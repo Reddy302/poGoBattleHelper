@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model List<PoGoBattleHelper.Models.Pokemon>
+
+<div class="text-center">
+    <h1 class="display-4">PoGo Battle Helper</h1>
+</div>
+
+@*TODO: use iconselect.js saved in bookmarks to display a list of all of the types*@
+
+@*FOR TESTING *@
+@*<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Type1</th>
+        <th>Type2</th>
+    </tr>
+    @foreach (Pokemon poke in Model)
+    {
+    <tr>
+        <td>@poke.Name</td>
+        @foreach (PoGoBattleHelper.Models.Type type in poke.Types)
+        {
+        <td>@type.Name</td>
+        }
+
+    </tr>
+    }
+</table>*@
+
+@*TODO: return list of pokemon that match the type selected*@
