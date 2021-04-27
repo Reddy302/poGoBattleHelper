@@ -28,6 +28,10 @@ namespace PoGoBattleHelper.Controllers
             // CREATE A LIST OF POKES : List<Pokemon> pokes = parse json code here;
             List<Pokemon> pokeList = JsonSerializer.Deserialize<List<Pokemon>>(fileString);
             // RETURN THE VIEW WITH THE LIST OF POKES INCLUDED : View(pokes)
+
+            //NEW CODE HERE
+            
+
             return View(pokeList);
         }
 
