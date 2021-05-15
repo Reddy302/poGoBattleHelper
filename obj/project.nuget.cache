@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yEB8Jx6Rt0TZ2vZiL651TKORIvnE0j+eXZbl2NHWuf1GghOvEPDpvAuOjHsNwpQ9Mou6Ze+B4UEBswFx9bNGYw==",
+  "dgSpecHash": "IMIdVcTo2fE15bIyggAVA/8+n4waAeCHdSv/wEf7dWox7FBBknDeUsYXobu0w1WbaaU2FpsLLzvLME4lLIIMzw==",
   "success": true,
   "projectFilePath": "C:\\Users\\MLewis\\Desktop\\LaunchCode\\CoderGirl 2020\\Capstone Project\\App-PoGoBattleHelper\\PoGoBattleHelper\\App\\PoGoBattleHelper.csproj",
   "expectedPackageFiles": [
@@ -13,7 +13,8 @@
     "C:\\Users\\MLewis\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\MLewis\\.nuget\\packages\\system.runtime.handles\\4.3.0\\system.runtime.handles.4.3.0.nupkg.sha512",
     "C:\\Users\\MLewis\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
-    "C:\\Users\\MLewis\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
+    "C:\\Users\\MLewis\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
+    "C:\\Users\\MLewis\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
   ],
   "logs": []
 }

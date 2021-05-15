@@ -5,61 +5,40 @@
 @model List<PoGoBattleHelper.Models.Pokemon>
 
 <div class="text-center">
-    <h1 class="display-4">PoGo Battle Helper</h1>
+    <h1 class="display-4"><strong>PoGo Battle Helper</strong></h1>
+    <a asp-action="GetType">Choose Pokemon by Type</a>
 </div>
 
 @*TODO: use iconselect.js saved in bookmarks to display a list of all of the types*@
 
 @*FOR TESTING BELOW*@
-@*<table class="table">
-    <tr>
-        <th>Name</th>
-        <th>Type1</th>
-        <th>Type2</th>
-    </tr>
-    @foreach (Pokemon poke in Model)
-    {
-    <tr>
-        <td>@poke.Name</td>
-        @foreach (PoGoBattleHelper.Models.Type type in poke.Types)
+<table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Type1</th>
+            <th>Type2</th>
+        </tr>
+        @foreach (Pokemon poke in Model)
         {
-        <td>@type.Name</td>
-        }
+        <tr>
+            <td>@poke.Name</td>
+            @foreach (PoGoBattleHelper.Models.Type type in poke.Types)
+            {
+            <td>@type.Name</td>
+            }
 
-    </tr>
-    }
-</table>*@
+        </tr>
+        }
+    </table>
 
 
 @*THIS IS HOW TO FORMAT A REGULAR IMAGE*@
 
 @*<div>
-    <img src='@Url.Content("~/images/types/POKEMON_TYPE_BUG.png")' alt="bug type" />
-</div>*@
+        <img src='@Url.Content("~/images/types/POKEMON_TYPE_BUG.png")' alt="bug type" />
+    </div>*@
 
 @*FOR TESTING ABOVE*@
 
-<form id="pokeTypes" name="pokeTypes" valign="center">
-    <input id="bug" name="bug" type="image" alt="bug" src="~/images/types/POKEMON_TYPE_BUG.png">
-    <input id="dark" name="dark" type="image" alt="dark" src="~/images/types/POKEMON_TYPE_DARK.png">
-    <input id="dragon" name="dragon" type="image" alt="dragon" src="~/images/types/POKEMON_TYPE_DRAGON.png">
-    <input id="electric" name="electric" type="image" alt="electric" src="~/images/types/POKEMON_TYPE_ELECTRIC.png">
-    <input id="fairy" name="fairy" type="image" alt="fairy" src="~/images/types/POKEMON_TYPE_FAIRY.png">
-    <input id="fighting" name="fighting" type="image" alt="fighting" src="~/images/types/POKEMON_TYPE_FIGHTING.png">
-    <input id="fire" name="fire" type="image" alt="fire" src="~/images/types/POKEMON_TYPE_FIRE.png">
-    <input id="flying" name="flying" type="image" alt="flying" src="~/images/types/POKEMON_TYPE_FLYING.png">
-    <input id="ghost" name="ghost" type="image" alt="ghost" src="~/images/types/POKEMON_TYPE_GHOST.png">
-    <br />
-    <input id="grass" name="grass" type="image" alt="grass" src="~/images/types/POKEMON_TYPE_GRASS.png">
-    <input id="ground" name="ground" type="image" alt="ground" src="~/images/types/POKEMON_TYPE_GROUND.png">
-    <input id="ice" name="ice" type="image" alt="ice" src="~/images/types/POKEMON_TYPE_ICE.png">
-    <input id="normal" name="normal" type="image" alt="normal" src="~/images/types/POKEMON_TYPE_NORMAL.png">
-    <input id="poison" name="poison" type="image" alt="poison" src="~/images/types/POKEMON_TYPE_POISON.png">
-    <input id="psychic" name="psychic" type="image" alt="psychic" src="~/images/types/POKEMON_TYPE_PSYCHIC.png">
-    <input id="rock" name="rock" type="image" alt="rock" src="~/images/types/POKEMON_TYPE_ROCK.png">
-    <input id="steel" name="steel" type="image" alt="steel" src="~/images/types/POKEMON_TYPE_STEEL.png">
-    <input id="water" name="water" type="image" alt="water" src="~/images/types/POKEMON_TYPE_WATER.png">
-</form>
-
 @*TODO: center the form and find out how to allow two selections if the poke has more than one type*@
-@*TODO: return list of pokemon that match the type selected*@
+@*TODO: return list of pokemon that match the type or types selected*@

@@ -9,5 +9,15 @@ namespace PoGoBattleHelper.Models
     {
         public string Id { get; set; }
         public string Name { get; set; }
+
+        public Type(string name, string id)
+        {
+            Name = name;
+            Id = id;
+        }
+        public Type()
+        {
+
+        }
     }
 }

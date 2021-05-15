@@ -1,0 +1,71 @@
+﻿@model List<PoGoBattleHelper.Models.Pokemon>
+
+<div class="text-center">
+    <h1 class="display-4"><strong>PoGo Battle Helper</strong></h1>
+</div>
+<div class="text-center">
+    <div style="padding: 100px 0px 50px;" class="text-center">
+        <h3>Choose first type</h3>
+    </div>
+    <label for="pokeTypes"><strong>Pokemon Types:</strong></label>
+    <form id="pokeTypes" name="pokeTypes" valign="center" method="post" action="/Home/GetType">
+        <input type="hidden" id="Bug" name="pokeTypes" value="Bug" />
+        <input id="Bug" name="pokeTypes" type="image" alt="Bug" src="~/images/types/POKEMON_TYPE_BUG.png">
+        <input type="hidden" id="Dark" name="pokeTypes" value="Dark" />
+        <input id="Dark" name="pokeTypes" type="image" alt="Dark" src="~/images/types/POKEMON_TYPE_DARK.png">
+        <input type="hidden" id="Dragon" name="pokeTypes" value="Dragon" />
+        <input id="Dragon" name="pokeTypes" type="image" alt="Dragon" src="~/images/types/POKEMON_TYPE_DRAGON.png">
+        <input type="hidden" id="Electric" name="pokeTypes" value="Electric" />
+        <input id="Electric" name="pokeTypes" type="image" alt="Electric" src="~/images/types/POKEMON_TYPE_ELECTRIC.png">
+        <input type="hidden" id="Fairy" name="pokeTypes" value="Fairy" />
+        <input id="Fairy" name="pokeTypes" type="image" alt="Fairy" src="~/images/types/POKEMON_TYPE_FAIRY.png">
+        <input type="hidden" id="Fighting" name="pokeTypes" value="Fighting" />
+        <input id="Fighting" name="pokeTypes" type="image" alt="Fighting" src="~/images/types/POKEMON_TYPE_FIGHTING.png">
+        <input type="hidden" id="Fire" name="pokeTypes" value="Fire" />
+        <input id="Fire" name="pokeTypes" type="image" alt="Fire" src="~/images/types/POKEMON_TYPE_FIRE.png">
+        <input type="hidden" id="Flying" name="pokeTypes" value="Flying" />
+        <input id="Flying" name="pokeTypes" type="image" alt="Flying" src="~/images/types/POKEMON_TYPE_FLYING.png">
+        <input type="hidden" id="Ghost" name="pokeTypes" value="Ghost" />
+        <input id="Ghost" name="pokeTypes" type="image" alt="Ghost" src="~/images/types/POKEMON_TYPE_GHOST.png">
+        <br />
+        <input type="hidden" id="Grass" name="pokeTypes" value="Grass" />
+        <input id="Grass" name="pokeTypes" type="image" alt="Grass" src="~/images/types/POKEMON_TYPE_GRASS.png">
+        <input type="hidden" id="Ground" name="pokeTypes" value="Ground" />
+        <input id="Ground" name="pokeTypes" type="image" alt="Ground" src="~/images/types/POKEMON_TYPE_GROUND.png">
+        <input type="hidden" id="Ice" name="pokeTypes" value="Ice" />
+        <input id="Ice" name="pokeTypes" type="image" alt="Ice" src="~/images/types/POKEMON_TYPE_ICE.png">
+        <input type="hidden" id="Normal" name="pokeTypes" value="Normal" />
+        <input id="Normal" name="pokeTypes" type="image" alt="Normal" src="~/images/types/POKEMON_TYPE_NORMAL.png">
+        <input type="hidden" id="Poison" name="pokeTypes" value="Poison" />
+        <input id="Poison" name="pokeTypes" type="image" alt="Poison" src="~/images/types/POKEMON_TYPE_POISON.png">
+        <input type="hidden" id="Psychic" name="pokeTypes" value="Psychic" />
+        <input id="Psychic" name="pokeTypes" type="image" alt="Psychic" src="~/images/types/POKEMON_TYPE_PSYCHIC.png">
+        <input type="hidden" id="Rock" name="pokeTypes" value="Rock" />
+        <input id="Rock" name="pokeTypes" type="image" alt="Rock" src="~/images/types/POKEMON_TYPE_ROCK.png">
+        <input type="hidden" id="Steel" name="pokeTypes" value="Steel" />
+        <input id="Steel" name="pokeTypes" type="image" alt="Steel" src="~/images/types/POKEMON_TYPE_STEEL.png">
+        <input type="hidden" id="Water" name="pokeTypes" value="Water" />
+        <input id="Water" name="pokeTypes" type="image" alt="Water" src="~/images/types/POKEMON_TYPE_WATER.png">
+    </form>
+</div>
+<br />
+<br/>
+<div class="text-center">
+    @if (ViewBag.possiblePokes.Count == 0)
+    {
+        <p>Choose a type to see possible Pokemon with that type here.</p>
+    }
+    else
+    {
+        <table>
+            <tbody>
+                @foreach (Pokemon poke in ViewBag.possiblePokes)
+                {
+                    <tr>
+                        <td>@poke.Name</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

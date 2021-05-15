@@ -84,3 +84,5 @@ C:\Users\MLewis\Desktop\LaunchCode\CoderGirl 2020\Capstone Project\App-PoGoBattl
 C:\Users\MLewis\Desktop\LaunchCode\CoderGirl 2020\Capstone Project\App-PoGoBattleHelper\PoGoBattleHelper\App\obj\Debug\netcoreapp3.1\PoGoBattleHelper.dll
 C:\Users\MLewis\Desktop\LaunchCode\CoderGirl 2020\Capstone Project\App-PoGoBattleHelper\PoGoBattleHelper\App\obj\Debug\netcoreapp3.1\PoGoBattleHelper.pdb
 C:\Users\MLewis\Desktop\LaunchCode\CoderGirl 2020\Capstone Project\App-PoGoBattleHelper\PoGoBattleHelper\App\obj\Debug\netcoreapp3.1\PoGoBattleHelper.genruntimeconfig.cache
+C:\Users\MLewis\Desktop\LaunchCode\CoderGirl 2020\Capstone Project\App-PoGoBattleHelper\PoGoBattleHelper\App\obj\Debug\netcoreapp3.1\Razor\Views\Home\GetType.cshtml.g.cs
+C:\Users\MLewis\Desktop\LaunchCode\CoderGirl 2020\Capstone Project\App-PoGoBattleHelper\PoGoBattleHelper\App\obj\Debug\netcoreapp3.1\Razor\Views\Home\GetSecondType.cshtml.g.cs

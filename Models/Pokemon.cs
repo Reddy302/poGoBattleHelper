@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PoGoBattleHelper.Controllers;
+using PoGoBattleHelper.Models;
 
 namespace PoGoBattleHelper.Models
 {
@@ -27,6 +29,17 @@ namespace PoGoBattleHelper.Models
         public Evolution Evolution { get; set; }
         public string Id { get; set; }
         public object[] Forms { get; set; }
+
+        public Pokemon(Type type1, Type type2)
+        {
+            Types = new Type[2];
+            Types[0] = type1;
+            Types[1] = type2;
+        }
+        public Pokemon()
+        {
+
+        }
     }
 
     public class Buddysize
@@ -112,5 +125,17 @@ namespace PoGoBattleHelper.Models
     public class CostToEvolve1
     {
         public int CandyCost { get; set; }
+    }
+
+    public class Types
+    {
+        public Type Type1 { get; set; }
+        public Type Type2 { get; set; }
+
+        public Types(Type type1, Type type2)
+        {
+            Type1 = type1;
+            Type2 = type2;
+        }
     }
 }
