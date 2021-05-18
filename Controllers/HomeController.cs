@@ -40,7 +40,7 @@ namespace PoGoBattleHelper.Controllers
         }
 
         [HttpPost, Route("/Home/GetType")]
-        public IActionResult GetFirstType(string pokeTypes)
+        public IActionResult GetType(string bugType, string darkType, string dragonType, string electricType, string fairyType, string fightingType, string fireType, string flyingType, string ghostType, string grassType, string groundType, string iceType, string normalType, string poisonType, string psychicType, string rockType, string steelType, string waterType)
         {
             if (myTeam.Count < 3)
             {
@@ -48,7 +48,75 @@ namespace PoGoBattleHelper.Controllers
                 {
                     for (int i = 0; i < poke.Types.Count(); i++)
                     {
-                        if (poke.Types[i].Name == pokeTypes)
+                        if (poke.Types[i].Name == bugType)
+                        {
+                            possiblePokes.Add(poke);
+                        }
+                        else if (poke.Types[i].Name == darkType)
+                        {
+                            possiblePokes.Add(poke);
+                        }
+                        else if (poke.Types[i].Name == dragonType)
+                        {
+                            possiblePokes.Add(poke);
+                        }
+                        else if (poke.Types[i].Name == electricType)
+                        {
+                            possiblePokes.Add(poke);
+                        }
+                        else if (poke.Types[i].Name == fairyType)
+                        {
+                            possiblePokes.Add(poke);
+                        }
+                        else if (poke.Types[i].Name == fightingType)
+                        {
+                            possiblePokes.Add(poke);
+                        }
+                        else if (poke.Types[i].Name == fireType)
+                        {
+                            possiblePokes.Add(poke);
+                        }
+                        else if (poke.Types[i].Name == flyingType)
+                        {
+                            possiblePokes.Add(poke);
+                        }
+                        else if (poke.Types[i].Name == ghostType)
+                        {
+                            possiblePokes.Add(poke);
+                        }
+                        else if (poke.Types[i].Name == grassType)
+                        {
+                            possiblePokes.Add(poke);
+                        }
+                        else if (poke.Types[i].Name == groundType)
+                        {
+                            possiblePokes.Add(poke);
+                        }
+                        else if (poke.Types[i].Name == iceType)
+                        {
+                            possiblePokes.Add(poke);
+                        }
+                        else if (poke.Types[i].Name == normalType)
+                        {
+                            possiblePokes.Add(poke);
+                        }
+                        else if (poke.Types[i].Name == poisonType)
+                        {
+                            possiblePokes.Add(poke);
+                        }
+                        else if (poke.Types[i].Name == psychicType)
+                        {
+                            possiblePokes.Add(poke);
+                        }
+                        else if (poke.Types[i].Name == rockType)
+                        {
+                            possiblePokes.Add(poke);
+                        }
+                        else if (poke.Types[i].Name == steelType)
+                        {
+                            possiblePokes.Add(poke);
+                        }
+                        else if (poke.Types[i].Name == waterType)
                         {
                             possiblePokes.Add(poke);
                         }
@@ -59,18 +127,193 @@ namespace PoGoBattleHelper.Controllers
             return View("GetSecondType");
         }
 
+
+
         //[HttpPost, Route("/Home/GetType")]
-        //public IActionResult FirstTypeDark(string pokeTypeDark)
+        //public IActionResult GetFirstType(string Bug, string Dark, string Dragon, string Electric, string Fairy, string Fighting, string Fire, string Flying, string Ghost, string Grass, string Ground, string Ice, string Normal, string Poison, string Psychic, string Rock, string Steel, string Water)
         //{
         //    if (myTeam.Count < 3)
         //    {
         //        foreach (Pokemon poke in pokeList)
         //        {
-        //            for (int i = 0; i < poke.Types.Count(); i++)
+        //            if (Bug != null)
         //            {
-        //                if (poke.Types[i].Name == pokeTypeDark)
+        //                for (int i = 0; i < poke.Types.Count(); i++)
         //                {
-        //                    possiblePokes.Add(poke);
+        //                    if (poke.Types[i].Name == Bug)
+        //                    {
+        //                        possiblePokes.Add(poke);
+        //                    }
+        //                }
+        //            }
+        //            else if (Dark != null)
+        //            {
+        //                for (int i = 0; i < poke.Types.Count(); i++)
+        //                {
+        //                    if (poke.Types[i].Name == Dark)
+        //                    {
+        //                        possiblePokes.Add(poke);
+        //                    }
+        //                }
+        //            }
+        //            else if (Dragon != null)
+        //            {
+        //                for (int i = 0; i < poke.Types.Count(); i++)
+        //                {
+        //                    if (poke.Types[i].Name == Dragon)
+        //                    {
+        //                        possiblePokes.Add(poke);
+        //                    }
+        //                }
+        //            }
+        //            else if (Electric != null)
+        //            {
+        //                for (int i = 0; i < poke.Types.Count(); i++)
+        //                {
+        //                    if (poke.Types[i].Name == Electric)
+        //                    {
+        //                        possiblePokes.Add(poke);
+        //                    }
+        //                }
+        //            }
+        //            else if (Fairy != null)
+        //            {
+        //                for (int i = 0; i < poke.Types.Count(); i++)
+        //                {
+        //                    if (poke.Types[i].Name == Fairy)
+        //                    {
+        //                        possiblePokes.Add(poke);
+        //                    }
+        //                }
+        //            }
+        //            else if (Fighting != null)
+        //            {
+        //                for (int i = 0; i < poke.Types.Count(); i++)
+        //                {
+        //                    if (poke.Types[i].Name == Fighting)
+        //                    {
+        //                        possiblePokes.Add(poke);
+        //                    }
+        //                }
+        //            }
+        //            else if (Fire != null)
+        //            {
+        //                for (int i = 0; i < poke.Types.Count(); i++)
+        //                {
+        //                    if (poke.Types[i].Name == Fire)
+        //                    {
+        //                        possiblePokes.Add(poke);
+        //                    }
+        //                }
+        //            }
+        //            else if (Flying != null)
+        //            {
+        //                for (int i = 0; i < poke.Types.Count(); i++)
+        //                {
+        //                    if (poke.Types[i].Name == Flying)
+        //                    {
+        //                        possiblePokes.Add(poke);
+        //                    }
+        //                }
+        //            }
+        //            else if (Ghost != null)
+        //            {
+        //                for (int i = 0; i < poke.Types.Count(); i++)
+        //                {
+        //                    if (poke.Types[i].Name == Ghost)
+        //                    {
+        //                        possiblePokes.Add(poke);
+        //                    }
+        //                }
+        //            }
+        //            else if (Grass != null)
+        //            {
+        //                for (int i = 0; i < poke.Types.Count(); i++)
+        //                {
+        //                    if (poke.Types[i].Name == Grass)
+        //                    {
+        //                        possiblePokes.Add(poke);
+        //                    }
+        //                }
+        //            }
+        //            else if (Ground != null)
+        //            {
+        //                for (int i = 0; i < poke.Types.Count(); i++)
+        //                {
+        //                    if (poke.Types[i].Name == Ground)
+        //                    {
+        //                        possiblePokes.Add(poke);
+        //                    }
+        //                }
+        //            }
+        //            else if (Ice != null)
+        //            {
+        //                for (int i = 0; i < poke.Types.Count(); i++)
+        //                {
+        //                    if (poke.Types[i].Name == Ice)
+        //                    {
+        //                        possiblePokes.Add(poke);
+        //                    }
+        //                }
+        //            }
+        //            else if (Normal != null)
+        //            {
+        //                for (int i = 0; i < poke.Types.Count(); i++)
+        //                {
+        //                    if (poke.Types[i].Name == Normal)
+        //                    {
+        //                        possiblePokes.Add(poke);
+        //                    }
+        //                }
+        //            }
+        //            else if (Poison != null)
+        //            {
+        //                for (int i = 0; i < poke.Types.Count(); i++)
+        //                {
+        //                    if (poke.Types[i].Name == Poison)
+        //                    {
+        //                        possiblePokes.Add(poke);
+        //                    }
+        //                }
+        //            }
+        //            else if (Psychic != null)
+        //            {
+        //                for (int i = 0; i < poke.Types.Count(); i++)
+        //                {
+        //                    if (poke.Types[i].Name == Psychic)
+        //                    {
+        //                        possiblePokes.Add(poke);
+        //                    }
+        //                }
+        //            }
+        //            else if (Rock != null)
+        //            {
+        //                for (int i = 0; i < poke.Types.Count(); i++)
+        //                {
+        //                    if (poke.Types[i].Name == Rock)
+        //                    {
+        //                        possiblePokes.Add(poke);
+        //                    }
+        //                }
+        //            }
+        //            else if (Steel != null)
+        //            {
+        //                for (int i = 0; i < poke.Types.Count(); i++)
+        //                {
+        //                    if (poke.Types[i].Name == Steel)
+        //                    {
+        //                        possiblePokes.Add(poke);
+        //                    }
+        //                }
+        //            }
+        //            else if (Water != null)
+        //            {
+        //                for (int i = 0; i < poke.Types.Count(); i++)
+        //                {
+        //                    if (poke.Types[i].Name == Water)
+        //                    {
+        //                        possiblePokes.Add(poke);
+        //                    }
         //                }
         //            }
         //        }
@@ -78,6 +321,8 @@ namespace PoGoBattleHelper.Controllers
         //    ViewBag.possiblePokes = possiblePokes;
         //    return View("GetSecondType");
         //}
+
+
 
         public IActionResult Privacy()
         {
