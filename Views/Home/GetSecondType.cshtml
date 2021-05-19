@@ -5,66 +5,150 @@
 </div>
 <div class="text-center">
     <div style="padding: 100px 0px 50px;" class="text-center">
-        <h3>Choose second type</h3>
+        <h3>If the Pokemon has 2 types, please choose the second type.<br />Otherwise, choose the Pokemon below.</h3>
     </div>
-    <label for="pokeTypes"><strong>Pokemon Types:</strong></label>
-    <form id="pokeTypes" name="pokeTypes" valign="center" method="post" action="/Home/GetSecondType">
-        <input type="hidden" id="Bug" name="pokeTypes" value="Bug" />
-        <input id="Bug" name="pokeTypes" type="image" alt="Bug" src="~/images/types/POKEMON_TYPE_BUG.png">
-        <input type="hidden" id="Dark" name="pokeTypes" value="Dark" />
-        <input id="Dark" name="pokeTypes" type="image" alt="Dark" src="~/images/types/POKEMON_TYPE_DARK.png">
-        <input type="hidden" id="Dragon" name="pokeTypes" value="Dragon" />
-        <input id="Dragon" name="pokeTypes" type="image" alt="Dragon" src="~/images/types/POKEMON_TYPE_DRAGON.png">
-        <input type="hidden" id="Electric" name="pokeTypes" value="Electric" />
-        <input id="Electric" name="pokeTypes" type="image" alt="Electric" src="~/images/types/POKEMON_TYPE_ELECTRIC.png">
-        <input type="hidden" id="Fairy" name="pokeTypes" value="Fairy" />
-        <input id="Fairy" name="pokeTypes" type="image" alt="Fairy" src="~/images/types/POKEMON_TYPE_FAIRY.png">
-        <input type="hidden" id="Fighting" name="pokeTypes" value="Fighting" />
-        <input id="Fighting" name="pokeTypes" type="image" alt="Fighting" src="~/images/types/POKEMON_TYPE_FIGHTING.png">
-        <input type="hidden" id="Fire" name="pokeTypes" value="Fire" />
-        <input id="Fire" name="pokeTypes" type="image" alt="Fire" src="~/images/types/POKEMON_TYPE_FIRE.png">
-        <input type="hidden" id="Flying" name="pokeTypes" value="Flying" />
-        <input id="Flying" name="pokeTypes" type="image" alt="Flying" src="~/images/types/POKEMON_TYPE_FLYING.png">
-        <input type="hidden" id="Ghost" name="pokeTypes" value="Ghost" />
-        <input id="Ghost" name="pokeTypes" type="image" alt="Ghost" src="~/images/types/POKEMON_TYPE_GHOST.png">
-        <br />
-        <input type="hidden" id="Grass" name="pokeTypes" value="Grass" />
-        <input id="Grass" name="pokeTypes" type="image" alt="Grass" src="~/images/types/POKEMON_TYPE_GRASS.png">
-        <input type="hidden" id="Ground" name="pokeTypes" value="Ground" />
-        <input id="Ground" name="pokeTypes" type="image" alt="Ground" src="~/images/types/POKEMON_TYPE_GROUND.png">
-        <input type="hidden" id="Ice" name="pokeTypes" value="Ice" />
-        <input id="Ice" name="pokeTypes" type="image" alt="Ice" src="~/images/types/POKEMON_TYPE_ICE.png">
-        <input type="hidden" id="Normal" name="pokeTypes" value="Normal" />
-        <input id="Normal" name="pokeTypes" type="image" alt="Normal" src="~/images/types/POKEMON_TYPE_NORMAL.png">
-        <input type="hidden" id="Poison" name="pokeTypes" value="Poison" />
-        <input id="Poison" name="pokeTypes" type="image" alt="Poison" src="~/images/types/POKEMON_TYPE_POISON.png">
-        <input type="hidden" id="Psychic" name="pokeTypes" value="Psychic" />
-        <input id="Psychic" name="pokeTypes" type="image" alt="Psychic" src="~/images/types/POKEMON_TYPE_PSYCHIC.png">
-        <input type="hidden" id="Rock" name="pokeTypes" value="Rock" />
-        <input id="Rock" name="pokeTypes" type="image" alt="Rock" src="~/images/types/POKEMON_TYPE_ROCK.png">
-        <input type="hidden" id="Steel" name="pokeTypes" value="Steel" />
-        <input id="Steel" name="pokeTypes" type="image" alt="Steel" src="~/images/types/POKEMON_TYPE_STEEL.png">
-        <input type="hidden" id="Water" name="pokeTypes" value="Water" />
-        <input id="Water" name="pokeTypes" type="image" alt="Water" src="~/images/types/POKEMON_TYPE_WATER.png">
-    </form>
+    <h4>Pokemon Types:</h4>
+    <table align="center">
+        <tbody>
+            <tr>
+                <td>
+                    <form id="bugType" name="bugType" valign="center" method="post" action="/Home/GetType">
+                        <input type="hidden" id="bugType" name="bugType" value="Bug" />
+                        <input id="bugType" name="bugType" type="image" alt="Bug" src="~/images/types/POKEMON_TYPE_BUG.png">
+                    </form>
+                </td>
+                <td>
+                    <form id="darkType" name="darkType" valign="center" method="post" action="/Home/GetType">
+                        <input type="hidden" id="darkType" name="darkType" value="Dark" />
+                        <input id="darkType" name="darkType" type="image" alt="Dark" src="~/images/types/POKEMON_TYPE_DARK.png">
+                    </form>
+                </td>
+                <td>
+                    <form id="dragonType" name="dragonType" valign="center" method="post" action="/Home/GetType">
+                        <input type="hidden" id="dragonType" name="dragonType" value="Dragon" />
+                        <input id="dragonType" name="dragonType" type="image" alt="Dragon" src="~/images/types/POKEMON_TYPE_DRAGON.png">
+                    </form>
+                </td>
+                <td>
+                    <form id="electricType" name="electricType" valign="center" method="post" action="/Home/GetType">
+                        <input type="hidden" id="electricType" name="electricType" value="Electric" />
+                        <input id="electricType" name="electricType" type="image" alt="Electric" src="~/images/types/POKEMON_TYPE_ELECTRIC.png">
+                    </form>
+                </td>
+                <td>
+                    <form id="fairyType" name="fairyType" valign="center" method="post" action="/Home/GetType">
+                        <input type="hidden" id="fairyType" name="fairyType" value="Fairy" />
+                        <input id="fairyType" name="fairyType" type="image" alt="Fairy" src="~/images/types/POKEMON_TYPE_FAIRY.png">
+                    </form>
+                </td>
+                <td>
+                    <form id="fightingType" name="fightingType" valign="center" method="post" action="/Home/GetType">
+                        <input type="hidden" id="fightingType" name="fightingType" value="Fighting" />
+                        <input id="fightingType" name="fightingType" type="image" alt="Fighting" src="~/images/types/POKEMON_TYPE_FIGHTING.png">
+                    </form>
+                </td>
+                <td>
+                    <form id="fireType" name="fireType" valign="center" method="post" action="/Home/GetType">
+                        <input type="hidden" id="fireType" name="fireType" value="Fire" />
+                        <input id="fireType" name="fireType" type="image" alt="Fire" src="~/images/types/POKEMON_TYPE_FIRE.png">
+                    </form>
+                </td>
+                <td>
+                    <form id="flyingType" name="flyingType" valign="center" method="post" action="/Home/GetType">
+                        <input type="hidden" id="flyingType" name="flyingType" value="Flying" />
+                        <input id="flyingType" name="flyingType" type="image" alt="Flying" src="~/images/types/POKEMON_TYPE_FLYING.png">
+                    </form>
+                </td>
+                <td>
+                    <form id="ghostType" name="ghostType" valign="center" method="post" action="/Home/GetType">
+                        <input type="hidden" id="ghostType" name="ghostType" value="Ghost" />
+                        <input id="ghostType" name="ghostType" type="image" alt="Ghost" src="~/images/types/POKEMON_TYPE_GHOST.png">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form id="grassType" name="grassType" valign="center" method="post" action="/Home/GetType">
+                        <input type="hidden" id="grassType" name="grassType" value="Grass" />
+                        <input id="grassType" name="grassType" type="image" alt="Grass" src="~/images/types/POKEMON_TYPE_GRASS.png">
+                    </form>
+                </td>
+                <td>
+                    <form id="groundType" name="groundType" valign="center" method="post" action="/Home/GetType">
+                        <input type="hidden" id="groundType" name="groundType" value="Ground" />
+                        <input id="groundType" name="groundType" type="image" alt="Ground" src="~/images/types/POKEMON_TYPE_GROUND.png">
+                    </form>
+                </td>
+                <td>
+                    <form id="iceType" name="iceType" valign="center" method="post" action="/Home/GetType">
+                        <input type="hidden" id="iceType" name="iceType" value="Ice" />
+                        <input id="iceType" name="iceType" type="image" alt="Ice" src="~/images/types/POKEMON_TYPE_ICE.png">
+                    </form>
+                </td>
+                <td>
+                    <form id="normalType" name="normalType" valign="center" method="post" action="/Home/GetType">
+                        <input type="hidden" id="normalType" name="normalType" value="Normal" />
+                        <input id="normalType" name="normalType" type="image" alt="Normal" src="~/images/types/POKEMON_TYPE_NORMAL.png">
+                    </form>
+                </td>
+                <td>
+                    <form id="poisonType" name="poisonType" valign="center" method="post" action="/Home/GetType">
+                        <input type="hidden" id="poisonType" name="poisonType" value="Poison" />
+                        <input id="poisonType" name="poisonType" type="image" alt="Poison" src="~/images/types/POKEMON_TYPE_POISON.png">
+                    </form>
+                </td>
+                <td>
+                    <form id="psychicType" name="psychicType" valign="center" method="post" action="/Home/GetType">
+                        <input type="hidden" id="psychicType" name="psychicType" value="Psychic" />
+                        <input id="psychicType" name="psychicType" type="image" alt="Psychic" src="~/images/types/POKEMON_TYPE_PSYCHIC.png">
+                    </form>
+                </td>
+                <td>
+                    <form id="rockType" name="rockType" valign="center" method="post" action="/Home/GetType">
+                        <input type="hidden" id="rockType" name="rockType" value="Rock" />
+                        <input id="rockType" name="rockType" type="image" alt="Rock" src="~/images/types/POKEMON_TYPE_ROCK.png">
+                    </form>
+                </td>
+                <td>
+                    <form id="steelType" name="steelType" valign="center" method="post" action="/Home/GetType">
+                        <input type="hidden" id="steelType" name="steelType" value="Steel" />
+                        <input id="steelType" name="steelType" type="image" alt="Steel" src="~/images/types/POKEMON_TYPE_STEEL.png">
+                    </form>
+                </td>
+                <td>
+                    <form id="waterType" name="waterType" valign="center" method="post" action="/Home/GetType">
+                        <input type="hidden" id="waterType" name="waterType" value="Water" />
+                        <input id="waterType" name="waterType" type="image" alt="Water" src="~/images/types/POKEMON_TYPE_WATER.png">
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 <br />
 <br />
 <div class="text-center">
     @if (ViewBag.possiblePokes.Count == 0)
     {
-    <a asp-action="GetType">Choose Pokemon by Type</a>
+        <a asp-action="GetType">Choose Pokemon by Type</a>
     }
     else
     {
-        <table>
+        int counter = 0;
+        <table align="center">
             <tbody>
-                @foreach (Pokemon poke in ViewBag.possiblePokes)
-                {
-                    <tr>
+                @*ADD IN A LOOP TO LIST EACH POKE - TRY TO HAVE IT END THE ROW AFTER 5*@
+                <tr>
+                    @foreach (Pokemon poke in ViewBag.possiblePokes)
+                    {
                         <td>@poke.Name</td>
-                    </tr>
-                }
+                        counter++;
+                        if (counter % 5 == 0)
+                        {
+                            @:</tr><tr>
+                        }
+                    }
+                </tr>
             </tbody>
         </table>
     }
