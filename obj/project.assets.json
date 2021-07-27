@@ -605,19 +605,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MLewis\\.nuget\\packages\\": {}
+    "C:\\Users\\lewis\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MLewis\\Desktop\\LaunchCode\\CoderGirl 2020\\Capstone Project\\App-PoGoBattleHelper\\PoGoBattleHelper\\App\\PoGoBattleHelper.csproj",
+      "projectUniqueName": "C:\\Users\\lewis\\Desktop\\Capstone Project\\PoGoBattleHelper.csproj",
       "projectName": "PoGoBattleHelper",
-      "projectPath": "C:\\Users\\MLewis\\Desktop\\LaunchCode\\CoderGirl 2020\\Capstone Project\\App-PoGoBattleHelper\\PoGoBattleHelper\\App\\PoGoBattleHelper.csproj",
-      "packagesPath": "C:\\Users\\MLewis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MLewis\\Desktop\\LaunchCode\\CoderGirl 2020\\Capstone Project\\App-PoGoBattleHelper\\PoGoBattleHelper\\App\\obj\\",
+      "projectPath": "C:\\Users\\lewis\\Desktop\\Capstone Project\\PoGoBattleHelper.csproj",
+      "packagesPath": "C:\\Users\\lewis\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lewis\\Desktop\\Capstone Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MLewis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lewis\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -662,12 +662,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.13, 3.1.13]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -676,7 +670,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

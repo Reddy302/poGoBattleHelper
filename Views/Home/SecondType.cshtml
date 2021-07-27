@@ -1,0 +1,36 @@
+﻿@model List<PoGoBattleHelper.Models.Pokemon>
+
+<div class="text-center">
+    <h1 class="display-4"><strong>PoGo Battle Helper</strong></h1>
+</div>
+<div class="text-center">
+    <div style="padding: 100px 0px 50px;" class="text-center">
+        <h3>Please choose the Pokemon below.</h3>
+    </div>
+    <h4>Pokemon with the types you chose:</h4>
+    <br />
+    @if (ViewBag.possiblePokes2Types.Count == 0)
+    {
+        <a asp-action="GetType">Choose Pokemon by Type</a>
+    }
+    else
+    {
+        int counter = 0;
+        <table align="center">
+            <tbody>
+                @*ADD IN A LOOP TO LIST EACH POKE - TRY TO HAVE IT END THE ROW AFTER 5*@
+                <tr>
+                    @foreach (Pokemon poke in ViewBag.possiblePokes2Types)
+                    {
+                        <td>@poke.Name</td>
+                        counter++;
+                        if (counter % 5 == 0)
+                        {
+                        @:</tr><tr>
+                        }
+                    }
+                </tr>
+            </tbody>
+        </table>
+    }
+    </div>

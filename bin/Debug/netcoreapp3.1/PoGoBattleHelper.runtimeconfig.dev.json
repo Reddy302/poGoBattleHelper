@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\MLewis\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\MLewis\\.nuget\\packages"
+      "C:\\Users\\lewis\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\lewis\\.nuget\\packages"
     ]
   }
 }
