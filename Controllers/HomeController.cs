@@ -32,7 +32,7 @@ namespace PoGoBattleHelper.Controllers
             return View(pokeList);
         }
 
-        [HttpGet]
+        [HttpGet, Route("Home/GetType")]
         public IActionResult GetType()
         {
             ViewBag.possiblePokes = possiblePokes;
@@ -245,3 +245,10 @@ namespace PoGoBattleHelper.Controllers
         }
     }
 }
+
+// TODO: Return a linked image in the view instead of just the poke name
+// TODO: When a pokemon name is clicked add the poke to myList and display a confirmation page with a slightly larger image of the poke
+// TODO: Add a "choose next pokemon" button to the confirmation page
+// TODO: Add a "go back this is not the poke I meant to choose" button to the confirmation page
+
+// TODO: Before finishing the app, make sure to find the updated poke list and import it to the app
