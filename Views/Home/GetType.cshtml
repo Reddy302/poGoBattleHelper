@@ -216,7 +216,7 @@
                         }
                         else if (@poke.Name.ToLower().Contains("rotom mow"))
                         {
-                            modifier = "31";
+                            modifier = "91";
                         }
                         else if (@poke.Name.ToLower().Contains("giratina altered"))
                         {
@@ -234,9 +234,22 @@
                         {
                             modifier = "35";
                         }
+                        else if (poke.Name.ToLower().Contains("alola"))
+                        {
+                            modifier = "61";
+                        }
+                        else if (poke.Name.ToLower().Contains("galar"))
+                        {
+                            modifier = "31";
+                        }
+                        else if (poke.Name.ToLower().Contains("mega"))
+                        {
+                            modifier = "51";
+                        }
 
                         string dex = poke.Dex.ToString("D3");
 
+                        // Below you will likely have to change the action to "AddPoke" or some shit to get the poke on your team
                         <td vertical-align="bottom">
                             <form id=@poke.Name name=@poke.Name valign="bottom" method="post" action="/Home/GetType">
                                 <input type="hidden" id=@poke.Name name=@poke.Name value=@poke.Name />

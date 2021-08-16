@@ -123,13 +123,13 @@ namespace PoGoBattleHelper.Controllers
                     }
                 }
                 ViewBag.possiblePokes = possiblePokes;
-                return View("GetSecondType");
+                return Redirect("GetSecondType");
             }
             else
             {
                 ViewBag.possiblePokes = possiblePokes;
                 // CHANGE THIS VIEW TO THE TEAM VIEW ONCE CREATED
-                return View("GetSecondType");
+                return Redirect("GetSecondType");
             }
         }
 
@@ -225,11 +225,11 @@ namespace PoGoBattleHelper.Controllers
                     }
                 }
                 ViewBag.possiblePokes2Types = possiblePokes2Types;
-                return View("SecondType");
+                return Redirect("SecondType");
             }
             ViewBag.possiblePokes2Types = possiblePokes2Types;
             // THIS WILL RETURN THE VIEW OF YOUR TEAM ONCE THAT IS CREATED
-            return View("SecondType");
+            return Redirect("SecondType");
         }
 
 
@@ -250,5 +250,7 @@ namespace PoGoBattleHelper.Controllers
 // TODO: When a pokemon name is clicked add the poke to myList and display a confirmation page with a slightly larger image of the poke
 // TODO: Add a "choose next pokemon" button to the confirmation page
 // TODO: Add a "go back this is not the poke I meant to choose" button to the confirmation page
+// TODO: Put the getType code into a Partial View once it has been refactored.
+// TODO: Add a Data Layer to the application
 
 // TODO: Before finishing the app, make sure to find the updated poke list and import it to the app
