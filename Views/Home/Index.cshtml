@@ -2,7 +2,9 @@
     ViewData["Title"] = "Home Page";
 }
 
-@model List<PoGoBattleHelper.Models.Pokemon>
+@model PoGoBattleHelper.ViewModels.GetTypeViewModel;
+
+
 
 <div class="text-center">
     <h1 class="display-4"><strong>PoGo Battle Helper</strong></h1>
@@ -12,23 +14,45 @@
 
 @*FOR TESTING BELOW*@
 <table class="table">
-        <tr>
-            <th>Name</th>
-            <th>Type1</th>
-            <th>Type2</th>
-        </tr>
-        @foreach (Pokemon poke in Model)
-        {
+    <tr>
+        <th>Name</th>
+        <th>Type1</th>
+        <th>Type2</th>
+    </tr>
+    @foreach (Pokemon poke in Model.Pokes)
+    {
         <tr>
             <td>@poke.Name</td>
             @foreach (PoGoBattleHelper.Models.Type type in poke.Types)
             {
-            <td>@type.Name</td>
+                <td>@type.Name</td>
             }
 
         </tr>
-        }
-    </table>
+    }
+</table>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>ID</th>
+        <th>Damage Stat</th>
+        <th>Attack Scaler</th>
+    </tr>
+    @foreach (PoGoBattleHelper.Models.Type type in Model.Types)
+    {
+        <tr>
+            <td>@type.Name</td>
+            <td>@type.Id</td>
+            @foreach (Damage stat in type.Damage)
+            {
+                <td>@stat.Id</td>
+                <td>@stat.AttackScalar.ToString()</td>
+            }
+
+        </tr>
+    }
+</table>
 
 
 @*THIS IS HOW TO FORMAT A REGULAR IMAGE*@

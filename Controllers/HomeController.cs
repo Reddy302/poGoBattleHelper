@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PoGoBattleHelper.Models;
+using PoGoBattleHelper.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -15,6 +16,8 @@ namespace PoGoBattleHelper.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private static readonly string fileString2 = System.IO.File.ReadAllText("pokedex/type.json");
+        private static readonly List<Models.Type> typeList = JsonSerializer.Deserialize<List<Models.Type>>(fileString2);
         private static readonly string fileString = System.IO.File.ReadAllText("pokedex/pokemon.json");
         private static readonly List<Pokemon> pokeList = JsonSerializer.Deserialize<List<Pokemon>>(fileString);
         private static List<Pokemon> myTeam = new List<Pokemon>();
@@ -26,22 +29,27 @@ namespace PoGoBattleHelper.Controllers
             _logger = logger;
         }
 
-        //[HttpGet]
+        [HttpGet]
         public IActionResult Index()
         {
-            return View(pokeList);
+            GetTypeViewModel myModel = new GetTypeViewModel();
+            myModel.Pokes = pokeList;
+            myModel.Types = typeList;
+            return View(myModel);
         }
 
         [HttpGet, Route("Home/GetType")]
         public IActionResult GetType()
         {
             ViewBag.possiblePokes = possiblePokes;
-            return View();
+            return View(typeList);
         }
 
+        //[HttpGet]
         [HttpPost, Route("/Home/GetType")]
         public IActionResult GetType(string bugType, string darkType, string dragonType, string electricType, string fairyType, string fightingType, string fireType, string flyingType, string ghostType, string grassType, string groundType, string iceType, string normalType, string poisonType, string psychicType, string rockType, string steelType, string waterType)
         {
+            ViewBag.possiblePokes = possiblePokes;
             if (myTeam.Count < 3)
             {
                 foreach (Pokemon poke in pokeList)
@@ -225,11 +233,11 @@ namespace PoGoBattleHelper.Controllers
                     }
                 }
                 ViewBag.possiblePokes2Types = possiblePokes2Types;
-                return Redirect("SecondType");
+                return View("AddPoke");
             }
             ViewBag.possiblePokes2Types = possiblePokes2Types;
             // THIS WILL RETURN THE VIEW OF YOUR TEAM ONCE THAT IS CREATED
-            return Redirect("SecondType");
+            return View("AddPoke");
         }
 
 

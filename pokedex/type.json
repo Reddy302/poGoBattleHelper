@@ -1,1405 +1,1405 @@
 [
     {
-        "id": "POKEMON_TYPE_BUG",
-        "name": "Bug",
-        "damage": [
+        "Id": "POKEMON_TYPE_BUG",
+        "Name": "Bug",
+        "Damage": [
             {
-                "id": "POKEMON_TYPE_NORMAL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_NORMAL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIGHTING",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_FIGHTING",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_FLYING",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_FLYING",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_POISON",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_POISON",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_GROUND",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GROUND",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ROCK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ROCK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_BUG",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_BUG",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GHOST",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_GHOST",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_STEEL",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_STEEL",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_FIRE",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_FIRE",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_WATER",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_WATER",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GRASS",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_GRASS",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_ELECTRIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ELECTRIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_PSYCHIC",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_PSYCHIC",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_ICE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ICE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DRAGON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DRAGON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DARK",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_DARK",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_FAIRY",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_FAIRY",
+                "AttackScalar": 0.625
             }
         ]
     },
     {
-        "id": "POKEMON_TYPE_DARK",
-        "name": "Dark",
-        "damage": [
+        "Id": "POKEMON_TYPE_DARK",
+        "Name": "Dark",
+        "Damage": [
             {
-                "id": "POKEMON_TYPE_NORMAL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_NORMAL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIGHTING",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_FIGHTING",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_FLYING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FLYING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_POISON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_POISON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GROUND",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GROUND",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ROCK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ROCK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_BUG",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_BUG",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GHOST",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_GHOST",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_STEEL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_STEEL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIRE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIRE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_WATER",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_WATER",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GRASS",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GRASS",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ELECTRIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ELECTRIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_PSYCHIC",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_PSYCHIC",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_ICE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ICE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DRAGON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DRAGON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DARK",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_DARK",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_FAIRY",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_FAIRY",
+                "AttackScalar": 0.625
             }
         ]
     },
     {
-        "id": "POKEMON_TYPE_DRAGON",
-        "name": "Dragon",
-        "damage": [
+        "Id": "POKEMON_TYPE_DRAGON",
+        "Name": "Dragon",
+        "Damage": [
             {
-                "id": "POKEMON_TYPE_NORMAL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_NORMAL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIGHTING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIGHTING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FLYING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FLYING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_POISON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_POISON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GROUND",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GROUND",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ROCK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ROCK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_BUG",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_BUG",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GHOST",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GHOST",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_STEEL",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_STEEL",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_FIRE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIRE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_WATER",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_WATER",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GRASS",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GRASS",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ELECTRIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ELECTRIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_PSYCHIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_PSYCHIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ICE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ICE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DRAGON",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_DRAGON",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_DARK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DARK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FAIRY",
-                "attackScalar": 0.390625
+                "Id": "POKEMON_TYPE_FAIRY",
+                "AttackScalar": 0.390625
             }
         ]
     },
     {
-        "id": "POKEMON_TYPE_ELECTRIC",
-        "name": "Electric",
-        "damage": [
+        "Id": "POKEMON_TYPE_ELECTRIC",
+        "Name": "Electric",
+        "Damage": [
             {
-                "id": "POKEMON_TYPE_NORMAL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_NORMAL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIGHTING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIGHTING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FLYING",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_FLYING",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_POISON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_POISON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GROUND",
-                "attackScalar": 0.390625
+                "Id": "POKEMON_TYPE_GROUND",
+                "AttackScalar": 0.390625
             },
             {
-                "id": "POKEMON_TYPE_ROCK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ROCK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_BUG",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_BUG",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GHOST",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GHOST",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_STEEL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_STEEL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIRE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIRE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_WATER",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_WATER",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_GRASS",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_GRASS",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_ELECTRIC",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_ELECTRIC",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_PSYCHIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_PSYCHIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ICE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ICE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DRAGON",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_DRAGON",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_DARK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DARK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FAIRY",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FAIRY",
+                "AttackScalar": 1
             }
         ]
     },
     {
-        "id": "POKEMON_TYPE_FAIRY",
-        "name": "Fairy",
-        "damage": [
+        "Id": "POKEMON_TYPE_FAIRY",
+        "Name": "Fairy",
+        "Damage": [
             {
-                "id": "POKEMON_TYPE_NORMAL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_NORMAL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIGHTING",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_FIGHTING",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_FLYING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FLYING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_POISON",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_POISON",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_GROUND",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GROUND",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ROCK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ROCK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_BUG",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_BUG",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GHOST",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GHOST",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_STEEL",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_STEEL",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_FIRE",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_FIRE",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_WATER",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_WATER",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GRASS",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GRASS",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ELECTRIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ELECTRIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_PSYCHIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_PSYCHIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ICE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ICE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DRAGON",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_DRAGON",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_DARK",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_DARK",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_FAIRY",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FAIRY",
+                "AttackScalar": 1
             }
         ]
     },
     {
-        "id": "POKEMON_TYPE_FIGHTING",
-        "name": "Fighting",
-        "damage": [
+        "Id": "POKEMON_TYPE_FIGHTING",
+        "Name": "Fighting",
+        "Damage": [
             {
-                "id": "POKEMON_TYPE_NORMAL",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_NORMAL",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_FIGHTING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIGHTING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FLYING",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_FLYING",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_POISON",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_POISON",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_GROUND",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GROUND",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ROCK",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_ROCK",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_BUG",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_BUG",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_GHOST",
-                "attackScalar": 0.390625
+                "Id": "POKEMON_TYPE_GHOST",
+                "AttackScalar": 0.390625
             },
             {
-                "id": "POKEMON_TYPE_STEEL",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_STEEL",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_FIRE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIRE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_WATER",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_WATER",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GRASS",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GRASS",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ELECTRIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ELECTRIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_PSYCHIC",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_PSYCHIC",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_ICE",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_ICE",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_DRAGON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DRAGON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DARK",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_DARK",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_FAIRY",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_FAIRY",
+                "AttackScalar": 0.625
             }
         ]
     },
     {
-        "id": "POKEMON_TYPE_FIRE",
-        "name": "Fire",
-        "damage": [
+        "Id": "POKEMON_TYPE_FIRE",
+        "Name": "Fire",
+        "Damage": [
             {
-                "id": "POKEMON_TYPE_NORMAL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_NORMAL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIGHTING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIGHTING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FLYING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FLYING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_POISON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_POISON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GROUND",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GROUND",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ROCK",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_ROCK",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_BUG",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_BUG",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_GHOST",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GHOST",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_STEEL",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_STEEL",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_FIRE",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_FIRE",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_WATER",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_WATER",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_GRASS",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_GRASS",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_ELECTRIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ELECTRIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_PSYCHIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_PSYCHIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ICE",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_ICE",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_DRAGON",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_DRAGON",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_DARK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DARK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FAIRY",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FAIRY",
+                "AttackScalar": 1
             }
         ]
     },
     {
-        "id": "POKEMON_TYPE_FLYING",
-        "name": "Flying",
-        "damage": [
+        "Id": "POKEMON_TYPE_FLYING",
+        "Name": "Flying",
+        "Damage": [
             {
-                "id": "POKEMON_TYPE_NORMAL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_NORMAL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIGHTING",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_FIGHTING",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_FLYING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FLYING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_POISON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_POISON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GROUND",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GROUND",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ROCK",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_ROCK",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_BUG",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_BUG",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_GHOST",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GHOST",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_STEEL",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_STEEL",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_FIRE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIRE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_WATER",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_WATER",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GRASS",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_GRASS",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_ELECTRIC",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_ELECTRIC",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_PSYCHIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_PSYCHIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ICE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ICE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DRAGON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DRAGON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DARK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DARK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FAIRY",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FAIRY",
+                "AttackScalar": 1
             }
         ]
     },
     {
-        "id": "POKEMON_TYPE_GHOST",
-        "name": "Ghost",
-        "damage": [
+        "Id": "POKEMON_TYPE_GHOST",
+        "Name": "Ghost",
+        "Damage": [
             {
-                "id": "POKEMON_TYPE_NORMAL",
-                "attackScalar": 0.390625
+                "Id": "POKEMON_TYPE_NORMAL",
+                "AttackScalar": 0.390625
             },
             {
-                "id": "POKEMON_TYPE_FIGHTING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIGHTING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FLYING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FLYING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_POISON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_POISON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GROUND",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GROUND",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ROCK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ROCK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_BUG",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_BUG",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GHOST",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_GHOST",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_STEEL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_STEEL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIRE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIRE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_WATER",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_WATER",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GRASS",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GRASS",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ELECTRIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ELECTRIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_PSYCHIC",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_PSYCHIC",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_ICE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ICE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DRAGON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DRAGON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DARK",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_DARK",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_FAIRY",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FAIRY",
+                "AttackScalar": 1
             }
         ]
     },
     {
-        "id": "POKEMON_TYPE_GRASS",
-        "name": "Grass",
-        "damage": [
+        "Id": "POKEMON_TYPE_GRASS",
+        "Name": "Grass",
+        "Damage": [
             {
-                "id": "POKEMON_TYPE_NORMAL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_NORMAL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIGHTING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIGHTING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FLYING",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_FLYING",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_POISON",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_POISON",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_GROUND",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_GROUND",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_ROCK",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_ROCK",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_BUG",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_BUG",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_GHOST",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GHOST",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_STEEL",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_STEEL",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_FIRE",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_FIRE",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_WATER",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_WATER",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_GRASS",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_GRASS",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_ELECTRIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ELECTRIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_PSYCHIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_PSYCHIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ICE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ICE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DRAGON",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_DRAGON",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_DARK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DARK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FAIRY",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FAIRY",
+                "AttackScalar": 1
             }
         ]
     },
     {
-        "id": "POKEMON_TYPE_GROUND",
-        "name": "Ground",
-        "damage": [
+        "Id": "POKEMON_TYPE_GROUND",
+        "Name": "Ground",
+        "Damage": [
             {
-                "id": "POKEMON_TYPE_NORMAL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_NORMAL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIGHTING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIGHTING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FLYING",
-                "attackScalar": 0.390625
+                "Id": "POKEMON_TYPE_FLYING",
+                "AttackScalar": 0.390625
             },
             {
-                "id": "POKEMON_TYPE_POISON",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_POISON",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_GROUND",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GROUND",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ROCK",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_ROCK",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_BUG",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_BUG",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_GHOST",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GHOST",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_STEEL",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_STEEL",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_FIRE",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_FIRE",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_WATER",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_WATER",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GRASS",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_GRASS",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_ELECTRIC",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_ELECTRIC",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_PSYCHIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_PSYCHIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ICE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ICE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DRAGON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DRAGON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DARK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DARK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FAIRY",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FAIRY",
+                "AttackScalar": 1
             }
         ]
     },
     {
-        "id": "POKEMON_TYPE_ICE",
-        "name": "Ice",
-        "damage": [
+        "Id": "POKEMON_TYPE_ICE",
+        "Name": "Ice",
+        "Damage": [
             {
-                "id": "POKEMON_TYPE_NORMAL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_NORMAL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIGHTING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIGHTING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FLYING",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_FLYING",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_POISON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_POISON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GROUND",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_GROUND",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_ROCK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ROCK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_BUG",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_BUG",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GHOST",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GHOST",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_STEEL",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_STEEL",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_FIRE",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_FIRE",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_WATER",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_WATER",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_GRASS",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_GRASS",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_ELECTRIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ELECTRIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_PSYCHIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_PSYCHIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ICE",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_ICE",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_DRAGON",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_DRAGON",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_DARK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DARK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FAIRY",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FAIRY",
+                "AttackScalar": 1
             }
         ]
     },
     {
-        "id": "POKEMON_TYPE_NORMAL",
-        "name": "Normal",
-        "damage": [
+        "Id": "POKEMON_TYPE_NORMAL",
+        "Name": "Normal",
+        "Damage": [
             {
-                "id": "POKEMON_TYPE_NORMAL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_NORMAL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIGHTING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIGHTING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FLYING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FLYING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_POISON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_POISON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GROUND",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GROUND",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ROCK",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_ROCK",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_BUG",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_BUG",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GHOST",
-                "attackScalar": 0.390625
+                "Id": "POKEMON_TYPE_GHOST",
+                "AttackScalar": 0.390625
             },
             {
-                "id": "POKEMON_TYPE_STEEL",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_STEEL",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_FIRE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIRE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_WATER",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_WATER",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GRASS",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GRASS",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ELECTRIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ELECTRIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_PSYCHIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_PSYCHIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ICE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ICE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DRAGON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DRAGON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DARK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DARK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FAIRY",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FAIRY",
+                "AttackScalar": 1
             }
         ]
     },
     {
-        "id": "POKEMON_TYPE_POISON",
-        "name": "Poison",
-        "damage": [
+        "Id": "POKEMON_TYPE_POISON",
+        "Name": "Poison",
+        "Damage": [
             {
-                "id": "POKEMON_TYPE_NORMAL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_NORMAL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIGHTING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIGHTING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FLYING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FLYING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_POISON",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_POISON",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_GROUND",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_GROUND",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_ROCK",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_ROCK",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_BUG",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_BUG",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GHOST",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_GHOST",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_STEEL",
-                "attackScalar": 0.390625
+                "Id": "POKEMON_TYPE_STEEL",
+                "AttackScalar": 0.390625
             },
             {
-                "id": "POKEMON_TYPE_FIRE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIRE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_WATER",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_WATER",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GRASS",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_GRASS",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_ELECTRIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ELECTRIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_PSYCHIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_PSYCHIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ICE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ICE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DRAGON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DRAGON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DARK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DARK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FAIRY",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_FAIRY",
+                "AttackScalar": 1.6
             }
         ]
     },
     {
-        "id": "POKEMON_TYPE_PSYCHIC",
-        "name": "Psychic",
-        "damage": [
+        "Id": "POKEMON_TYPE_PSYCHIC",
+        "Name": "Psychic",
+        "Damage": [
             {
-                "id": "POKEMON_TYPE_NORMAL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_NORMAL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIGHTING",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_FIGHTING",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_FLYING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FLYING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_POISON",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_POISON",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_GROUND",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GROUND",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ROCK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ROCK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_BUG",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_BUG",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GHOST",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GHOST",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_STEEL",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_STEEL",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_FIRE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIRE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_WATER",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_WATER",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GRASS",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GRASS",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ELECTRIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ELECTRIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_PSYCHIC",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_PSYCHIC",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_ICE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ICE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DRAGON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DRAGON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DARK",
-                "attackScalar": 0.390625
+                "Id": "POKEMON_TYPE_DARK",
+                "AttackScalar": 0.390625
             },
             {
-                "id": "POKEMON_TYPE_FAIRY",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FAIRY",
+                "AttackScalar": 1
             }
         ]
     },
     {
-        "id": "POKEMON_TYPE_ROCK",
-        "name": "Rock",
-        "damage": [
+        "Id": "POKEMON_TYPE_ROCK",
+        "Name": "Rock",
+        "Damage": [
             {
-                "id": "POKEMON_TYPE_NORMAL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_NORMAL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIGHTING",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_FIGHTING",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_FLYING",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_FLYING",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_POISON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_POISON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GROUND",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_GROUND",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_ROCK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ROCK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_BUG",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_BUG",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_GHOST",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GHOST",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_STEEL",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_STEEL",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_FIRE",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_FIRE",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_WATER",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_WATER",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GRASS",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GRASS",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ELECTRIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ELECTRIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_PSYCHIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_PSYCHIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ICE",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_ICE",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_DRAGON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DRAGON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DARK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DARK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FAIRY",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FAIRY",
+                "AttackScalar": 1
             }
         ]
     },
     {
-        "id": "POKEMON_TYPE_STEEL",
-        "name": "Steel",
-        "damage": [
+        "Id": "POKEMON_TYPE_STEEL",
+        "Name": "Steel",
+        "Damage": [
             {
-                "id": "POKEMON_TYPE_NORMAL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_NORMAL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIGHTING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIGHTING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FLYING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FLYING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_POISON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_POISON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GROUND",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GROUND",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ROCK",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_ROCK",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_BUG",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_BUG",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GHOST",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GHOST",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_STEEL",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_STEEL",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_FIRE",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_FIRE",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_WATER",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_WATER",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_GRASS",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GRASS",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ELECTRIC",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_ELECTRIC",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_PSYCHIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_PSYCHIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ICE",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_ICE",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_DRAGON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DRAGON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DARK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DARK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FAIRY",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_FAIRY",
+                "AttackScalar": 1.6
             }
         ]
     },
     {
-        "id": "POKEMON_TYPE_WATER",
-        "name": "Water",
-        "damage": [
+        "Id": "POKEMON_TYPE_WATER",
+        "Name": "Water",
+        "Damage": [
             {
-                "id": "POKEMON_TYPE_NORMAL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_NORMAL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIGHTING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FIGHTING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FLYING",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FLYING",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_POISON",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_POISON",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GROUND",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_GROUND",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_ROCK",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_ROCK",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_BUG",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_BUG",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_GHOST",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_GHOST",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_STEEL",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_STEEL",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FIRE",
-                "attackScalar": 1.6
+                "Id": "POKEMON_TYPE_FIRE",
+                "AttackScalar": 1.6
             },
             {
-                "id": "POKEMON_TYPE_WATER",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_WATER",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_GRASS",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_GRASS",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_ELECTRIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ELECTRIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_PSYCHIC",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_PSYCHIC",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_ICE",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_ICE",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_DRAGON",
-                "attackScalar": 0.625
+                "Id": "POKEMON_TYPE_DRAGON",
+                "AttackScalar": 0.625
             },
             {
-                "id": "POKEMON_TYPE_DARK",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_DARK",
+                "AttackScalar": 1
             },
             {
-                "id": "POKEMON_TYPE_FAIRY",
-                "attackScalar": 1
+                "Id": "POKEMON_TYPE_FAIRY",
+                "AttackScalar": 1
             }
         ]
     }

@@ -131,4 +131,4 @@ C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\PoGoBattleHelper
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\PoGoBattleHelper.dll
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\PoGoBattleHelper.pdb
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\PoGoBattleHelper.genruntimeconfig.cache
-C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\Home\SecondType.cshtml.g.cs
+C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\Home\AddPoke.cshtml.g.cs
