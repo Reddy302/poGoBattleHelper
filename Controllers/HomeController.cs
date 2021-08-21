@@ -38,207 +38,206 @@ namespace PoGoBattleHelper.Controllers
             return View(myModel);
         }
 
-        [HttpGet, Route("Home/GetType")]
-        public IActionResult GetType()
-        {
-            ViewBag.possiblePokes = possiblePokes;
-            return View(typeList);
-        }
+        //[HttpGet, Route("Home/GetType")]
+        //public IActionResult GetType()
+        //{
+        //    ViewBag.possiblePokes = possiblePokes;
+        //    return View();
+        //}
+
+        //[HttpPost, Route("/Home/GetType")]
+        //public IActionResult GetType(string bugType, string darkType, string dragonType, string electricType, string fairyType, string fightingType, string fireType, string flyingType, string ghostType, string grassType, string groundType, string iceType, string normalType, string poisonType, string psychicType, string rockType, string steelType, string waterType)
+        //{
+        //    ViewBag.possiblePokes = possiblePokes;
+        //    if (myTeam.Count < 3)
+        //    {
+        //        foreach (Pokemon poke in pokeList)
+        //        {
+        //            for (int i = 0; i < poke.Types.Count(); i++)
+        //            {
+        //                if (poke.Types[i].Name == bugType)
+        //                {
+        //                    possiblePokes.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == darkType)
+        //                {
+        //                    possiblePokes.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == dragonType)
+        //                {
+        //                    possiblePokes.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == electricType)
+        //                {
+        //                    possiblePokes.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == fairyType)
+        //                {
+        //                    possiblePokes.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == fightingType)
+        //                {
+        //                    possiblePokes.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == fireType)
+        //                {
+        //                    possiblePokes.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == flyingType)
+        //                {
+        //                    possiblePokes.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == ghostType)
+        //                {
+        //                    possiblePokes.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == grassType)
+        //                {
+        //                    possiblePokes.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == groundType)
+        //                {
+        //                    possiblePokes.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == iceType)
+        //                {
+        //                    possiblePokes.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == normalType)
+        //                {
+        //                    possiblePokes.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == poisonType)
+        //                {
+        //                    possiblePokes.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == psychicType)
+        //                {
+        //                    possiblePokes.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == rockType)
+        //                {
+        //                    possiblePokes.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == steelType)
+        //                {
+        //                    possiblePokes.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == waterType)
+        //                {
+        //                    possiblePokes.Add(poke);
+        //                }
+        //            }
+        //        }
+        //        ViewBag.possiblePokes = possiblePokes;
+        //        return Redirect("GetSecondType");
+        //    }
+        //    else
+        //    {
+        //        ViewBag.possiblePokes = possiblePokes;
+        //        // CHANGE THIS VIEW TO THE TEAM VIEW ONCE CREATED
+        //        return Redirect("GetSecondType");
+        //    }
+        //}
 
         //[HttpGet]
-        [HttpPost, Route("/Home/GetType")]
-        public IActionResult GetType(string bugType, string darkType, string dragonType, string electricType, string fairyType, string fightingType, string fireType, string flyingType, string ghostType, string grassType, string groundType, string iceType, string normalType, string poisonType, string psychicType, string rockType, string steelType, string waterType)
-        {
-            ViewBag.possiblePokes = possiblePokes;
-            if (myTeam.Count < 3)
-            {
-                foreach (Pokemon poke in pokeList)
-                {
-                    for (int i = 0; i < poke.Types.Count(); i++)
-                    {
-                        if (poke.Types[i].Name == bugType)
-                        {
-                            possiblePokes.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == darkType)
-                        {
-                            possiblePokes.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == dragonType)
-                        {
-                            possiblePokes.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == electricType)
-                        {
-                            possiblePokes.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == fairyType)
-                        {
-                            possiblePokes.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == fightingType)
-                        {
-                            possiblePokes.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == fireType)
-                        {
-                            possiblePokes.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == flyingType)
-                        {
-                            possiblePokes.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == ghostType)
-                        {
-                            possiblePokes.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == grassType)
-                        {
-                            possiblePokes.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == groundType)
-                        {
-                            possiblePokes.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == iceType)
-                        {
-                            possiblePokes.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == normalType)
-                        {
-                            possiblePokes.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == poisonType)
-                        {
-                            possiblePokes.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == psychicType)
-                        {
-                            possiblePokes.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == rockType)
-                        {
-                            possiblePokes.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == steelType)
-                        {
-                            possiblePokes.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == waterType)
-                        {
-                            possiblePokes.Add(poke);
-                        }
-                    }
-                }
-                ViewBag.possiblePokes = possiblePokes;
-                return Redirect("GetSecondType");
-            }
-            else
-            {
-                ViewBag.possiblePokes = possiblePokes;
-                // CHANGE THIS VIEW TO THE TEAM VIEW ONCE CREATED
-                return Redirect("GetSecondType");
-            }
-        }
+        //public IActionResult GetSecondType()
+        //{
+        //    ViewBag.possiblePokes = possiblePokes;
+        //    ViewBag.possiblePokes2Types = possiblePokes2Types;
+        //    return View();
+        //}
 
-        [HttpGet]
-        public IActionResult GetSecondType()
-        {
-            ViewBag.possiblePokes = possiblePokes;
-            ViewBag.possiblePokes2Types = possiblePokes2Types;
-            return View();
-        }
-
-        [HttpPost, Route("/Home/GetSecondType")]
-        public IActionResult GetSecondType(string bugType, string darkType, string dragonType, string electricType, string fairyType, string fightingType, string fireType, string flyingType, string ghostType, string grassType, string groundType, string iceType, string normalType, string poisonType, string psychicType, string rockType, string steelType, string waterType)
-        {
-            if (myTeam.Count < 3)
-            {
-                foreach (Pokemon poke in possiblePokes)
-                {
-                    for (int i = 0; i < poke.Types.Count(); i++)
-                    {
-                        if (poke.Types[i].Name == bugType)
-                        {
-                            possiblePokes2Types.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == darkType)
-                        {
-                            possiblePokes2Types.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == dragonType)
-                        {
-                            possiblePokes2Types.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == electricType)
-                        {
-                            possiblePokes2Types.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == fairyType)
-                        {
-                            possiblePokes2Types.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == fightingType)
-                        {
-                            possiblePokes2Types.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == fireType)
-                        {
-                            possiblePokes2Types.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == flyingType)
-                        {
-                            possiblePokes2Types.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == ghostType)
-                        {
-                            possiblePokes2Types.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == grassType)
-                        {
-                            possiblePokes2Types.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == groundType)
-                        {
-                            possiblePokes2Types.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == iceType)
-                        {
-                            possiblePokes2Types.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == normalType)
-                        {
-                            possiblePokes2Types.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == poisonType)
-                        {
-                            possiblePokes2Types.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == psychicType)
-                        {
-                            possiblePokes2Types.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == rockType)
-                        {
-                            possiblePokes2Types.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == steelType)
-                        {
-                            possiblePokes2Types.Add(poke);
-                        }
-                        else if (poke.Types[i].Name == waterType)
-                        {
-                            possiblePokes2Types.Add(poke);
-                        }
-                    }
-                }
-                ViewBag.possiblePokes2Types = possiblePokes2Types;
-                return View("AddPoke");
-            }
-            ViewBag.possiblePokes2Types = possiblePokes2Types;
-            // THIS WILL RETURN THE VIEW OF YOUR TEAM ONCE THAT IS CREATED
-            return View("AddPoke");
-        }
+        //[HttpPost, Route("/Home/GetSecondType")]
+        //public IActionResult GetSecondType(string bugType, string darkType, string dragonType, string electricType, string fairyType, string fightingType, string fireType, string flyingType, string ghostType, string grassType, string groundType, string iceType, string normalType, string poisonType, string psychicType, string rockType, string steelType, string waterType)
+        //{
+        //    if (myTeam.Count < 3)
+        //    {
+        //        foreach (Pokemon poke in possiblePokes)
+        //        {
+        //            for (int i = 0; i < poke.Types.Count(); i++)
+        //            {
+        //                if (poke.Types[i].Name == bugType)
+        //                {
+        //                    possiblePokes2Types.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == darkType)
+        //                {
+        //                    possiblePokes2Types.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == dragonType)
+        //                {
+        //                    possiblePokes2Types.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == electricType)
+        //                {
+        //                    possiblePokes2Types.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == fairyType)
+        //                {
+        //                    possiblePokes2Types.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == fightingType)
+        //                {
+        //                    possiblePokes2Types.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == fireType)
+        //                {
+        //                    possiblePokes2Types.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == flyingType)
+        //                {
+        //                    possiblePokes2Types.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == ghostType)
+        //                {
+        //                    possiblePokes2Types.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == grassType)
+        //                {
+        //                    possiblePokes2Types.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == groundType)
+        //                {
+        //                    possiblePokes2Types.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == iceType)
+        //                {
+        //                    possiblePokes2Types.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == normalType)
+        //                {
+        //                    possiblePokes2Types.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == poisonType)
+        //                {
+        //                    possiblePokes2Types.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == psychicType)
+        //                {
+        //                    possiblePokes2Types.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == rockType)
+        //                {
+        //                    possiblePokes2Types.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == steelType)
+        //                {
+        //                    possiblePokes2Types.Add(poke);
+        //                }
+        //                else if (poke.Types[i].Name == waterType)
+        //                {
+        //                    possiblePokes2Types.Add(poke);
+        //                }
+        //            }
+        //        }
+        //        ViewBag.possiblePokes2Types = possiblePokes2Types;
+        //        return View("AddPoke");
+        //    }
+        //    ViewBag.possiblePokes2Types = possiblePokes2Types;
+        //    // THIS WILL RETURN THE VIEW OF YOUR TEAM ONCE THAT IS CREATED
+        //    return View("AddPoke");
+        //}
 
 
         public IActionResult Privacy()

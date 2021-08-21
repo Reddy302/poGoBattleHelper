@@ -115,8 +115,6 @@ C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\scopedcss\bundle
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\PoGoBattleHelper.TagHelpers.input.cache
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\PoGoBattleHelper.TagHelpers.output.cache
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\PoGoBattleHelper.RazorCoreGenerate.cache
-C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\Home\GetSecondType.cshtml.g.cs
-C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\Home\GetType.cshtml.g.cs
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
@@ -131,4 +129,6 @@ C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\PoGoBattleHelper
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\PoGoBattleHelper.dll
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\PoGoBattleHelper.pdb
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\PoGoBattleHelper.genruntimeconfig.cache
-C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\Home\AddPoke.cshtml.g.cs
+C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\GetType\GetSecondType.cshtml.g.cs
+C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\GetType\Index.cshtml.g.cs
+C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\GetType\AddPoke.cshtml.g.cs

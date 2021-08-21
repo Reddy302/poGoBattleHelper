@@ -1,4 +1,4 @@
-﻿@model List<PoGoBattleHelper.Models.Type>
+﻿@model PoGoBattleHelper.ViewModels.GetTypeViewModel;
 
 <div class="text-center">
     <h1 class="display-4"><strong>PoGo Battle Helper</strong></h1>
@@ -13,55 +13,55 @@
         <tbody>
             <tr>
                 <td>
-                    <form id="bugType" name="bugType" valign="center" method="post" action="/Home/GetType">
+                    <form id="bugType" name="bugType" valign="center" method="post" action="/GetType">
                         <input type="hidden" id="bugType" name="bugType" value="Bug" />
                         <input id="bugType" name="bugType" type="image" alt="Bug" src="~/images/types/POKEMON_TYPE_BUG.png">
                     </form>
                 </td>
                 <td>
-                    <form id="darkType" name="darkType" valign="center" method="post" action="/Home/GetType">
+                    <form id="darkType" name="darkType" valign="center" method="post" action="/GetType">
                         <input type="hidden" id="darkType" name="darkType" value="Dark" />
                         <input id="darkType" name="darkType" type="image" alt="Dark" src="~/images/types/POKEMON_TYPE_DARK.png">
                     </form>
                 </td>
                 <td>
-                    <form id="dragonType" name="dragonType" valign="center" method="post" action="/Home/GetType">
+                    <form id="dragonType" name="dragonType" valign="center" method="post" action="/GetType">
                         <input type="hidden" id="dragonType" name="dragonType" value="Dragon" />
                         <input id="dragonType" name="dragonType" type="image" alt="Dragon" src="~/images/types/POKEMON_TYPE_DRAGON.png">
                     </form>
                 </td>
                 <td>
-                    <form id="electricType" name="electricType" valign="center" method="post" action="/Home/GetType">
+                    <form id="electricType" name="electricType" valign="center" method="post" action="/GetType">
                         <input type="hidden" id="electricType" name="electricType" value="Electric" />
                         <input id="electricType" name="electricType" type="image" alt="Electric" src="~/images/types/POKEMON_TYPE_ELECTRIC.png">
                     </form>
                 </td>
                 <td>
-                    <form id="fairyType" name="fairyType" valign="center" method="post" action="/Home/GetType">
+                    <form id="fairyType" name="fairyType" valign="center" method="post" action="/GetType">
                         <input type="hidden" id="fairyType" name="fairyType" value="Fairy" />
                         <input id="fairyType" name="fairyType" type="image" alt="Fairy" src="~/images/types/POKEMON_TYPE_FAIRY.png">
                     </form>
                 </td>
                 <td>
-                    <form id="fightingType" name="fightingType" valign="center" method="post" action="/Home/GetType">
+                    <form id="fightingType" name="fightingType" valign="center" method="post" action="/GetType">
                         <input type="hidden" id="fightingType" name="fightingType" value="Fighting" />
                         <input id="fightingType" name="fightingType" type="image" alt="Fighting" src="~/images/types/POKEMON_TYPE_FIGHTING.png">
                     </form>
                 </td>
                 <td>
-                    <form id="fireType" name="fireType" valign="center" method="post" action="/Home/GetType">
+                    <form id="fireType" name="fireType" valign="center" method="post" action="/GetType">
                         <input type="hidden" id="fireType" name="fireType" value="Fire" />
                         <input id="fireType" name="fireType" type="image" alt="Fire" src="~/images/types/POKEMON_TYPE_FIRE.png">
                     </form>
                 </td>
                 <td>
-                    <form id="flyingType" name="flyingType" valign="center" method="post" action="/Home/GetType">
+                    <form id="flyingType" name="flyingType" valign="center" method="post" action="/GetType">
                         <input type="hidden" id="flyingType" name="flyingType" value="Flying" />
                         <input id="flyingType" name="flyingType" type="image" alt="Flying" src="~/images/types/POKEMON_TYPE_FLYING.png">
                     </form>
                 </td>
                 <td>
-                    <form id="ghostType" name="ghostType" valign="center" method="post" action="/Home/GetType">
+                    <form id="ghostType" name="ghostType" valign="center" method="post" action="/GetType">
                         <input type="hidden" id="ghostType" name="ghostType" value="Ghost" />
                         <input id="ghostType" name="ghostType" type="image" alt="Ghost" src="~/images/types/POKEMON_TYPE_GHOST.png">
                     </form>
@@ -69,55 +69,55 @@
             </tr>
             <tr>
                 <td>
-                    <form id="grassType" name="grassType" valign="center" method="post" action="/Home/GetType">
+                    <form id="grassType" name="grassType" valign="center" method="post" action="/GetType">
                         <input type="hidden" id="grassType" name="grassType" value="Grass" />
                         <input id="grassType" name="grassType" type="image" alt="Grass" src="~/images/types/POKEMON_TYPE_GRASS.png">
                     </form>
                 </td>
                 <td>
-                    <form id="groundType" name="groundType" valign="center" method="post" action="/Home/GetType">
+                    <form id="groundType" name="groundType" valign="center" method="post" action="/GetType">
                         <input type="hidden" id="groundType" name="groundType" value="Ground" />
                         <input id="groundType" name="groundType" type="image" alt="Ground" src="~/images/types/POKEMON_TYPE_GROUND.png">
                     </form>
                 </td>
                 <td>
-                    <form id="iceType" name="iceType" valign="center" method="post" action="/Home/GetType">
+                    <form id="iceType" name="iceType" valign="center" method="post" action="/GetType">
                         <input type="hidden" id="iceType" name="iceType" value="Ice" />
                         <input id="iceType" name="iceType" type="image" alt="Ice" src="~/images/types/POKEMON_TYPE_ICE.png">
                     </form>
                 </td>
                 <td>
-                    <form id="normalType" name="normalType" valign="center" method="post" action="/Home/GetType">
+                    <form id="normalType" name="normalType" valign="center" method="post" action="/GetType">
                         <input type="hidden" id="normalType" name="normalType" value="Normal" />
                         <input id="normalType" name="normalType" type="image" alt="Normal" src="~/images/types/POKEMON_TYPE_NORMAL.png">
                     </form>
                 </td>
                 <td>
-                    <form id="poisonType" name="poisonType" valign="center" method="post" action="/Home/GetType">
+                    <form id="poisonType" name="poisonType" valign="center" method="post" action="/GetType">
                         <input type="hidden" id="poisonType" name="poisonType" value="Poison" />
                         <input id="poisonType" name="poisonType" type="image" alt="Poison" src="~/images/types/POKEMON_TYPE_POISON.png">
                     </form>
                 </td>
                 <td>
-                    <form id="psychicType" name="psychicType" valign="center" method="post" action="/Home/GetType">
+                    <form id="psychicType" name="psychicType" valign="center" method="post" action="/GetType">
                         <input type="hidden" id="psychicType" name="psychicType" value="Psychic" />
                         <input id="psychicType" name="psychicType" type="image" alt="Psychic" src="~/images/types/POKEMON_TYPE_PSYCHIC.png">
                     </form>
                 </td>
                 <td>
-                    <form id="rockType" name="rockType" valign="center" method="post" action="/Home/GetType">
+                    <form id="rockType" name="rockType" valign="center" method="post" action="/GetType">
                         <input type="hidden" id="rockType" name="rockType" value="Rock" />
                         <input id="rockType" name="rockType" type="image" alt="Rock" src="~/images/types/POKEMON_TYPE_ROCK.png">
                     </form>
                 </td>
                 <td>
-                    <form id="steelType" name="steelType" valign="center" method="post" action="/Home/GetType">
+                    <form id="steelType" name="steelType" valign="center" method="post" action="/GetType">
                         <input type="hidden" id="steelType" name="steelType" value="Steel" />
                         <input id="steelType" name="steelType" type="image" alt="Steel" src="~/images/types/POKEMON_TYPE_STEEL.png">
                     </form>
                 </td>
                 <td>
-                    <form id="waterType" name="waterType" valign="center" method="post" action="/Home/GetType">
+                    <form id="waterType" name="waterType" valign="center" method="post" action="/GetType">
                         <input type="hidden" id="waterType" name="waterType" value="Water" />
                         <input id="waterType" name="waterType" type="image" alt="Water" src="~/images/types/POKEMON_TYPE_WATER.png">
                     </form>
@@ -251,7 +251,7 @@
 
                         // Below you will likely have to change the action to "AddPoke" or some shit to get the poke on your team
                         <td vertical-align="bottom">
-                            <form id=@poke.Name name=@poke.Name valign="bottom" method="post" action="/Home/GetType">
+                            <form id=@poke.Name name=@poke.Name valign="bottom" method="post" action="/GetType">
                                 <input type="hidden" id=@poke.Name name=@poke.Name value=@poke.Name />
                                 <input id=@poke.Name name=@poke.Name type="image" alt=@poke.Name src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png">
                             </form>
