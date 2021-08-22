@@ -1,4 +1,4 @@
-﻿@model List<PoGoBattleHelper.Models.Pokemon>
+﻿@model PoGoBattleHelper.ViewModels.GetTypeViewModel;
 
 <div class="text-center">
     <h1 class="display-4"><strong>PoGo Battle Helper</strong></h1>
@@ -129,9 +129,9 @@
 
                         string dex = poke.Dex.ToString("D3");
                         <td vertical-align="bottom">
-                            <form id=@poke.Name name=@poke.Name valign="bottom" method="post" action="/Home/SecondType">
-                                <input type="hidden" id=@poke.Name name=@poke.Name value=@poke.Name />
-                                <input id=@poke.Name name=@poke.Name type="image" alt=@poke.Name src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png">
+                            <form id=@poke.Name name="variableName" valign="bottom" method="post">
+                                <input type="hidden" id=@poke.Name name="variableName" value=@poke.Name />
+                                <input id=@poke.Name name="variableName" type="image" alt=@poke.Name src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png">
                             </form>
                             <br />
                             <span>@poke.Name</span>
