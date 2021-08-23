@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using PoGoBattleHelper.Controllers;
 using PoGoBattleHelper.Models;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using System.IO;
 
 namespace PoGoBattleHelper.Models
 {
@@ -23,16 +26,18 @@ namespace PoGoBattleHelper.Models
         public QuickMove[] QuickMoves { get; set; }
         public Family Family { get; set; }
         public Stats Stats { get; set; }
-        public Type[] Types { get; set; }
+        public Models.Type[] Types { get; set; }
         public Encounter Encounter { get; set; }
         public Camera Camera { get; set; }
         public Evolution Evolution { get; set; }
         public string Id { get; set; }
         public object[] Forms { get; set; }
+        private static readonly string fileString = System.IO.File.ReadAllText("pokedex/pokemon.json");
+        public static readonly List<Pokemon> pokeList = JsonSerializer.Deserialize<List<Pokemon>>(fileString);
 
-        public Pokemon(Type type1, Type type2)
+        public Pokemon(Models.Type type1, Models.Type type2)
         {
-            Types = new Type[2];
+            Types = new Models.Type[2];
             Types[0] = type1;
             Types[1] = type2;
         }
@@ -129,10 +134,10 @@ namespace PoGoBattleHelper.Models
 
     public class Types
     {
-        public Type Type1 { get; set; }
-        public Type Type2 { get; set; }
+        public Models.Type Type1 { get; set; }
+        public Models.Type Type2 { get; set; }
 
-        public Types(Type type1, Type type2)
+        public Types(Models.Type type1, Models.Type type2)
         {
             Type1 = type1;
             Type2 = type2;

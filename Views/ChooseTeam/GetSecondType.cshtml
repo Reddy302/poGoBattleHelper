@@ -1,8 +1,8 @@
-﻿@model PoGoBattleHelper.ViewModels.GetTypeViewModel;
+﻿@model PoGoBattleHelper.ViewModels.ChooseTeamViewModel;
 
-<div class="text-center">
+@*<div class="text-center">
     <h1 class="display-4"><strong>PoGo Battle Helper</strong></h1>
-</div>
+</div>*@
 <div class="text-center">
     <div style="padding: 100px 0px 50px;" class="text-center">
         <h3>If the Pokemon has 2 types, please choose the second type.<br />Otherwise, choose the Pokemon below.</h3>
@@ -15,7 +15,7 @@
                 @foreach (PoGoBattleHelper.Models.Type type in Model.Types)
                 {
                     <td>
-                        <form id=@type.Name.ToLower() name="type" valign="center" method="post">
+                        <form id=@type.Name.ToLower() name="type" valign="center" method="post" action="GetSecondType">
                             <input type="hidden" id=@type.Name.ToLower() name="type" value=@type.Name.ToLower() />
                             <input id=@type.Name.ToLower() name="type" type="image" alt=@type.Name src="~/images/types/@(type.Id).png">
                         </form>
@@ -33,7 +33,7 @@
 <br />
 <br />
 <div class="text-center">
-    @if (ViewBag.possiblePokes.Count == 0)
+    @if (Model.PossiblePokes.Count == 0)
     {
         <a asp-action="GetType">Choose Pokemon by Type</a>
     }
@@ -43,10 +43,10 @@
         <table align="center">
             <tbody>
                 <tr vertical-align="bottom">
-                    @foreach (Pokemon poke in ViewBag.possiblePokes)
+                    @foreach (Pokemon poke in Model.PossiblePokes.ToList())
                     {
                         string modifier = "00";
-                        @if (@poke.Name.ToLower().Contains("castform sunny"))
+                        if (@poke.Name.ToLower().Contains("castform sunny"))
                         {
                             modifier = "12";
                         }
@@ -153,9 +153,9 @@
 
                         string dex = poke.Dex.ToString("D3");
                         <td vertical-align="bottom">
-                            <form id=@poke.Name name=@poke.Name valign="bottom" method="post">
-                                <input type="hidden" id=@poke.Name name=@poke.Name value=@poke.Name />
-                                <input id=@poke.Name name=@poke.Name type="image" alt=@poke.Name src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png">
+                            <form id=@poke.Name.ToLower() name="poke" valign="bottom" method="post" action="AddPoke">
+                                <input type="hidden" id=@poke.Name.ToLower() name="poke" value="@poke.Name.ToLower()" />
+                                <input id=@poke.Name.ToLower() name="poke" type="image" value="@poke.Name.ToLower()" alt=@poke.Name src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png">
                             </form>
                             <br />
                             <span>@poke.Name</span>

@@ -129,6 +129,7 @@ C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\PoGoBattleHelper
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\PoGoBattleHelper.dll
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\PoGoBattleHelper.pdb
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\PoGoBattleHelper.genruntimeconfig.cache
-C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\GetType\GetSecondType.cshtml.g.cs
-C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\GetType\Index.cshtml.g.cs
-C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\GetType\AddPoke.cshtml.g.cs
+C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\ChooseTeam\AddPoke.cshtml.g.cs
+C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\ChooseTeam\GetSecondType.cshtml.g.cs
+C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\ChooseTeam\Index.cshtml.g.cs
+C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\ChooseTeam\MyTeam.cshtml.g.cs

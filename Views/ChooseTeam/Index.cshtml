@@ -1,28 +1,53 @@
-﻿@model PoGoBattleHelper.ViewModels.GetTypeViewModel;
+﻿@model PoGoBattleHelper.ViewModels.ChooseTeamViewModel;
 
-<div class="text-center">
+@*<div class="text-center">
     <h1 class="display-4"><strong>PoGo Battle Helper</strong></h1>
-</div>
+</div>*@
 <div class="text-center">
     <div style="padding: 100px 0px 50px;" class="text-center">
-        <h3>Please choose the Pokemon below.</h3>
+        <h3>Choose first type</h3>
     </div>
-    <h4>Pokemon with the types you chose:</h4>
     <br />
-    @if (ViewBag.possiblePokes2Types.Count == 0)
+    <h4>Pokemon Types:</h4>
+    <table align="center">
+        <tbody>
+            <tr>
+                @{int counter = 0;}
+                @foreach (PoGoBattleHelper.Models.Type type in Model.Types)
+                {
+                    <td>
+                        <form id=@type.Name.ToLower() name="type" valign="center" method="post" action="GetType">
+                            <input type="hidden" id=@type.Name.ToLower() name="type" value=@type.Name.ToLower() />
+                            <input id=@type.Name.ToLower() name="type" type="image" alt=@type.Name src="~/images/types/@(type.Id).png">
+                        </form>
+                    </td>
+                    counter++;
+                    if (counter % 9 == 0)
+                    {
+                    @:</tr><tr>
+                    }
+                }
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br />
+<br/>
+<div class="text-center">
+    @if (Model.PossiblePokes.Count == 0)
     {
-        <a asp-action="GetType">Choose Pokemon by Type</a>
+        <p>Choose a type to see possible Pokemon with that type here.</p>
     }
     else
     {
-        int counter = 0;
+        int counter2 = 0;
         <table align="center">
             <tbody>
                 <tr vertical-align="bottom">
-                    @foreach (Pokemon poke in ViewBag.possiblePokes2Types)
+                    @foreach (Pokemon poke in Model.PossiblePokes.ToList())
                     {
                         string modifier = "00";
-                        @if (@poke.Name.ToLower().Contains("castform sunny"))
+                        if (@poke.Name.ToLower().Contains("castform sunny"))
                         {
                             modifier = "12";
                         }
@@ -128,16 +153,17 @@
                         }
 
                         string dex = poke.Dex.ToString("D3");
+
                         <td vertical-align="bottom">
-                            <form id=@poke.Name name="variableName" valign="bottom" method="post">
-                                <input type="hidden" id=@poke.Name name="variableName" value=@poke.Name />
-                                <input id=@poke.Name name="variableName" type="image" alt=@poke.Name src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png">
+                            <form id=@poke.Name.ToLower() name="poke" valign="bottom" method="post" action="AddPoke">
+                                <input type="hidden" id=@poke.Name.ToLower() name="poke" value=@poke.Name.ToLower() />
+                                <input id=@poke.Name.ToLower() name="poke" type="image" value=@poke.Name.ToLower() alt=@poke.Name src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png">
                             </form>
                             <br />
                             <span>@poke.Name</span>
                         </td>
-                        counter++;
-                        if (counter % 5 == 0)
+                        counter2++;
+                        if (counter2 % 5 == 0)
                         {
                         @:</tr><tr>
                         }

@@ -16,13 +16,6 @@ namespace PoGoBattleHelper.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private static readonly string fileString2 = System.IO.File.ReadAllText("pokedex/type.json");
-        private static readonly List<Models.Type> typeList = JsonSerializer.Deserialize<List<Models.Type>>(fileString2);
-        private static readonly string fileString = System.IO.File.ReadAllText("pokedex/pokemon.json");
-        private static readonly List<Pokemon> pokeList = JsonSerializer.Deserialize<List<Pokemon>>(fileString);
-        private static List<Pokemon> myTeam = new List<Pokemon>();
-        private static List<Pokemon> possiblePokes = new List<Pokemon>();
-        private static List<Pokemon> possiblePokes2Types = new List<Pokemon>();
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -32,9 +25,9 @@ namespace PoGoBattleHelper.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            GetTypeViewModel myModel = new GetTypeViewModel();
-            myModel.Pokes = pokeList;
-            myModel.Types = typeList;
+            ChooseTeamViewModel myModel = new ChooseTeamViewModel();
+            myModel.Pokes = Pokemon.pokeList;
+            myModel.Types = Models.Type.typeList;
             return View(myModel);
         }
 
