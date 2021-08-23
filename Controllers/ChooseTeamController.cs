@@ -20,13 +20,11 @@ namespace PoGoBattleHelper.Controllers
         private static List<Pokemon> possiblePokes = new List<Pokemon>();
         private static List<Pokemon> possiblePokes2Types = new List<Pokemon>();
         public ChooseTeamViewModel myModel = new ChooseTeamViewModel();
+        public ChooseMovesViewModel moveModel = new ChooseMovesViewModel();
 
         [HttpGet, Route("/GetType")]
         public IActionResult Index()
         {
-            //ViewBag.possiblePokes = possiblePokes;
-
-            //ChooseTeamViewModel myModel = new ChooseTeamViewModel();
             myModel.Pokes = Pokemon.pokeList;
             myModel.Types = Models.Type.typeList;
             myModel.PossiblePokes = possiblePokes;
@@ -39,7 +37,7 @@ namespace PoGoBattleHelper.Controllers
         {
             if (myTeam.Count < 3)
             {
-                foreach (Pokemon poke in Pokemon.pokeList)
+                foreach (Pokemon poke in Pokemon.pokeList.ToList())
                 {
                     for (int i = 0; i < poke.Types.Count(); i++)
                     {
@@ -55,18 +53,13 @@ namespace PoGoBattleHelper.Controllers
             else
             {
                 myModel.PossiblePokes = possiblePokes;
-                // CHANGE THIS VIEW TO THE TEAM VIEW ONCE CREATED
-                return Redirect("/GetSecondType");
+                return Redirect("/MyTeam");
             }
         }
 
         [HttpGet, Route("/GetSecondType")]
         public IActionResult GetSecondType()
         {
-            //ViewBag.possiblePokes = possiblePokes;
-            //ViewBag.possiblePokes2Types = possiblePokes2Types;
-
-            //ChooseTeamViewModel myModel = new ChooseTeamViewModel();
             myModel.Pokes = Pokemon.pokeList;
             myModel.Types = Models.Type.typeList;
             myModel.PossiblePokes = possiblePokes;
@@ -90,12 +83,10 @@ namespace PoGoBattleHelper.Controllers
                     }
                 }
                 myModel.PossiblePokes2Types = possiblePokes2Types;
-                // THIS WILL NEED TO BE CHANGED TO A REDIRECT ONCE THE ADDPOKE CONTROLLER IS CREATED
                 return Redirect("/AddPoke");
             }
             myModel.PossiblePokes2Types = possiblePokes2Types;
-            // THIS WILL RETURN THE VIEW OF YOUR TEAM ONCE THAT IS CREATED
-            return Redirect("/AddPoke");
+            return Redirect("/MyTeam");
         }
 
         [HttpGet, Route("/AddPoke")]
@@ -126,7 +117,7 @@ namespace PoGoBattleHelper.Controllers
             else
             {
                 myModel.MyTeam = myTeam;
-                // THIS WILL BE THE VIEW OF THE TEAM SCREEN WHEN THAT GETS CREATED. MAY NEED TO BE A REDIRECT OR REDIRECT TO ACTION. MAY HAVE TO SAVE THE POKE TEAM SOMEWHERE.
+                moveModel.MyTeam = myTeam;
                 return Redirect("/MyTeam");
             }
         }
@@ -139,9 +130,9 @@ namespace PoGoBattleHelper.Controllers
         }
 
         [HttpPost, Route("/MyTeam")]
-        public IActionResult MyTeam(string clear)
+        public IActionResult MyTeam(string clear, string clearLast, string startOver, string chooseMoves)
         {
-            if (clear == "clear")
+            if (clear == "clear" || clearLast == "clearLast" || startOver == "startOver" || chooseMoves == "chooseMoves")
             {
                 foreach (Pokemon poke in possiblePokes.ToList())
                 {
@@ -155,13 +146,34 @@ namespace PoGoBattleHelper.Controllers
 
                 myModel.PossiblePokes = possiblePokes;
                 myModel.PossiblePokes2Types = possiblePokes2Types;
-
+            }
+            if (clear == "clear")
+            {
                 return Redirect("/GetType");
             }
-            else
+            if (clearLast == "clearLast")
             {
-                return View();
+                myTeam.Remove(myTeam[myTeam.Count - 1]);
+
+                myModel.MyTeam = myTeam;
+                return Redirect("/GetType");
             }
+            if (startOver == "startOver")
+            {
+                foreach (Pokemon poke in myTeam.ToList())
+                {
+                    myTeam.Remove(poke);
+                }
+
+                myModel.MyTeam = myTeam;
+                return Redirect("/GetType");
+            }
+            if (chooseMoves == "chooseMoves")
+            {
+                moveModel.MyTeam = myTeam;
+                return Redirect("/ChooseMoves");
+            }
+            return Redirect("/GetType");
         }
     }
 }

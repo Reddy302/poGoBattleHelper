@@ -17,95 +17,95 @@
                     @foreach (Pokemon poke in Model.MyTeam)
                     {
                         string modifier = "00";
-                        if (@poke.Name.ToLower().Contains("castform sunny"))
+                        if (poke.Name.ToLower().Contains("castform sunny"))
                         {
                             modifier = "12";
                         }
-                        else if (@poke.Name.ToLower().Contains("castform rainy"))
+                        else if (poke.Name.ToLower().Contains("castform rainy"))
                         {
                             modifier = "13";
                         }
-                        else if (@poke.Name.ToLower().Contains("castform snowy"))
+                        else if (poke.Name.ToLower().Contains("castform snowy"))
                         {
                             modifier = "14";
                         }
-                        else if (@poke.Name.ToLower().Contains("deoxys attack"))
+                        else if (poke.Name.ToLower().Contains("deoxys attack"))
                         {
                             modifier = "16";
                         }
-                        else if (@poke.Name.ToLower().Contains("deoxys defense"))
+                        else if (poke.Name.ToLower().Contains("deoxys defense"))
                         {
                             modifier = "17";
                         }
-                        else if (@poke.Name.ToLower().Contains("deoxys speed"))
+                        else if (poke.Name.ToLower().Contains("deoxys speed"))
                         {
                             modifier = "18";
                         }
-                        else if (@poke.Name.ToLower().Contains("burmy plant"))
+                        else if (poke.Name.ToLower().Contains("burmy plant"))
                         {
                             modifier = "19";
                         }
-                        else if (@poke.Name.ToLower().Contains("burmy sandy"))
+                        else if (poke.Name.ToLower().Contains("burmy sandy"))
                         {
                             modifier = "20";
                         }
-                        else if (@poke.Name.ToLower().Contains("burmy trash"))
+                        else if (poke.Name.ToLower().Contains("burmy trash"))
                         {
                             modifier = "21";
                         }
-                        else if (@poke.Name.ToLower().Contains("wormdam plant"))
+                        else if (poke.Name.ToLower().Contains("wormdam plant"))
                         {
                             modifier = "22";
                         }
-                        else if (@poke.Name.ToLower().Contains("wormdam sandy"))
+                        else if (poke.Name.ToLower().Contains("wormdam sandy"))
                         {
                             modifier = "23";
                         }
-                        else if (@poke.Name.ToLower().Contains("wormdam trash"))
+                        else if (poke.Name.ToLower().Contains("wormdam trash"))
                         {
                             modifier = "24";
                         }
-                        else if (@poke.Name.ToLower().Contains("cherrim overcast"))
+                        else if (poke.Name.ToLower().Contains("cherrim overcast"))
                         {
                             modifier = "25";
                         }
-                        else if (@poke.Name.ToLower().Contains("cherrim sunny"))
+                        else if (poke.Name.ToLower().Contains("cherrim sunny"))
                         {
                             modifier = "26";
                         }
-                        else if (@poke.Name.ToLower().Contains("rotom heat"))
+                        else if (poke.Name.ToLower().Contains("rotom heat"))
                         {
                             modifier = "27";
                         }
-                        else if (@poke.Name.ToLower().Contains("rotom wash"))
+                        else if (poke.Name.ToLower().Contains("rotom wash"))
                         {
                             modifier = "28";
                         }
-                        else if (@poke.Name.ToLower().Contains("rotom frost"))
+                        else if (poke.Name.ToLower().Contains("rotom frost"))
                         {
                             modifier = "29";
                         }
-                        else if (@poke.Name.ToLower().Contains("rotom fan"))
+                        else if (poke.Name.ToLower().Contains("rotom fan"))
                         {
                             modifier = "30";
                         }
-                        else if (@poke.Name.ToLower().Contains("rotom mow"))
+                        else if (poke.Name.ToLower().Contains("rotom mow"))
                         {
                             modifier = "91";
                         }
-                        else if (@poke.Name.ToLower().Contains("giratina altered"))
+                        else if (poke.Name.ToLower().Contains("giratina altered"))
                         {
                             modifier = "32";
                         }
-                        else if (@poke.Name.ToLower().Contains("giratina origin"))
+                        else if (poke.Name.ToLower().Contains("giratina origin"))
                         {
                             modifier = "33";
                         }
-                        else if (@poke.Name.ToLower().Contains("shaymin land"))
+                        else if (poke.Name.ToLower().Contains("shaymin land"))
                         {
                             modifier = "34";
                         }
-                        else if (@poke.Name.ToLower().Contains("shaymin sky"))
+                        else if (poke.Name.ToLower().Contains("shaymin sky"))
                         {
                             modifier = "35";
                         }
@@ -129,11 +129,7 @@
                         string dex = poke.Dex.ToString("D3");
 
                         <td vertical-align="bottom">
-                        <img src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png" alt=@poke.Name /> 
-                            @*<form id=@poke.Name.ToLower() name="poke" valign="bottom" method="post">
-                                <input type="hidden" id=@poke.Name.ToLower() name="poke" value=@poke.Name.ToLower() />
-                                <input id=@poke.Name.ToLower() name="poke" type="image" alt=@poke.Name src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png">
-                            </form>*@
+                            <img src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png" alt="@poke.Name" />
                             <br />
                             <span>@poke.Name</span>
                         </td>
@@ -144,23 +140,57 @@
                         }
                     }
                 </tr>
-                @if (Model.MyTeam.Count < 3)
-                {
+            </tbody>
+        </table>
+        @if (Model.MyTeam.Count < 3)
+        {
+            <table align="center">
+                <tbody>
                     <tr>
-                        <td>
-                            <br /> <br />
-                            <p><b>Your team is not full.</b></p>
-                            @*<a class="btn btn-info" type="button" asp-controller="ChooseTeam" asp-action="NextTeamMember">Choose Another Pokemon by Type</a>*@
-                            @*<form method="post" name="clear">
-                                <a class="btn btn-info" asp-controller="ChooseTeam" asp-action="NextTeamMember" role="button" name="clear">Choose Another Pokemon by Type</a>
-                            </form>*@
+                        <td><span><br /></span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <p align="center"><b>Your team is not full.</b></p>
+                            <br />
                             <form method="post" action="MyTeam" id="clear" name="clear">
-                                <button class="btn btn-info" name="clear" value="clear" id="clear">Choose Another Pokemon by Type</button>
+                                <button class="btn btn-success" name="clear" value="clear" id="clear">Choose Another Pokemon by Type</button>
+                            </form>
+                            <br />
+                            <form method="post" action="MyTeam" id="clearLast" name="clearLast">
+                                <button class="btn btn-danger" name="clearLast" value="clearLast" id="clearLast">I MADE A MISTAKE!<br />REMOVE THE LAST POKE!</button>
                             </form>
                         </td>
                     </tr>
-                }
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <table align="center">
+                <tbody>
+                    <tr>
+                        <td><span><br /></span></td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <p align="center"><b>YOUR TEAM IS FULL.</b></p>
+                            <br />
+                            <form method="post" action="MyTeam" id="chooseMoves" name="chooseMoves">
+                                <button class="btn btn-success" name="chooseMoves" value="chooseMoves" id="chooseMoves">THAT'S MY TEAM!<br />NOW LET'S CHOOSE MOVES!</button>
+                            </form>
+                            <br />
+                            <form method="post" action="MyTeam" id="clearLast" name="clearLast">
+                                <button class="btn btn-danger" name="clearLast" value="clearLast" id="clearLast">I MADE A MISTAKE!<br />REMOVE THE LAST POKE!</button>
+                            </form>
+                            <br />
+                            <form method="post" action="MyTeam" id="startOver" name="startOver">
+                                <button class="btn btn-danger" name="startOver" value="startOver" id="startOver">THAT'S NOT THE TEAM I WANT<br />START OVER</button>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        }
     }
 </div>

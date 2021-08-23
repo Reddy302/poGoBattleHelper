@@ -11,7 +11,7 @@
     <br />
     @if (Model.PossiblePokes.Count == 0 && Model.PossiblePokes2Types.Count == 0)
     {
-        <a asp-action="GetType">Choose Pokemon by Type</a>
+        <a asp-controller="ChooseTeam" asp-action="GetType">Choose Pokemon by Type</a>
     }
     else if (Model.PossiblePokes2Types.Count != 0)
     {
@@ -22,95 +22,95 @@
                     @foreach (Pokemon poke in Model.PossiblePokes2Types)
                     {
                         string modifier = "00";
-                        if (@poke.Name.ToLower().Contains("castform sunny"))
+                        if (poke.Name.ToLower().Contains("castform sunny"))
                         {
                             modifier = "12";
                         }
-                        else if (@poke.Name.ToLower().Contains("castform rainy"))
+                        else if (poke.Name.ToLower().Contains("castform rainy"))
                         {
                             modifier = "13";
                         }
-                        else if (@poke.Name.ToLower().Contains("castform snowy"))
+                        else if (poke.Name.ToLower().Contains("castform snowy"))
                         {
                             modifier = "14";
                         }
-                        else if (@poke.Name.ToLower().Contains("deoxys attack"))
+                        else if (poke.Name.ToLower().Contains("deoxys attack"))
                         {
                             modifier = "16";
                         }
-                        else if (@poke.Name.ToLower().Contains("deoxys defense"))
+                        else if (poke.Name.ToLower().Contains("deoxys defense"))
                         {
                             modifier = "17";
                         }
-                        else if (@poke.Name.ToLower().Contains("deoxys speed"))
+                        else if (poke.Name.ToLower().Contains("deoxys speed"))
                         {
                             modifier = "18";
                         }
-                        else if (@poke.Name.ToLower().Contains("burmy plant"))
+                        else if (poke.Name.ToLower().Contains("burmy plant"))
                         {
                             modifier = "19";
                         }
-                        else if (@poke.Name.ToLower().Contains("burmy sandy"))
+                        else if (poke.Name.ToLower().Contains("burmy sandy"))
                         {
                             modifier = "20";
                         }
-                        else if (@poke.Name.ToLower().Contains("burmy trash"))
+                        else if (poke.Name.ToLower().Contains("burmy trash"))
                         {
                             modifier = "21";
                         }
-                        else if (@poke.Name.ToLower().Contains("wormdam plant"))
+                        else if (poke.Name.ToLower().Contains("wormdam plant"))
                         {
                             modifier = "22";
                         }
-                        else if (@poke.Name.ToLower().Contains("wormdam sandy"))
+                        else if (poke.Name.ToLower().Contains("wormdam sandy"))
                         {
                             modifier = "23";
                         }
-                        else if (@poke.Name.ToLower().Contains("wormdam trash"))
+                        else if (poke.Name.ToLower().Contains("wormdam trash"))
                         {
                             modifier = "24";
                         }
-                        else if (@poke.Name.ToLower().Contains("cherrim overcast"))
+                        else if (poke.Name.ToLower().Contains("cherrim overcast"))
                         {
                             modifier = "25";
                         }
-                        else if (@poke.Name.ToLower().Contains("cherrim sunny"))
+                        else if (poke.Name.ToLower().Contains("cherrim sunny"))
                         {
                             modifier = "26";
                         }
-                        else if (@poke.Name.ToLower().Contains("rotom heat"))
+                        else if (poke.Name.ToLower().Contains("rotom heat"))
                         {
                             modifier = "27";
                         }
-                        else if (@poke.Name.ToLower().Contains("rotom wash"))
+                        else if (poke.Name.ToLower().Contains("rotom wash"))
                         {
                             modifier = "28";
                         }
-                        else if (@poke.Name.ToLower().Contains("rotom frost"))
+                        else if (poke.Name.ToLower().Contains("rotom frost"))
                         {
                             modifier = "29";
                         }
-                        else if (@poke.Name.ToLower().Contains("rotom fan"))
+                        else if (poke.Name.ToLower().Contains("rotom fan"))
                         {
                             modifier = "30";
                         }
-                        else if (@poke.Name.ToLower().Contains("rotom mow"))
+                        else if (poke.Name.ToLower().Contains("rotom mow"))
                         {
                             modifier = "91";
                         }
-                        else if (@poke.Name.ToLower().Contains("giratina altered"))
+                        else if (poke.Name.ToLower().Contains("giratina altered"))
                         {
                             modifier = "32";
                         }
-                        else if (@poke.Name.ToLower().Contains("giratina origin"))
+                        else if (poke.Name.ToLower().Contains("giratina origin"))
                         {
                             modifier = "33";
                         }
-                        else if (@poke.Name.ToLower().Contains("shaymin land"))
+                        else if (poke.Name.ToLower().Contains("shaymin land"))
                         {
                             modifier = "34";
                         }
-                        else if (@poke.Name.ToLower().Contains("shaymin sky"))
+                        else if (poke.Name.ToLower().Contains("shaymin sky"))
                         {
                             modifier = "35";
                         }
@@ -129,9 +129,9 @@
 
                         string dex = poke.Dex.ToString("D3");
                         <td vertical-align="bottom">
-                            <form id=@poke.Name.ToLower() name="poke" valign="bottom" method="post" action="AddPoke">
-                                <input type="hidden" id=@poke.Name.ToLower() name="poke" value=@poke.Name.ToLower() />
-                                <input id=@poke.Name.ToLower() name="poke" type="image" value=@poke.Name.ToLower() alt=@poke.Name src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png">
+                            <form id="@poke.Name.ToLower()" name="poke" valign="bottom" method="post" action="AddPoke">
+                                <input type="hidden" id="@poke.Name.ToLower()" name="poke" value="@poke.Name.ToLower()" />
+                                <input id="@poke.Name.ToLower()" name="poke" type="image" value="@poke.Name.ToLower()" alt="@poke.Name" src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png">
                             </form>
                             <br />
                             <span>@poke.Name</span>
@@ -155,95 +155,95 @@
                     @foreach (Pokemon poke in Model.PossiblePokes)
                     {
                         string modifier = "00";
-                        @if (@poke.Name.ToLower().Contains("castform sunny"))
+                        @if (poke.Name.ToLower().Contains("castform sunny"))
                         {
                             modifier = "12";
                         }
-                        else if (@poke.Name.ToLower().Contains("castform rainy"))
+                        else if (poke.Name.ToLower().Contains("castform rainy"))
                         {
                             modifier = "13";
                         }
-                        else if (@poke.Name.ToLower().Contains("castform snowy"))
+                        else if (poke.Name.ToLower().Contains("castform snowy"))
                         {
                             modifier = "14";
                         }
-                        else if (@poke.Name.ToLower().Contains("deoxys attack"))
+                        else if (poke.Name.ToLower().Contains("deoxys attack"))
                         {
                             modifier = "16";
                         }
-                        else if (@poke.Name.ToLower().Contains("deoxys defense"))
+                        else if (poke.Name.ToLower().Contains("deoxys defense"))
                         {
                             modifier = "17";
                         }
-                        else if (@poke.Name.ToLower().Contains("deoxys speed"))
+                        else if (poke.Name.ToLower().Contains("deoxys speed"))
                         {
                             modifier = "18";
                         }
-                        else if (@poke.Name.ToLower().Contains("burmy plant"))
+                        else if (poke.Name.ToLower().Contains("burmy plant"))
                         {
                             modifier = "19";
                         }
-                        else if (@poke.Name.ToLower().Contains("burmy sandy"))
+                        else if (poke.Name.ToLower().Contains("burmy sandy"))
                         {
                             modifier = "20";
                         }
-                        else if (@poke.Name.ToLower().Contains("burmy trash"))
+                        else if (poke.Name.ToLower().Contains("burmy trash"))
                         {
                             modifier = "21";
                         }
-                        else if (@poke.Name.ToLower().Contains("wormdam plant"))
+                        else if (poke.Name.ToLower().Contains("wormdam plant"))
                         {
                             modifier = "22";
                         }
-                        else if (@poke.Name.ToLower().Contains("wormdam sandy"))
+                        else if (poke.Name.ToLower().Contains("wormdam sandy"))
                         {
                             modifier = "23";
                         }
-                        else if (@poke.Name.ToLower().Contains("wormdam trash"))
+                        else if (poke.Name.ToLower().Contains("wormdam trash"))
                         {
                             modifier = "24";
                         }
-                        else if (@poke.Name.ToLower().Contains("cherrim overcast"))
+                        else if (poke.Name.ToLower().Contains("cherrim overcast"))
                         {
                             modifier = "25";
                         }
-                        else if (@poke.Name.ToLower().Contains("cherrim sunny"))
+                        else if (poke.Name.ToLower().Contains("cherrim sunny"))
                         {
                             modifier = "26";
                         }
-                        else if (@poke.Name.ToLower().Contains("rotom heat"))
+                        else if (poke.Name.ToLower().Contains("rotom heat"))
                         {
                             modifier = "27";
                         }
-                        else if (@poke.Name.ToLower().Contains("rotom wash"))
+                        else if (poke.Name.ToLower().Contains("rotom wash"))
                         {
                             modifier = "28";
                         }
-                        else if (@poke.Name.ToLower().Contains("rotom frost"))
+                        else if (poke.Name.ToLower().Contains("rotom frost"))
                         {
                             modifier = "29";
                         }
-                        else if (@poke.Name.ToLower().Contains("rotom fan"))
+                        else if (poke.Name.ToLower().Contains("rotom fan"))
                         {
                             modifier = "30";
                         }
-                        else if (@poke.Name.ToLower().Contains("rotom mow"))
+                        else if (poke.Name.ToLower().Contains("rotom mow"))
                         {
                             modifier = "91";
                         }
-                        else if (@poke.Name.ToLower().Contains("giratina altered"))
+                        else if (poke.Name.ToLower().Contains("giratina altered"))
                         {
                             modifier = "32";
                         }
-                        else if (@poke.Name.ToLower().Contains("giratina origin"))
+                        else if (poke.Name.ToLower().Contains("giratina origin"))
                         {
                             modifier = "33";
                         }
-                        else if (@poke.Name.ToLower().Contains("shaymin land"))
+                        else if (poke.Name.ToLower().Contains("shaymin land"))
                         {
                             modifier = "34";
                         }
-                        else if (@poke.Name.ToLower().Contains("shaymin sky"))
+                        else if (poke.Name.ToLower().Contains("shaymin sky"))
                         {
                             modifier = "35";
                         }
@@ -262,9 +262,9 @@
 
                         string dex = poke.Dex.ToString("D3");
                         <td vertical-align="bottom">
-                            <form id=@poke.Name.ToLower() name="poke" valign="bottom" method="post" action="AddPoke">
-                                <input type="hidden" id=@poke.Name.ToLower() name="poke" value="@poke.Name.ToLower()" />
-                                <input id=@poke.Name.ToLower() name="poke" type="image" value="@poke.Name.ToLower()" alt=@poke.Name src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png">
+                            <form id="@poke.Name.ToLower()" name="poke" valign="bottom" method="post" action="AddPoke">
+                                <input type="hidden" id="@poke.Name.ToLower()" name="poke" value="@poke.Name.ToLower()" />
+                                <input id="@poke.Name.ToLower()" name="poke" type="image" value="@poke.Name.ToLower()" alt=@poke.Name src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png">
                             </form>
                             <br />
                             <span>@poke.Name</span>
