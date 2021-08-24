@@ -1,14 +1,12 @@
 ﻿@model PoGoBattleHelper.ViewModels.ChooseTeamViewModel;
 
-@*<div class="text-center">
-    <h1 class="display-4"><strong>PoGo Battle Helper</strong></h1>
-</div>*@
-<div class="text-center">
-    <div style="padding: 100px 0px 50px;" class="text-center">
+<div class="mx-auto text-center">
+    <div class="mx-auto pt-4 pb-3 text-center">
         <h2>Please choose the Pokemon below.</h2>
     </div>
-    <h4>Pokemon with the types you chose:</h4>
-    <br />
+    <div  class="mx-auto pt-4 pb-3 text-center">
+        <h4>Pokemon with the types you chose:</h4>
+    </div>
     @if (Model.PossiblePokes.Count == 0 && Model.PossiblePokes2Types.Count == 0)
     {
         <a asp-controller="ChooseTeam" asp-action="GetType">Choose Pokemon by Type</a>
@@ -16,9 +14,9 @@
     else if (Model.PossiblePokes2Types.Count != 0)
     {
         int counter = 0;
-        <table align="center">
+        <table class="mx-auto text-center">
             <tbody>
-                <tr vertical-align="bottom">
+                <tr>
                     @foreach (Pokemon poke in Model.PossiblePokes2Types)
                     {
                         string modifier = "00";
@@ -128,14 +126,15 @@
                         }
 
                         string dex = poke.Dex.ToString("D3");
-                        <td vertical-align="bottom">
-                            <form id="@poke.Name.ToLower()" name="poke" valign="bottom" method="post" action="AddPoke">
+                    <td class="py-3">
+                        <div class="py-3 text-center">
+                            <form id="@poke.Name.ToLower()" name="poke" valign="bottom" method="post" action="AddPoke" class="py-0">
                                 <input type="hidden" id="@poke.Name.ToLower()" name="poke" value="@poke.Name.ToLower()" />
-                                <input id="@poke.Name.ToLower()" name="poke" type="image" value="@poke.Name.ToLower()" alt="@poke.Name" src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png" style="height: 130px">
+                                <input id="@poke.Name.ToLower()" name="poke" type="image" value="@poke.Name.ToLower()" alt="@poke.Name" src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png" style="height: 130px; max-width: 150px">
                             </form>
-                            <br />
-                            <span>@poke.Name</span>
-                        </td>
+                            <div class="py-0"><strong>@poke.Name</strong></div>
+                        </div>
+                    </td>
                         counter++;
                         if (counter % 5 == 0)
                         {
@@ -151,7 +150,7 @@
         int counter2 = 0;
         <table align="center">
             <tbody>
-                <tr vertical-align="bottom">
+                <tr>
                     @foreach (Pokemon poke in Model.PossiblePokes)
                     {
                         string modifier = "00";
@@ -261,13 +260,13 @@
                         }
 
                         string dex = poke.Dex.ToString("D3");
-                        <td vertical-align="bottom">
+                        <td>
                             <form id="@poke.Name.ToLower()" name="poke" valign="bottom" method="post" action="AddPoke">
                                 <input type="hidden" id="@poke.Name.ToLower()" name="poke" value="@poke.Name.ToLower()" />
-                                <input id="@poke.Name.ToLower()" name="poke" type="image" value="@poke.Name.ToLower()" alt=@poke.Name src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png" style="height: 130px">
+                                <input id="@poke.Name.ToLower()" name="poke" type="image" value="@poke.Name.ToLower()" alt=@poke.Name src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png" style="height: 130px; max-width: 150px">
                             </form>
                             <br />
-                            <span>@poke.Name</span>
+                            <span><strong>@poke.Name</strong></span>
                         </td>
                         counter2++;
                         if (counter2 % 5 == 0)

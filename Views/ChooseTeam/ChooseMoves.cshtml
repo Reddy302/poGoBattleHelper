@@ -1,9 +1,9 @@
 ﻿@model PoGoBattleHelper.ViewModels.ChooseTeamViewModel;
 
-<div class="text-center">
+<div class="mx-auto pt-4 pb-3 text-center">
     <h3 class="h3"><strong>Your Team</strong></h3>
 </div>
-<div class="text-center">
+<div class="mx-auto text-center">
     @if (Model.MyTeam.Count == 0)
     {
         <p><b>SOMETHING WENT WRONG. PLEASE TRY AGAIN.</b></p>
@@ -11,9 +11,9 @@
     }
     else
     {
-        <table align="center">
+        <table class="mx-auto text-center">
             <tbody>
-                <tr vertical-align="bottom">
+                <tr>
                     @foreach (Pokemon poke in Model.MyTeam)
                     {
                         string modifier = "00";
@@ -128,10 +128,10 @@
 
                         string dex = poke.Dex.ToString("D3");
 
-                        <td vertical-align="bottom">
-                            <img src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png" alt="@poke.Name" style="height: 150px" />
+                        <td>
+                            <img src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png" alt="@poke.Name" style="height: 150px; max-width: 170px" />
                             <br />
-                            <span>@poke.Name</span>
+                            <span><strong>@poke.Name</strong></span>
                         </td>
                     }
                 </tr>

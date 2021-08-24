@@ -1,9 +1,9 @@
 ﻿@model PoGoBattleHelper.ViewModels.ChooseTeamViewModel;
 
-<div class="text-center">
+<div class="mx-auto pt-4 pb-3 text-center">
     <h3 class="h3"><strong>Your Team</strong></h3>
 </div>
-<div class="text-center">
+<div class="mx-auto text-center">
     @if (Model.MyTeam.Count == 0)
     {
         <a asp-controller="ChooseTeam" asp-action="Index">Choose Pokemon by Type</a>
@@ -11,9 +11,9 @@
     else
     {
         int counter = 0;
-        <table align="center">
+        <table class="mx-auto text-center">
             <tbody>
-                <tr vertical-align="bottom">
+                <tr>
                     @foreach (Pokemon poke in Model.MyTeam)
                     {
                         string modifier = "00";
@@ -128,10 +128,10 @@
 
                         string dex = poke.Dex.ToString("D3");
 
-                        <td vertical-align="bottom">
-                            <img src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png" alt="@poke.Name" style="height: 150px"/>
+                        <td>
+                            <img class="py-0" src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png" alt="@poke.Name" style="height: 150px; max-width: 170px"/>
                             <br />
-                            <span>@poke.Name</span>
+                            <span class="py-0"><strong>@poke.Name</strong></span>
                         </td>
                         counter++;
                         if (counter % 5 == 0)
@@ -144,14 +144,14 @@
         </table>
         @if (Model.MyTeam.Count < 3)
         {
-            <table align="center">
+            <table class="mx-auto text-center pt-4">
                 <tbody>
                     <tr>
                         <td><span><br /></span></td>
                     </tr>
                     <tr>
-                        <td align="center">
-                            <p align="center"><b>Your team is not full.</b></p>
+                        <td class="mx-auto text-center">
+                            <h4 align="center"><b>Your team is not full.</b></h4>
                             <br />
                             <form method="post" action="MyTeam" id="clear" name="clear">
                                 <button class="btn btn-success" name="clear" value="clear" id="clear">Choose Another Pokemon by Type</button>
@@ -167,14 +167,14 @@
         }
         else
         {
-            <table align="center">
+            <table class="mx-auto text-center pt-4">
                 <tbody>
                     <tr>
                         <td><span><br /></span></td>
                     </tr>
                     <tr>
-                        <td align="center">
-                            <p align="center"><b>YOUR TEAM IS FULL.</b></p>
+                        <td class="mx-auto text-center">
+                            <h4 align="center"><b>YOUR TEAM IS FULL.</b></h4>
                             <br />
                             <form method="post" action="MyTeam" id="chooseMoves" name="chooseMoves">
                                 <button class="btn btn-success" name="chooseMoves" value="chooseMoves" id="chooseMoves">THAT'S MY TEAM!<br />NOW LET'S CHOOSE MOVES!</button>
