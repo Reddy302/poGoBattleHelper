@@ -20,7 +20,6 @@ namespace PoGoBattleHelper.Controllers
         private static List<Pokemon> possiblePokes = new List<Pokemon>();
         private static List<Pokemon> possiblePokes2Types = new List<Pokemon>();
         public ChooseTeamViewModel myModel = new ChooseTeamViewModel();
-        public ChooseMovesViewModel moveModel = new ChooseMovesViewModel();
 
         [HttpGet, Route("/GetType")]
         public IActionResult Index()
@@ -48,12 +47,12 @@ namespace PoGoBattleHelper.Controllers
                     }
                 }
                 myModel.PossiblePokes = possiblePokes;
-                return Redirect("/GetSecondType");
+                return RedirectToAction("GetSecondType");
             }
             else
             {
                 myModel.PossiblePokes = possiblePokes;
-                return Redirect("/MyTeam");
+                return RedirectToAction("MyTeam");
             }
         }
 
@@ -83,10 +82,10 @@ namespace PoGoBattleHelper.Controllers
                     }
                 }
                 myModel.PossiblePokes2Types = possiblePokes2Types;
-                return Redirect("/AddPoke");
+                return RedirectToAction("AddPoke");
             }
             myModel.PossiblePokes2Types = possiblePokes2Types;
-            return Redirect("/MyTeam");
+            return RedirectToAction("MyTeam");
         }
 
         [HttpGet, Route("/AddPoke")]
@@ -112,13 +111,12 @@ namespace PoGoBattleHelper.Controllers
                     }
                 }
                 myModel.MyTeam = myTeam;
-                return Redirect("/MyTeam");
+                return RedirectToAction("MyTeam");
             }
             else
             {
                 myModel.MyTeam = myTeam;
-                moveModel.MyTeam = myTeam;
-                return Redirect("/MyTeam");
+                return RedirectToAction("MyTeam");
             }
         }
 
@@ -149,14 +147,14 @@ namespace PoGoBattleHelper.Controllers
             }
             if (clear == "clear")
             {
-                return Redirect("/GetType");
+                return RedirectToAction("GetType");
             }
             if (clearLast == "clearLast")
             {
                 myTeam.Remove(myTeam[myTeam.Count - 1]);
 
                 myModel.MyTeam = myTeam;
-                return Redirect("/GetType");
+                return RedirectToAction("GetType");
             }
             if (startOver == "startOver")
             {
@@ -166,14 +164,20 @@ namespace PoGoBattleHelper.Controllers
                 }
 
                 myModel.MyTeam = myTeam;
-                return Redirect("/GetType");
+                return RedirectToAction("GetType");
             }
             if (chooseMoves == "chooseMoves")
             {
-                moveModel.MyTeam = myTeam;
-                return Redirect("/ChooseMoves");
+                return RedirectToAction("ChooseMoves");
             }
-            return Redirect("/GetType");
+            return RedirectToAction("GetType");
+        }
+
+        [HttpGet, Route("/ChooseMoves")]
+        public IActionResult ChooseMoves()
+        {
+            myModel.MyTeam = myTeam;
+            return View(myModel);
         }
     }
 }
