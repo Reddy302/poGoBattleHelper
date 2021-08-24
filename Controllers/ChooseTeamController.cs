@@ -179,5 +179,18 @@ namespace PoGoBattleHelper.Controllers
             myModel.MyTeam = myTeam;
             return View(myModel);
         }
+
+        [HttpPost, Route("/ChooseMoves")]
+        public IActionResult ChooseMoves(string poke)
+        {
+            foreach (Pokemon mon in myTeam)
+            {
+                if (mon.Name == poke)
+                {
+                    //return a view that is dynamic to the pokemon and also shows all available moves in a checkbox form
+                }
+            }
+            return View();
+        }
     }
 }

@@ -128,16 +128,13 @@
 
                         string dex = poke.Dex.ToString("D3");
 
-                        <td>
-                            <img class="py-0" src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png" alt="@poke.Name" style="height: 150px; max-width: 170px"/>
-                            <br />
-                            <span class="py-0"><strong>@poke.Name</strong></span>
+                        <td class="p-3">
+                            <div class="py-3 px-3 text-center">
+                                <img class="py-0" src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png" alt="@poke.Name" style="height: 130px; max-width: 150px" />
+                                <br />
+                                <div class="py-0"><strong>@poke.Name</strong></div>
+                            </div>
                         </td>
-                        counter++;
-                        if (counter % 5 == 0)
-                        {
-                        @:</tr><tr>
-                        }
                     }
                 </tr>
             </tbody>
