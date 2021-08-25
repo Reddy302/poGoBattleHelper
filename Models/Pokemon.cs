@@ -32,6 +32,7 @@ namespace PoGoBattleHelper.Models
         public Evolution Evolution { get; set; }
         public string Id { get; set; }
         public object[] Forms { get; set; }
+
         private static readonly string fileString = System.IO.File.ReadAllText("pokedex/pokemon.json");
         public static readonly List<Pokemon> pokeList = JsonSerializer.Deserialize<List<Pokemon>>(fileString);
 

@@ -16,8 +16,9 @@ namespace PoGoBattleHelper.Models
         public string Id { get; set; }
         public string Name { get; set; }
         public Damage[] Damage { get; set; }
-        private static readonly string fileString2 = System.IO.File.ReadAllText("pokedex/type.json");
-        public static readonly List<Models.Type> typeList = JsonSerializer.Deserialize<List<Models.Type>>(fileString2);
+
+        private static readonly string fileString = System.IO.File.ReadAllText("pokedex/type.json");
+        public static readonly List<Models.Type> typeList = JsonSerializer.Deserialize<List<Models.Type>>(fileString);
 
         public Type(string id, string name, Damage[] damage)
         {
@@ -30,5 +31,11 @@ namespace PoGoBattleHelper.Models
         {
 
         }
+    }
+
+    public class Damage
+    {
+        public string Id { get; set; }
+        public float AttackScalar { get; set; }
     }
 }

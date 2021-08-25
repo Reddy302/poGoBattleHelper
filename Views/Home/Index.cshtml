@@ -12,45 +12,84 @@
 
 
 @*FOR TESTING BELOW*@
+@if (Model.MyTeam != null)
+{
+    <div><strong><h4>My Team Test</h4></strong></div>
+    @if (Model.MyTeam.Count == 0) { <div>Please choose a team to test me</div> }
+    <table class="table mx-auto text-center">
+        <tbody>
+            @foreach (Pokemon poke in Model.MyTeam)
+            {
+                <tr>
+                    <td>
+                        Poke: @poke.Name
+                    </td>
+                    @foreach (PoGoBattleHelper.Models.Type type in poke.Types)
+                    {
+                        <td>
+                            Type: @type.Name
+                        </td>
+                    }
+                    @foreach (CinematicMove move in poke.CinematicMoves)
+                    {
+                        <td>
+                            Charged Move: @move.Name
+                        </td>
+                    }
+                    @foreach (QuickMove move in poke.QuickMoves)
+                    {
+                        <td>
+                            Fast Move: @move.Name
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+
+<br /><br />
+<div><strong><h4>My Type Test</h4></strong></div>
 <table class="table">
-    <tr>
-        <th>Name</th>
-        <th>Type1</th>
-        <th>Type2</th>
-    </tr>
-    @foreach (Pokemon poke in Model.Pokes)
+    @foreach (PoGoBattleHelper.Models.Type type in Model.Types)
     {
         <tr>
-            <td>@poke.Name</td>
-            @foreach (PoGoBattleHelper.Models.Type type in poke.Types)
+            <td><strong>Name:</strong> @type.Name</td>
+            <td><strong>ID:</strong> @type.Id</td>
+            @foreach (Damage stat in type.Damage)
             {
-                <td>@type.Name</td>
+                <td><strong>Damage Stat: </strong>@stat.Id</td>
+                <td><strong>Scalar: </strong>@stat.AttackScalar.ToString()</td>
             }
 
         </tr>
     }
 </table>
 
-<table class="table">
-    <tr>
-        <th>Name</th>
-        <th>ID</th>
-        <th>Damage Stat</th>
-        <th>Attack Scaler</th>
-    </tr>
-    @foreach (PoGoBattleHelper.Models.Type type in Model.Types)
-    {
-        <tr>
-            <td>@type.Name</td>
-            <td>@type.Id</td>
-            @foreach (Damage stat in type.Damage)
-            {
-                <td>@stat.Id</td>
-                <td>@stat.AttackScalar.ToString()</td>
-            }
 
+<br /><br />
+<div><strong><h4>My Pokemon Test</h4></strong></div>
+<table class="table">
+    <tbody>
+        <tr>
+            <th>Name</th>
+            <th>Type1</th>
+            <th>Type2</th>
         </tr>
-    }
+        @foreach (Pokemon poke in Model.Pokes)
+        {
+            <tr>
+                <td>@poke.Name</td>
+                @foreach (PoGoBattleHelper.Models.Type type in poke.Types)
+                {
+                    <td>@type.Name</td>
+                }
+
+            </tr>
+        }
+    </tbody>
 </table>
 
 

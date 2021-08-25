@@ -25,9 +25,11 @@ namespace PoGoBattleHelper.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            List<Pokemon> test = ChooseTeamController.myTeam;
             ChooseTeamViewModel myModel = new ChooseTeamViewModel();
             myModel.Pokes = Pokemon.pokeList;
             myModel.Types = Models.Type.typeList;
+            myModel.MyTeam = test;
             return View(myModel);
         }
 

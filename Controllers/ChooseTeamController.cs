@@ -16,7 +16,7 @@ namespace PoGoBattleHelper.Controllers
 {
     public class ChooseTeamController : Controller
     {
-        private static List<Pokemon> myTeam = new List<Pokemon>();
+        public static List<Pokemon> myTeam = new List<Pokemon>();
         private static List<Pokemon> possiblePokes = new List<Pokemon>();
         private static List<Pokemon> possiblePokes2Types = new List<Pokemon>();
         public ChooseTeamViewModel myModel = new ChooseTeamViewModel();
@@ -188,6 +188,7 @@ namespace PoGoBattleHelper.Controllers
                 if (mon.Name == poke)
                 {
                     //return a view that is dynamic to the pokemon and also shows all available moves in a checkbox form
+                    return RedirectToAction("Moves");
                 }
             }
             return View();
