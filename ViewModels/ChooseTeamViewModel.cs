@@ -13,5 +13,6 @@ namespace PoGoBattleHelper.ViewModels
         public List<Pokemon> PossiblePokes { get; set; }
         public List<Pokemon> PossiblePokes2Types { get; set; }
         public List<Pokemon> MyTeam { get; set; }
+        
     }
 }
