@@ -30,6 +30,7 @@ namespace PoGoBattleHelper.Controllers
             myModel.Pokes = Pokemon.pokeList;
             myModel.Types = Models.Type.typeList;
             myModel.MyTeam = test;
+            myModel.Moves = Move.moveList;
             return View(myModel);
         }
 

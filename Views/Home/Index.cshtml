@@ -9,37 +9,41 @@
 <div class="text-center">
     <a asp-controller="ChooseTeam" asp-action="Index">Choose Pokemon by Type</a>
 </div>
-
+<br />
+<br />
+<br />
 
 @*FOR TESTING BELOW*@
 @if (Model.MyTeam != null)
 {
-    <div><h4><strong>My Team Test</strong></h4></div>
-    @if (Model.MyTeam.Count == 0) { <div>Please choose a team to test me</div> }
-    <table class="table mx-auto text-center">
+    <div class="mx-auto text-center"><h4><strong>My Team Test</strong></h4></div>
+    @if (Model.MyTeam.Count == 0)
+    {<div class="mx-auto text-center">Please choose a team to test me</div>}
+    <table class="table mx-auto">
         <tbody>
             @foreach (Pokemon poke in Model.MyTeam)
             {
                 <tr>
                     <td>
-                        Poke: @poke.Name
+                        <b>Poke:</b> @poke.Name
                     </td>
                     @foreach (PoGoBattleHelper.Models.Type type in poke.Types)
                     {
                         <td>
-                            Type: @type.Name
+                            <b>Type:</b> @type.Name
                         </td>
                     }
                     @foreach (Move move in poke.CinematicMoves)
                     {
                         <td>
-                            Charged Move: @move.Name
+                            <b>Charged Move:</b> @move.Name
                         </td>
+                        @*<td>MOVE TEST: @move.PokemonType.Name</td>*@
                     }
                     @foreach (Move move in poke.QuickMoves)
                     {
                         <td>
-                            Fast Move: @move.Name
+                            <b>Fast Move:</b>  @move.Name
                         </td>
                     }
                 </tr>
@@ -49,9 +53,32 @@
 }
 
 
+<br />
+<br />
+<div class="mx-auto text-center"><h4><strong>My Move Test</strong></h4></div>
+<table class="table mx-auto text-center">
+    <tbody>
+        @foreach (Move move in Model.Moves)
+        {
+        <tr>
+            <td>
+                <b>Name:</b> @move.Name
+            </td>
+            <td>
+                <b>Type:</b> @move.PokemonType.Name
+            </td>
+            <td>
+                <b>Power:</b> @move.Power
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
 
-<br /><br />
-<div><h4><strong>My Type Test</strong></h4></div>
+
+<br />
+<br />
+<div class="mx-auto text-center"><h4><strong>My Type Test</strong></h4></div>
 <table class="table">
     @foreach (PoGoBattleHelper.Models.Type type in Model.Types)
     {
@@ -69,8 +96,9 @@
 </table>
 
 
-<br /><br />
-<div><h4><strong>My Pokemon Test</strong></h4></div>
+<br />
+<br />
+<div class="mx-auto text-center"><h4><strong>My Pokemon Test</strong></h4></div>
 <table class="table">
     <tbody>
         <tr>
