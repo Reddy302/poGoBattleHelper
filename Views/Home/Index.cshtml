@@ -14,7 +14,7 @@
 @*FOR TESTING BELOW*@
 @if (Model.MyTeam != null)
 {
-    <div><strong><h4>My Team Test</h4></strong></div>
+    <div><h4><strong>My Team Test</strong></h4></div>
     @if (Model.MyTeam.Count == 0) { <div>Please choose a team to test me</div> }
     <table class="table mx-auto text-center">
         <tbody>
@@ -30,13 +30,13 @@
                             Type: @type.Name
                         </td>
                     }
-                    @foreach (CinematicMove move in poke.CinematicMoves)
+                    @foreach (Move move in poke.CinematicMoves)
                     {
                         <td>
                             Charged Move: @move.Name
                         </td>
                     }
-                    @foreach (QuickMove move in poke.QuickMoves)
+                    @foreach (Move move in poke.QuickMoves)
                     {
                         <td>
                             Fast Move: @move.Name
@@ -51,7 +51,7 @@
 
 
 <br /><br />
-<div><strong><h4>My Type Test</h4></strong></div>
+<div><h4><strong>My Type Test</strong></h4></div>
 <table class="table">
     @foreach (PoGoBattleHelper.Models.Type type in Model.Types)
     {
@@ -70,7 +70,7 @@
 
 
 <br /><br />
-<div><strong><h4>My Pokemon Test</h4></strong></div>
+<div><h4><strong>My Pokemon Test</strong></h4></div>
 <table class="table">
     <tbody>
         <tr>

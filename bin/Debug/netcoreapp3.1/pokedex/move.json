@@ -2,7 +2,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 60,
+        "Power": 60,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.06,
         "TrainerLevelMin": 1,
@@ -23,7 +23,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 150,
+        "Power": 150,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.15,
         "TrainerLevelMin": 1,
@@ -44,7 +44,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 80,
+        "Power": 80,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.08,
         "TrainerLevelMin": 1,
@@ -65,7 +65,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 50,
+        "Power": 50,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.065,
         "TrainerLevelMin": 1,
@@ -86,7 +86,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 35,
+        "Power": 35,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.055,
         "TrainerLevelMin": 1,
@@ -107,7 +107,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 60,
+        "Power": 60,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.06,
         "TrainerLevelMin": 1,
@@ -128,7 +128,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 90,
+        "Power": 90,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.12,
         "TrainerLevelMin": 1,
@@ -149,7 +149,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 70,
+        "Power": 70,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.09,
         "TrainerLevelMin": 1,
@@ -170,7 +170,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 100,
+        "Power": 100,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.08,
         "TrainerLevelMin": 1,
@@ -191,7 +191,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 50,
+        "Power": 50,
         "CriticalChance": 0.25,
         "StaminaLossScalar": 0.1,
         "TrainerLevelMin": 1,
@@ -212,7 +212,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 70,
+        "Power": 70,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.065,
         "TrainerLevelMin": 1,
@@ -233,7 +233,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 120,
+        "Power": 120,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.1,
         "TrainerLevelMin": 1,
@@ -254,7 +254,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 100,
+        "Power": 100,
         "CriticalChance": 0.5,
         "StaminaLossScalar": 0.1,
         "TrainerLevelMin": 1,
@@ -275,7 +275,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 50,
+        "Power": 50,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.075,
         "TrainerLevelMin": 1,
@@ -296,7 +296,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 40,
+        "Power": 40,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.06,
         "TrainerLevelMin": 1,
@@ -317,7 +317,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 65,
+        "Power": 65,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.08,
         "TrainerLevelMin": 1,
@@ -338,7 +338,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 100,
+        "Power": 100,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.08,
         "TrainerLevelMin": 1,
@@ -359,7 +359,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 60,
+        "Power": 60,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.08,
         "TrainerLevelMin": 1,
@@ -380,7 +380,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 90,
+        "Power": 90,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.09,
         "TrainerLevelMin": 1,
@@ -401,7 +401,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 130,
+        "Power": 130,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.11,
         "TrainerLevelMin": 1,
@@ -422,7 +422,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 95,
+        "Power": 95,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.095,
         "TrainerLevelMin": 1,
@@ -443,7 +443,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 55,
+        "Power": 55,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.06,
         "TrainerLevelMin": 1,
@@ -464,7 +464,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 80,
+        "Power": 80,
         "CriticalChance": 0.25,
         "StaminaLossScalar": 0.08,
         "TrainerLevelMin": 1,
@@ -485,7 +485,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 110,
+        "Power": 110,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.09,
         "TrainerLevelMin": 1,
@@ -506,7 +506,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 25,
+        "Power": 25,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -527,7 +527,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 90,
+        "Power": 90,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.09,
         "TrainerLevelMin": 1,
@@ -548,7 +548,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 35,
+        "Power": 35,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.05,
         "TrainerLevelMin": 1,
@@ -569,7 +569,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 50,
+        "Power": 50,
         "CriticalChance": 0.25,
         "StaminaLossScalar": 0.07,
         "TrainerLevelMin": 1,
@@ -590,7 +590,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 45,
+        "Power": 45,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.065,
         "TrainerLevelMin": 1,
@@ -611,7 +611,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 60,
+        "Power": 60,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.08,
         "TrainerLevelMin": 1,
@@ -632,7 +632,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 40,
+        "Power": 40,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.065,
         "TrainerLevelMin": 1,
@@ -653,7 +653,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 45,
+        "Power": 45,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -674,7 +674,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 50,
+        "Power": 50,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.09,
         "TrainerLevelMin": 1,
@@ -695,7 +695,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 55,
+        "Power": 55,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.08,
         "TrainerLevelMin": 1,
@@ -716,7 +716,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 65,
+        "Power": 65,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.08,
         "TrainerLevelMin": 1,
@@ -737,7 +737,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 70,
+        "Power": 70,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.06,
         "TrainerLevelMin": 1,
@@ -758,7 +758,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 70,
+        "Power": 70,
         "CriticalChance": 0.25,
         "StaminaLossScalar": 0.06,
         "TrainerLevelMin": 1,
@@ -779,7 +779,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 80,
+        "Power": 80,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.075,
         "TrainerLevelMin": 1,
@@ -800,7 +800,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 80,
+        "Power": 80,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.08,
         "TrainerLevelMin": 1,
@@ -821,7 +821,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 50,
+        "Power": 50,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -842,7 +842,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 40,
+        "Power": 40,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.06,
         "TrainerLevelMin": 1,
@@ -863,7 +863,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 50,
+        "Power": 50,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.06,
         "TrainerLevelMin": 1,
@@ -884,7 +884,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 100,
+        "Power": 100,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.08,
         "TrainerLevelMin": 1,
@@ -905,7 +905,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 70,
+        "Power": 70,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.06,
         "TrainerLevelMin": 1,
@@ -926,7 +926,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 60,
+        "Power": 60,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.08,
         "TrainerLevelMin": 1,
@@ -947,7 +947,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 25,
+        "Power": 25,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.05,
         "TrainerLevelMin": 1,
@@ -968,7 +968,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 45,
+        "Power": 45,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.075,
         "TrainerLevelMin": 1,
@@ -989,7 +989,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 100,
+        "Power": 100,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.11,
         "TrainerLevelMin": 1,
@@ -1010,7 +1010,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 80,
+        "Power": 80,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.09,
         "TrainerLevelMin": 1,
@@ -1031,7 +1031,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 45,
+        "Power": 45,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -1052,7 +1052,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 90,
+        "Power": 90,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.085,
         "TrainerLevelMin": 1,
@@ -1073,7 +1073,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 50,
+        "Power": 50,
         "CriticalChance": 0.25,
         "StaminaLossScalar": 0.08,
         "TrainerLevelMin": 1,
@@ -1094,7 +1094,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 70,
+        "Power": 70,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -1115,7 +1115,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 60,
+        "Power": 60,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.05,
         "TrainerLevelMin": 1,
@@ -1136,7 +1136,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 100,
+        "Power": 100,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.08,
         "TrainerLevelMin": 1,
@@ -1157,7 +1157,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 130,
+        "Power": 130,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.095,
         "TrainerLevelMin": 1,
@@ -1178,7 +1178,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 90,
+        "Power": 90,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.1,
         "TrainerLevelMin": 1,
@@ -1199,7 +1199,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 40,
+        "Power": 40,
         "CriticalChance": 0.25,
         "StaminaLossScalar": 0.07,
         "TrainerLevelMin": 1,
@@ -1220,7 +1220,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 80,
+        "Power": 80,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.09,
         "TrainerLevelMin": 1,
@@ -1241,7 +1241,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 110,
+        "Power": 110,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.095,
         "TrainerLevelMin": 1,
@@ -1262,7 +1262,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 130,
+        "Power": 130,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.12,
         "TrainerLevelMin": 1,
@@ -1283,7 +1283,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 40,
+        "Power": 40,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.065,
         "TrainerLevelMin": 1,
@@ -1304,7 +1304,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 80,
+        "Power": 80,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.06,
         "TrainerLevelMin": 1,
@@ -1325,7 +1325,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 55,
+        "Power": 55,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.065,
         "TrainerLevelMin": 1,
@@ -1346,7 +1346,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 75,
+        "Power": 75,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.075,
         "TrainerLevelMin": 1,
@@ -1367,7 +1367,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 45,
+        "Power": 45,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.08,
         "TrainerLevelMin": 1,
@@ -1388,7 +1388,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 70,
+        "Power": 70,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.05,
         "TrainerLevelMin": 1,
@@ -1409,7 +1409,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 70,
+        "Power": 70,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.07,
         "TrainerLevelMin": 1,
@@ -1430,7 +1430,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 140,
+        "Power": 140,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.11,
         "TrainerLevelMin": 1,
@@ -1451,7 +1451,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 60,
+        "Power": 60,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.065,
         "TrainerLevelMin": 1,
@@ -1472,7 +1472,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 70,
+        "Power": 70,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.06,
         "TrainerLevelMin": 1,
@@ -1493,7 +1493,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 80,
+        "Power": 80,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.08,
         "TrainerLevelMin": 1,
@@ -1514,7 +1514,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 130,
+        "Power": 130,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.11,
         "TrainerLevelMin": 1,
@@ -1535,7 +1535,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 100,
+        "Power": 100,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.09,
         "TrainerLevelMin": 1,
@@ -1556,7 +1556,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 100,
+        "Power": 100,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.1,
         "TrainerLevelMin": 1,
@@ -1577,7 +1577,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 60,
+        "Power": 60,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.055,
         "TrainerLevelMin": 1,
@@ -1598,7 +1598,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 50,
+        "Power": 50,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.075,
         "TrainerLevelMin": 1,
@@ -1619,7 +1619,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 55,
+        "Power": 55,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.075,
         "TrainerLevelMin": 1,
@@ -1640,7 +1640,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 180,
+        "Power": 180,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.12,
         "TrainerLevelMin": 1,
@@ -1661,7 +1661,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 70,
+        "Power": 70,
         "CriticalChance": 0.25,
         "StaminaLossScalar": 0.09,
         "TrainerLevelMin": 1,
@@ -1682,7 +1682,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 90,
+        "Power": 90,
         "StaminaLossScalar": 0.12,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -1702,7 +1702,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 60,
+        "Power": 60,
         "CriticalChance": 0.25,
         "StaminaLossScalar": 0.06,
         "TrainerLevelMin": 1,
@@ -1723,7 +1723,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 110,
+        "Power": 110,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.11,
         "TrainerLevelMin": 1,
@@ -1744,7 +1744,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 40,
+        "Power": 40,
         "CriticalChance": 0.25,
         "StaminaLossScalar": 0.075,
         "TrainerLevelMin": 1,
@@ -1765,7 +1765,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 60,
+        "Power": 60,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.06,
         "TrainerLevelMin": 1,
@@ -1786,7 +1786,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 40,
+        "Power": 40,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.065,
         "TrainerLevelMin": 1,
@@ -1807,7 +1807,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 55,
+        "Power": 55,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.065,
         "TrainerLevelMin": 1,
@@ -1828,7 +1828,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 80,
+        "Power": 80,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.08,
         "TrainerLevelMin": 1,
@@ -1849,7 +1849,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 50,
+        "Power": 50,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.085,
         "TrainerLevelMin": 1,
@@ -1870,7 +1870,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 50,
+        "Power": 50,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
         "VfxName": "rest",
@@ -1889,7 +1889,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 35,
+        "Power": 35,
         "StaminaLossScalar": 0.1,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -1908,7 +1908,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 50,
+        "Power": 50,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.08,
         "TrainerLevelMin": 1,
@@ -1929,7 +1929,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 90,
+        "Power": 90,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.11,
         "TrainerLevelMin": 1,
@@ -1950,7 +1950,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 25,
+        "Power": 25,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.06,
         "TrainerLevelMin": 1,
@@ -1971,7 +1971,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 25,
+        "Power": 25,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.06,
         "TrainerLevelMin": 1,
@@ -1992,7 +1992,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 3,
+        "Power": 3,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2012,7 +2012,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 5,
+        "Power": 5,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2032,7 +2032,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 6,
+        "Power": 6,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2052,7 +2052,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 7,
+        "Power": 7,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2072,7 +2072,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 6,
+        "Power": 6,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2092,7 +2092,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 5,
+        "Power": 5,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2112,7 +2112,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 6,
+        "Power": 6,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2132,7 +2132,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 6,
+        "Power": 6,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2152,7 +2152,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 8,
+        "Power": 8,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2172,7 +2172,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 10,
+        "Power": 10,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2192,7 +2192,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 8,
+        "Power": 8,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2212,7 +2212,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 10,
+        "Power": 10,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2232,7 +2232,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 5,
+        "Power": 5,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2252,7 +2252,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 9,
+        "Power": 9,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2272,7 +2272,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 7,
+        "Power": 7,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2292,7 +2292,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 13,
+        "Power": 13,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2312,7 +2312,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 5,
+        "Power": 5,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2332,7 +2332,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 12,
+        "Power": 12,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2352,7 +2352,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 10,
+        "Power": 10,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2372,7 +2372,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 8,
+        "Power": 8,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2392,7 +2392,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 6,
+        "Power": 6,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2412,7 +2412,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 5,
+        "Power": 5,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2432,7 +2432,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 7,
+        "Power": 7,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2452,7 +2452,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 5,
+        "Power": 5,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2472,7 +2472,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 10,
+        "Power": 10,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2492,7 +2492,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 9,
+        "Power": 9,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2512,7 +2512,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 5,
+        "Power": 5,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2532,7 +2532,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 12,
+        "Power": 12,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2552,7 +2552,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 8,
+        "Power": 8,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2572,7 +2572,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 9,
+        "Power": 9,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2592,7 +2592,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 5,
+        "Power": 5,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2631,7 +2631,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 10,
+        "Power": 10,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2651,7 +2651,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 15,
+        "Power": 15,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2671,7 +2671,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 12,
+        "Power": 12,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2691,7 +2691,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 20,
+        "Power": 20,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2711,7 +2711,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 5,
+        "Power": 5,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2731,7 +2731,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 12,
+        "Power": 12,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2751,7 +2751,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 10,
+        "Power": 10,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2771,7 +2771,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 11,
+        "Power": 11,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2791,7 +2791,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 11,
+        "Power": 11,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2811,7 +2811,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 15,
+        "Power": 15,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2849,7 +2849,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 12,
+        "Power": 12,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2869,7 +2869,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 6,
+        "Power": 6,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2889,7 +2889,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 100,
+        "Power": 100,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -2910,7 +2910,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 90,
+        "Power": 90,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -2931,7 +2931,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 140,
+        "Power": 140,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -2952,7 +2952,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 80,
+        "Power": 80,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -2973,7 +2973,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 8,
+        "Power": 8,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -2993,7 +2993,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 20,
+        "Power": 20,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3013,7 +3013,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 90,
+        "Power": 90,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -3034,7 +3034,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 140,
+        "Power": 140,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -3055,7 +3055,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 15,
+        "Power": 15,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3075,7 +3075,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 90,
+        "Power": 90,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -3096,7 +3096,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 14,
+        "Power": 14,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3116,7 +3116,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 90,
+        "Power": 90,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -3137,7 +3137,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 80,
+        "Power": 80,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -3158,7 +3158,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 80,
+        "Power": 80,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -3179,7 +3179,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 50,
+        "Power": 50,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -3200,7 +3200,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 10,
+        "Power": 10,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3220,7 +3220,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 15,
+        "Power": 15,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3240,7 +3240,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 70,
+        "Power": 70,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -3261,7 +3261,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 8,
+        "Power": 8,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3281,7 +3281,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 10,
+        "Power": 10,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3301,7 +3301,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 60,
+        "Power": 60,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -3322,7 +3322,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 15,
+        "Power": 15,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3342,7 +3342,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 80,
+        "Power": 80,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -3363,7 +3363,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 70,
+        "Power": 70,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -3384,7 +3384,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 14,
+        "Power": 14,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3404,7 +3404,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 160,
+        "Power": 160,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -3425,7 +3425,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 8,
+        "Power": 8,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3445,7 +3445,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 90,
+        "Power": 90,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -3466,7 +3466,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 90,
+        "Power": 90,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -3487,7 +3487,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 12,
+        "Power": 12,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3507,7 +3507,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 120,
+        "Power": 120,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -3528,7 +3528,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 60,
+        "Power": 60,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -3549,7 +3549,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 110,
+        "Power": 110,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -3570,7 +3570,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 12,
+        "Power": 12,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3590,7 +3590,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 70,
+        "Power": 70,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -3611,7 +3611,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 70,
+        "Power": 70,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.04,
         "TrainerLevelMin": 1,
@@ -3632,7 +3632,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 15,
+        "Power": 15,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
@@ -3653,7 +3653,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 8,
+        "Power": 8,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3673,7 +3673,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 16,
+        "Power": 16,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3693,7 +3693,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 65,
+        "Power": 65,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3713,7 +3713,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 150,
+        "Power": 150,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3733,7 +3733,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 80,
+        "Power": 80,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3772,7 +3772,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 70,
+        "Power": 70,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3792,7 +3792,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 130,
+        "Power": 130,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3812,7 +3812,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 130,
+        "Power": 130,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3832,7 +3832,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 5,
+        "Power": 5,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3852,7 +3852,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 60,
+        "Power": 60,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3872,7 +3872,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 60,
+        "Power": 60,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3892,7 +3892,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 60,
+        "Power": 60,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3912,7 +3912,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 60,
+        "Power": 60,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3932,7 +3932,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 100,
+        "Power": 100,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3952,7 +3952,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 4,
-        "power": 16,
+        "Power": 16,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3972,7 +3972,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 110,
+        "Power": 110,
         "StaminaLossScalar": 0.01,
         "TrainerLevelMin": 1,
         "TrainerLevelMax": 100,
@@ -3992,7 +3992,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 90,
+        "Power": 90,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.065,
         "TrainerLevelMin": 1,
@@ -4013,7 +4013,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 90,
+        "Power": 90,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.065,
         "TrainerLevelMin": 1,
@@ -4034,7 +4034,7 @@
     {
         "AccuracyChange": 1,
         "AnimationId": 5,
-        "power": 100,
+        "Power": 100,
         "CriticalChance": 0.05,
         "StaminaLossScalar": 0.065,
         "TrainerLevelMin": 1,

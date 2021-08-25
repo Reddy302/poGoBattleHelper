@@ -22,8 +22,8 @@ namespace PoGoBattleHelper.Models
         public float ModelScale { get; set; }
         public int MaxCP { get; set; }
         public Buddysize BuddySize { get; set; }
-        public CinematicMove[] CinematicMoves { get; set; }
-        public QuickMove[] QuickMoves { get; set; }
+        public Move[] CinematicMoves { get; set; }
+        public Move[] QuickMoves { get; set; }
         public Family Family { get; set; }
         public Stats Stats { get; set; }
         public Models.Type[] Types { get; set; }

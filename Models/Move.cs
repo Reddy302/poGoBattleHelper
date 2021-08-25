@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace PoGoBattleHelper.Models
 {
-    public class QuickMove
+    public class Move
     {
 		public int AccuracyChange { get; set; }
 		public int AnimationId { get; set; }
@@ -25,9 +25,11 @@ namespace PoGoBattleHelper.Models
 		public int InternalId { get; set; }
 
 
-		public QuickMove()
+		public Move()
         {
 
         }
     }
 }
+
+
