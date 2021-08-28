@@ -48,7 +48,6 @@ namespace PoGoBattleHelper.Controllers
 }
 
 // TODO: Find Raticate Alola sprite and add it to the pokes folder as "pokemon_icon_020_61.png"
-// TODO: Add a "go back this is not the poke I meant to choose" button to the confirmation page
 // TODO: Put the getType code into a Partial View once it has been refactored.
 // TODO: Add a Data Layer to the application
 
