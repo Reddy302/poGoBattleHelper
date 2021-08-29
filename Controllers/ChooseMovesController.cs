@@ -17,7 +17,8 @@ namespace PoGoBattleHelper.Controllers
     public class ChooseMovesController : Controller
     {
         public ChooseMovesViewModel myModel = new ChooseMovesViewModel();
-        public List<Pokemon> myTeam = ChooseTeamController.myTeam;
+        public static List<Pokemon> myTeam = ChooseTeamController.myTeam;
+        public static Pokemon chosenPoke = new Pokemon();
 
         [HttpGet, Route("/ChooseMoves")]
         public IActionResult Index()
@@ -27,17 +28,87 @@ namespace PoGoBattleHelper.Controllers
         }
 
         [HttpPost, Route("/ChooseMoves")]
-        public IActionResult ChooseMoves(string poke)
+        public IActionResult ChooseMoves(string name)
         {
-            foreach (Pokemon mon in myTeam)
+            foreach (Pokemon poke in myTeam)
             {
-                if (mon.Name == poke)
+                if (poke.Name.ToLower() == name)
                 {
-                    //return a view that is dynamic to the pokemon and also shows all available moves in a checkbox form
-                    return RedirectToAction("Moves");
+                    chosenPoke = poke;
+                    // Tie the move information from pokemon.json to the information in move.json
+                    foreach (Move move in Move.moveList)
+                    {
+                        foreach (Move cMove in poke.CinematicMoves)
+                        {
+                            if (cMove.Id == move.Id)
+                            {
+                                cMove.PokemonType = move.PokemonType;
+                            }
+                        }
+                        foreach (Move fMove in poke.QuickMoves)
+                        {
+                            if (fMove.Id == move.Id)
+                            {
+                                fMove.PokemonType = move.PokemonType;
+                            }
+                        }
+                    }
+                }
+            }
+            myModel.MyTeam = myTeam;
+            myModel.ChosenPoke = chosenPoke;
+            //return a view that is dynamic to the pokemon and also shows all available moves in a checkbox form
+            return RedirectToAction("Moves");
+        }
+
+        [HttpGet, Route("/ChooseMoves/Moves")]
+        public IActionResult Moves()
+        {
+            myModel.ChosenPoke = chosenPoke;
+            return View(myModel);
+        }
+
+        [HttpPost, Route("/ChooseMoves/Moves")]
+        public IActionResult Moves(string fastMove, string chargedMove1, string chargedMove2)
+        {
+            foreach (Pokemon poke in myTeam)
+            {
+                if (fastMove == "fastMove")
+                {
+                    return View();
+                }
+
+                if (chargedMove1 == "chargedMove1")
+                {
+                    return View();
+                }
+
+                if (chargedMove2 == "chargedMove2")
+                {
+                    return View();
                 }
             }
             return View();
+
+
+
+
+
+
+
+
+
         }
+
+
+
+
+
+
+
+
+
+
+
     }
 }

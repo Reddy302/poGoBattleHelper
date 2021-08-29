@@ -134,9 +134,9 @@
 
                         <td class="p-3">
                             <div class="py-3 px-3 text-center">
-                                <form id="@poke.Name.ToLower()" name="poke" valign="bottom" method="post" action="AddPoke" class="py-0">
-                                    <input type="hidden" id="@poke.Name.ToLower()" name="poke" value="@poke.Name.ToLower()" />
-                                    <input id="@poke.Name.ToLower()" name="poke" type="image" value="@poke.Name.ToLower()" alt="@poke.Name" src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png" style="height: 130px; max-width: 150px">
+                                <form id="@poke.Name.ToLower()" name="name" valign="bottom" method="post" action="ChooseMoves" class="py-0">
+                                    <input type="hidden" id="@poke.Name.ToLower()" name="name" value="@poke.Name.ToLower()" />
+                                    <input id="@poke.Name.ToLower()" name="name" type="image" value="@poke.Name.ToLower()" alt="@poke.Name" src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png" style="height: 130px; max-width: 150px">
                                 </form>
                                 <div class="py-0 text-center"><strong>@poke.Name</strong></div>
                             </div>
