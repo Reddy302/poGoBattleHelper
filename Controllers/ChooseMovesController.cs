@@ -32,7 +32,7 @@ namespace PoGoBattleHelper.Controllers
         {
             foreach (Pokemon poke in myTeam)
             {
-                if (poke.Name.ToLower() == name)
+                if (poke.Name.ToLower().Equals(name))
                 {
                     chosenPoke = poke;
                     // Tie the move information from pokemon.json to the information in move.json
@@ -40,14 +40,14 @@ namespace PoGoBattleHelper.Controllers
                     {
                         foreach (Move cMove in poke.CinematicMoves)
                         {
-                            if (cMove.Id == move.Id)
+                            if (cMove.Id.Equals(move.Id))
                             {
                                 cMove.PokemonType = move.PokemonType;
                             }
                         }
                         foreach (Move fMove in poke.QuickMoves)
                         {
-                            if (fMove.Id == move.Id)
+                            if (fMove.Id.Equals(move.Id))
                             {
                                 fMove.PokemonType = move.PokemonType;
                             }
@@ -69,25 +69,19 @@ namespace PoGoBattleHelper.Controllers
         }
 
         [HttpPost, Route("/ChooseMoves/Moves")]
-        public IActionResult Moves(string fastMove, string chargedMove1, string chargedMove2)
+        public IActionResult Moves(string fastMove, string chargedMove, string poke, string submit)
         {
-            foreach (Pokemon poke in myTeam)
+            if (submit.Equals("Submit My Moves"))
             {
-                if (fastMove == "fastMove")
+                foreach (Pokemon mon in myTeam)
                 {
-                    return View();
-                }
+                    if (mon.Name.Equals(poke))
+                    {
 
-                if (chargedMove1 == "chargedMove1")
-                {
-                    return View();
-                }
-
-                if (chargedMove2 == "chargedMove2")
-                {
-                    return View();
+                    }
                 }
             }
+            
             return View();
 
 

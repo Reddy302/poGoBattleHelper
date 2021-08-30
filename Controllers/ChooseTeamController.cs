@@ -40,7 +40,7 @@ namespace PoGoBattleHelper.Controllers
                 {
                     for (int i = 0; i < poke.Types.Count(); i++)
                     {
-                        if (poke.Types[i].Name.ToLower() == type)
+                        if (poke.Types[i].Name.ToLower().Equals(type))
                         {
                             possiblePokes.Add(poke);
                         }
@@ -75,7 +75,7 @@ namespace PoGoBattleHelper.Controllers
                 {
                     for (int i = 0; i < poke.Types.Count(); i++)
                     {
-                        if (poke.Types[i].Name.ToLower() == type)
+                        if (poke.Types[i].Name.ToLower().Equals(type))
                         {
                             possiblePokes2Types.Add(poke);
                         }
@@ -105,7 +105,7 @@ namespace PoGoBattleHelper.Controllers
             {
                 foreach(Pokemon mon in Pokemon.pokeList.ToList())
                 {
-                    if(mon.Name.ToLower() == poke)
+                    if(mon.Name.ToLower().Equals(poke))
                     {
                         myTeam.Add(mon);
                     }
