@@ -77,12 +77,34 @@ namespace PoGoBattleHelper.Controllers
                 {
                     if (mon.Name.Equals(poke))
                     {
+                        foreach (Move fMove in mon.QuickMoves)
+                        {
+                            if (fastMove.Equals(fMove.Id))
+                            {
+                                continue;
+                            }
+                            else if (fastMove.Equals("false"))
+                            {
+                                mon.QuickMoves.Remove(fMove);
+                            }
+                        }
 
+                        foreach (Move cMove in mon.CinematicMoves)
+                        {
+                            if (chargedMove.Equals(cMove.Id))
+                            {
+                                continue;
+                            }
+                            else if (chargedMove.Equals("false"))
+                            {
+                                mon.CinematicMoves.Remove(cMove);
+                            }
+                        }
                     }
                 }
             }
             
-            return View();
+            return RedirectToAction("Index", "Home");
 
 
 

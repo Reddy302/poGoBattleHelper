@@ -15,12 +15,12 @@ namespace PoGoBattleHelper.Models
     {
         public string Id { get; set; }
         public string Name { get; set; }
-        public Damage[] Damage { get; set; }
+        public List<Damage> Damage { get; set; }
 
         private static readonly string fileString = System.IO.File.ReadAllText("pokedex/type.json");
         public static readonly List<Models.Type> typeList = JsonSerializer.Deserialize<List<Models.Type>>(fileString);
 
-        public Type(string id, string name, Damage[] damage)
+        public Type(string id, string name, List<Damage> damage)
         {
             Id = id;
             Name = name;

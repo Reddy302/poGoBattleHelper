@@ -14,7 +14,7 @@ namespace PoGoBattleHelper.Models
     {
         public int Dex { get; set; }
         public string Name { get; set; }
-        public float[] AnimationTime { get; set; }
+        public List<float> AnimationTime { get; set; }
         public float Height { get; set; }
         public float ModelHeight { get; set; }
         public int KmBuddyDistance { get; set; }
@@ -22,25 +22,25 @@ namespace PoGoBattleHelper.Models
         public float ModelScale { get; set; }
         public int MaxCP { get; set; }
         public Buddysize BuddySize { get; set; }
-        public Move[] CinematicMoves { get; set; }
-        public Move[] QuickMoves { get; set; }
+        public List<Move> CinematicMoves { get; set; }
+        public List<Move> QuickMoves { get; set; }
         public Family Family { get; set; }
         public Stats Stats { get; set; }
-        public Models.Type[] Types { get; set; }
+        public List<Models.Type> Types { get; set; }
         public Encounter Encounter { get; set; }
         public Camera Camera { get; set; }
         public Evolution Evolution { get; set; }
         public string Id { get; set; }
-        public object[] Forms { get; set; }
+        public List<object> Forms { get; set; }
 
         private static readonly string fileString = System.IO.File.ReadAllText("pokedex/pokemon.json");
         public static readonly List<Pokemon> pokeList = JsonSerializer.Deserialize<List<Pokemon>>(fileString);
 
         public Pokemon(Models.Type type1, Models.Type type2)
         {
-            Types = new Models.Type[2];
-            Types[0] = type1;
-            Types[1] = type2;
+            
+            Types.Add(type1);
+            Types.Add(type2);
         }
 
         public Pokemon()

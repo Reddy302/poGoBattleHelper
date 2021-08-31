@@ -4032,24 +4032,45 @@
         "InternalId": 300
     },
     {
-        "AccuracyChange": 1,
-        "AnimationId": 5,
-        "Power": 100,
-        "CriticalChance": 0.05,
-        "StaminaLossScalar": 0.065,
-        "TrainerLevelMin": 1,
-        "TrainerLevelMax": 100,
-        "VfxName": "meteor_mash",
-        "DurationMs": 2600,
-        "DamageWindowStartMs": 2300,
-        "DamageWindowEndMs": 2500,
-        "EnergyDelta": -50,
-        "Id": "METEOR_MASH",
-        "PokemonType": {
-            "Id": "POKEMON_TYPE_STEEL",
-            "Name": "Steel"
-        },
-        "Name": "Meteor Mash",
-        "InternalId": 301
+      "AccuracyChange": 1,
+      "AnimationId": 5,
+      "Power": 100,
+      "CriticalChance": 0.05,
+      "StaminaLossScalar": 0.065,
+      "TrainerLevelMin": 1,
+      "TrainerLevelMax": 100,
+      "VfxName": "meteor_mash",
+      "DurationMs": 2600,
+      "DamageWindowStartMs": 2300,
+      "DamageWindowEndMs": 2500,
+      "EnergyDelta": -50,
+      "Id": "METEOR_MASH",
+      "PokemonType": {
+        "Id": "POKEMON_TYPE_STEEL",
+        "Name": "Steel"
+      },
+      "Name": "Meteor Mash",
+      "InternalId": 301
+    },
+    {
+      "AccuracyChange": 1,
+      "AnimationId": 5,
+      "Power": 29,
+      "CriticalChance": 0.05,
+      "StaminaLossScalar": 0.01,
+      "TrainerLevelMin": 1,
+      "TrainerLevelMax": 100,
+      "VfxName": "incinerate_fast",
+      "DurationMs": 2300,
+      "DamageWindowStartMs": 500,
+      "DamageWindowEndMs": 2300,
+      "EnergyDelta": 20,
+      "Id": "INCINERATE_FAST",
+      "PokemonType": {
+        "Id": "POKEMON_TYPE_FIRE",
+        "Name": "Fire"
+      },
+      "Name": "Incinerate",
+      "InternalId": 302
     }
 ]
