@@ -17,93 +17,93 @@ namespace PoGoBattleHelper.Controllers
     public class ChooseMovesController : Controller
     {
         public ChooseMovesViewModel myModel = new ChooseMovesViewModel();
-        public static List<Pokemon> myTeam = ChooseTeamController.myTeam;
+        //public static List<Pokemon> myTeam = ChooseTeamController.myTeam;
         public static Pokemon chosenPoke = new Pokemon();
 
         [HttpGet, Route("/ChooseMoves")]
         public IActionResult Index()
         {
-            myModel.MyTeam = myTeam;
+            myModel.MyTeam = ChooseTeamController.myTeam;
             return View(myModel);
         }
 
         [HttpPost, Route("/ChooseMoves")]
         public IActionResult ChooseMoves(string name)
         {
-            foreach (Pokemon poke in myTeam)
+            foreach (Pokemon poke in ChooseTeamController.myTeam)
             {
-                if (poke.Name.ToLower().Equals(name))
+                if (poke.Name.ToLower() == name)
                 {
                     chosenPoke = poke;
-                    // Tie the move information from pokemon.json to the information in move.json
-                    foreach (Move move in Move.moveList)
-                    {
-                        foreach (Move cMove in poke.CinematicMoves)
-                        {
-                            if (cMove.Id.Equals(move.Id))
-                            {
-                                cMove.PokemonType = move.PokemonType;
-                            }
-                        }
-                        foreach (Move fMove in poke.QuickMoves)
-                        {
-                            if (fMove.Id.Equals(move.Id))
-                            {
-                                fMove.PokemonType = move.PokemonType;
-                            }
-                        }
-                    }
                 }
             }
-            myModel.MyTeam = myTeam;
+            myModel.MyTeam = ChooseTeamController.myTeam;
             myModel.ChosenPoke = chosenPoke;
             //return a view that is dynamic to the pokemon and also shows all available moves in a checkbox form
-            return RedirectToAction("Moves");
+            return RedirectToAction("QuickMoves");
         }
 
-        [HttpGet, Route("/ChooseMoves/Moves")]
-        public IActionResult Moves()
+        [HttpGet, Route("/ChooseMoves/QuickMoves")]
+        public IActionResult QuickMoves()
         {
             myModel.ChosenPoke = chosenPoke;
             return View(myModel);
         }
 
-        [HttpPost, Route("/ChooseMoves/Moves")]
-        public IActionResult Moves(string fastMove, string chargedMove, string poke, string submit)
+        [HttpPost, Route("/ChooseMoves/QuickMoves")]
+        public IActionResult QuickMoves(string fastMove)
         {
-            if (submit.Equals("Submit My Moves"))
+            
+            foreach (Pokemon mon in ChooseTeamController.myTeam)
             {
-                foreach (Pokemon mon in myTeam)
+                if (mon.Name == chosenPoke.Name)
                 {
-                    if (mon.Name.Equals(poke))
+                    for (int i = 0; i < mon.QuickMoves.Count; i ++)
                     {
-                        foreach (Move fMove in mon.QuickMoves)
+                        if (mon.QuickMoves[i].Id != fastMove)
                         {
-                            if (fastMove.Equals(fMove.Id))
-                            {
-                                continue;
-                            }
-                            else if (fastMove.Equals("false"))
-                            {
-                                mon.QuickMoves.Remove(fMove);
-                            }
-                        }
-
-                        foreach (Move cMove in mon.CinematicMoves)
-                        {
-                            if (chargedMove.Equals(cMove.Id))
-                            {
-                                continue;
-                            }
-                            else if (chargedMove.Equals("false"))
-                            {
-                                mon.CinematicMoves.Remove(cMove);
-                            }
+                            Move moveToRemove = mon.QuickMoves[i];
+                            mon.QuickMoves.Remove(moveToRemove);
                         }
                     }
+
+
+
+
+
+
+
+
+
+
+                    //foreach (Move fMove in mon.QuickMoves)
+                    //{
+                    //    if (fastMove.Equals(fMove.Id))
+                    //    {
+                    //        continue;
+                    //    }
+                    //    else if (fastMove.Equals("false"))
+                    //    {
+                    //        mon.QuickMoves.Remove(fMove);
+                    //    }
+                    //}
+
+                    //foreach (Move cMove in mon.CinematicMoves)
+                    //{
+                    //    if (chargedMove.Equals(cMove.Id))
+                    //    {
+                    //        continue;
+                    //    }
+                    //    else if (chargedMove.Equals("false"))
+                    //    {
+                    //        mon.CinematicMoves.Remove(cMove);
+                    //    }
+                    //}
                 }
+                
             }
-            
+            ChooseTeamViewModel myModel = new ChooseTeamViewModel();
+            myModel.MyTeam = ChooseTeamController.myTeam;
             return RedirectToAction("Index", "Home");
 
 

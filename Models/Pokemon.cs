@@ -34,7 +34,7 @@ namespace PoGoBattleHelper.Models
         public List<object> Forms { get; set; }
 
         private static readonly string fileString = System.IO.File.ReadAllText("pokedex/pokemon.json");
-        public static readonly List<Pokemon> pokeList = JsonSerializer.Deserialize<List<Pokemon>>(fileString);
+        public static List<Pokemon> pokeList = JsonSerializer.Deserialize<List<Pokemon>>(fileString);
 
         public Pokemon(Models.Type type1, Models.Type type2)
         {
@@ -143,6 +143,34 @@ namespace PoGoBattleHelper.Models
         {
             Type1 = type1;
             Type2 = type2;
+        }
+    }
+
+    public class CinematicMoves
+    {
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public Models.Type PokemonType { get; set; }
+
+        public CinematicMoves(string id, string name, Models.Type pokemonType)
+        {
+            Id = id;
+            Name = name;
+            PokemonType = pokemonType;
+        }
+    }
+
+    public class FastMoves
+    {
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public Models.Type PokemonType { get; set; }
+
+        public FastMoves(string id, string name, Models.Type pokemonType)
+        {
+            Id = id;
+            Name = name;
+            PokemonType = pokemonType;
         }
     }
 }

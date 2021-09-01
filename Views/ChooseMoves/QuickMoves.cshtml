@@ -130,70 +130,36 @@
             </tbody>
         </table>
         <br />
-        <div class="mx-auto text-center"><h4><strong>AVAILABLE MOVES FOR THIS POKE</strong></h4></div><br />
-        <div class="mx-auto text-center"><h5>Please choose 1 Fast Move and 1-2 Charged Moves.</h5></div><br />
-        <form id="@Model.ChosenPoke.Name" name="poke" action="Moves" method="post">
-            <input type="hidden" id="@Model.ChosenPoke.Name" name="poke" value="@Model.ChosenPoke.Name" />
-        </form>
+        <div class="mx-auto text-center"><h4><strong>AVAILABLE FAST MOVES FOR THIS POKE</strong></h4></div><br />
+        <div class="mx-auto text-center"><h5>Please choose 1 Fast Move.</h5></div><br />
+        
         <table class="mx-auto text-center">
             <tbody>
                 @*ADD IN A TABLE THAT LISTS ALL MOVES FOR THE POKE*@
                 <tr class="align-top text-center">
-                    <td class="align-top" width="50%">
-                        <table class="m-3 align-top">
-                            <tbody>
-                                <tr>
-                                    <td colspan="3">
-                                        <div class="text-center"><h5><strong>Available Fast Moves</strong></h5></div>
-                                    </td>
-                                </tr>
-                                @foreach (Move fastMove in Model.ChosenPoke.QuickMoves)
-                                {
-                                    <tr>
-                                        <td class="align-top">
-                                            <form id="@fastMove.Id" name="fastMove" valign="bottom" method="post" action="Moves" class="m-2">
-                                                <input type="hidden" id="@fastMove.Id" name="fastMove" value="false" />
-                                                <input type="checkbox" id="@fastMove.Id" name="fastMove" value="@fastMove.Id" />
-                                            </form>
-                                        </td>
-                                        <td><img alt="@fastMove.PokemonType.Name" src="~/images/types/@(fastMove.PokemonType.Id).png" height="45" /></td>
-                                        <td><h5 class="mx-auto text-left">@fastMove.Name</h5></td>                                        
-                                    </tr>
-                                }
-
-                            </tbody>
-                        </table>
-                    </td>
-                    <td class="align-top" width="50%">
-                        <table class="m-3 align-top">
-                            <tbody>
-                                <tr>
-                                    <td colspan="3">
-                                        <div class="text-center"><h5><strong>Available Charged Moves</strong></h5></div>
-                                    </td>
-                                </tr>
-                                @foreach (Move chargedMove in Model.ChosenPoke.CinematicMoves)
-                                {
-                                    <tr>
-                                        <td class="align-top">
-                                            <form id="@chargedMove.Id" name="chargedMove" valign="bottom" method="post" action="Moves" class="m-2">
-                                                <input type="hidden" id="@chargedMove.Id" name="chargedMove" value="false" />
-                                                <input type="checkbox" id="@chargedMove.Id" name="chargedMove" value="@chargedMove.Id" />
-                                            </form>
-                                        </td>
-                                        <td><img alt="@chargedMove.PokemonType.Name" src="~/images/types/@(chargedMove.PokemonType.Id).png" height="45" /></td>
-                                        <td><h5 class="mx-auto text-left">@chargedMove.Name</h5></td>
-                                    </tr>
-                                }
-                            </tbody>
-                        </table>
+                    <td colspan="3">
+                        <div class="text-center"><h5><strong>Available Fast Moves</strong></h5></div>
                     </td>
                 </tr>
+                <tr>
+                    <td class="text-left">
+                        <form id="fastMove" name="fastMove" valign="bottom" method="post" action="QuickMoves" class="m-2">
+                            @foreach (Move fastMove in Model.ChosenPoke.QuickMoves)
+                            {
+                                <input type="hidden" id="fastMove" name="@fastMove.Id" value="false" />
+                                <input type="checkbox" id="fastMove" name="@fastMove.Id" value="@fastMove.Id" />
+                                <label for="fastMove" class="h5"><img alt="@fastMove.PokemonType.Name" src="~/images/types/@(fastMove.PokemonType.Id).png" height="45" />&nbsp;@fastMove.Name</label><br />
+                            }
+                                <button class="btn btn-success" type="submit">Submit My Moves!</button>
+                            </form>
+                    </td>                                      
+                </tr>
+                
             </tbody>
         </table>
         <br />
         <div class="mx-auto text-center">
-            <input class="btn btn-success" name="submit" type="submit" action="Moves" value="Submit My Moves" />
+            
         </div>
 
 
@@ -226,23 +192,7 @@
 
 
 
-
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 else
 {

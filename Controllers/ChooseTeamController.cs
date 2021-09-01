@@ -24,8 +24,31 @@ namespace PoGoBattleHelper.Controllers
         [HttpGet, Route("/GetType")]
         public IActionResult Index()
         {
+            foreach (Pokemon poke in Pokemon.pokeList)
+            {
+                foreach (Move move in Move.moveList)
+                {
+                    foreach (Move fMove in poke.QuickMoves)
+                    {
+                        if (fMove.Id == move.Id)
+                        {
+                            fMove.PokemonType = move.PokemonType;
+                        }
+                    }
+                    foreach(Move cMove in poke.CinematicMoves)
+                    {
+                        if (cMove.Id == move.Id)
+                        {
+                            cMove.PokemonType = move.PokemonType;
+                        }
+                    }
+                }
+            }
+
+
             myModel.Pokes = Pokemon.pokeList;
             myModel.Types = Models.Type.typeList;
+            myModel.Moves = Move.moveList;
             myModel.PossiblePokes = possiblePokes;
             myModel.PossiblePokes2Types = possiblePokes2Types;
             return View(myModel);
