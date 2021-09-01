@@ -152,3 +152,42 @@
         </table>
     }
 </div>
+
+
+@if (Model.MyTeam != null)
+{
+    <div class="mx-auto text-center"><h4><strong>My Team Test</strong></h4></div>
+    @if (Model.MyTeam.Count == 0)
+    {<div class="mx-auto text-center">Please choose a team to test me</div>}
+    <table class="table mx-auto">
+        <tbody>
+            @foreach (Pokemon poke in Model.MyTeam)
+            {
+                <tr>
+                    <td>
+                        <b>Poke:</b> @poke.Name
+                    </td>
+                    @foreach (PoGoBattleHelper.Models.Type type in poke.Types)
+                    {
+                        <td>
+                            <b>Type:</b> @type.Name
+                        </td>
+                    }
+                    @foreach (Move move in poke.CinematicMoves)
+                    {
+                        <td>
+                            <b>Charged Move:</b> @move.Name
+                        </td>
+                        <td>MOVE TEST: @move.PokemonType.Name</td>
+                    }
+                    @foreach (Move move in poke.QuickMoves)
+                    {
+                        <td>
+                            <b>Fast Move:</b>  @move.Name
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}

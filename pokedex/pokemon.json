@@ -28713,12 +28713,12 @@
                 "Id": "FIRE_BLAST"
             },
             {
-              "Name": "Solar Beam",
-              "Id": "SOLAR_BEAM"
+                "Name": "Solar Beam",
+                "Id": "SOLAR_BEAM"
             },
             {
-              "Name": "Earthquake",
-              "Id": "EARTHQUAKE"
+                "Name": "Earthquake",
+                "Id": "EARTHQUAKE"
             }
         ],
         "QuickMoves": [
@@ -28727,16 +28727,16 @@
                 "Id": "EXTRASENSORY_FAST"
             },
             {
-              "Name": "Steel Wing Fast",
-              "Id": "STEEL_WING_FAST"
+                "Name": "Steel Wing Fast",
+                "Id": "STEEL_WING_FAST"
             },
             {
-              "Name": "Hidden Power Fast",
-              "Id": "HIDDEN_POWER_FAST"
+                "Name": "Hidden Power Fast",
+                "Id": "HIDDEN_POWER_FAST"
             },
             {
-              "Name": "Incinerate Fast",
-              "Id": "INCINERATE_FAST"
+                "Name": "Incinerate Fast",
+                "Id": "INCINERATE_FAST"
             }
         ],
         "Family": {

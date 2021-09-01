@@ -18,9 +18,9 @@
                         foreach (PoGoBattleHelper.Models.Type type in Model.Types)
                         {
                             <td>
-                                <form id=@type.Name.ToLower() name="type" valign="center" method="post" action="GetType">
-                                    <input type="hidden" id=@type.Name.ToLower() name="type" value=@type.Name.ToLower() />
-                                    <input id=@type.Name.ToLower() name="type" type="image" alt=@type.Name src="~/images/types/@(type.Id).png">
+                                <form id="@type.Name.ToLower()" name="type" valign="center" method="post" action="GetType">
+                                    <input type="hidden" id="@type.Name.ToLower()" name="type" value="@type.Name.ToLower()" />
+                                    <input id="@type.Name.ToLower()" name="type" type="image" alt="@type.Name" src="~/images/types/@(type.Id).png">
                                 </form>
                             </td>
                             counter++;

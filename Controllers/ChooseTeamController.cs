@@ -45,7 +45,6 @@ namespace PoGoBattleHelper.Controllers
                 }
             }
 
-
             myModel.Pokes = Pokemon.pokeList;
             myModel.Types = Models.Type.typeList;
             myModel.Moves = Move.moveList;

@@ -53,20 +53,28 @@ namespace PoGoBattleHelper.Controllers
         [HttpPost, Route("/ChooseMoves/QuickMoves")]
         public IActionResult QuickMoves(string fastMove)
         {
-            
             foreach (Pokemon mon in ChooseTeamController.myTeam)
             {
                 if (mon.Name == chosenPoke.Name)
                 {
-                    for (int i = 0; i < mon.QuickMoves.Count; i ++)
+                    for (int i = 0; i < mon.QuickMoves.Count(); i++)
                     {
-                        if (mon.QuickMoves[i].Id != fastMove)
+                        if (fastMove != mon.QuickMoves[i].Id)
                         {
-                            Move moveToRemove = mon.QuickMoves[i];
-                            mon.QuickMoves.Remove(moveToRemove);
+                            mon.QuickMoves.Remove(mon.QuickMoves[i]);
+                        }
+                        else
+                        {
+                            continue;
                         }
                     }
-
+                    //foreach (Move qMove in mon.QuickMoves)
+                    //{
+                    //    if (qMove.Id != fastMove)
+                    //    {
+                    //        mon.QuickMoves.Remove(qMove);
+                    //    }
+                    //}
 
 
 
@@ -102,9 +110,12 @@ namespace PoGoBattleHelper.Controllers
                 }
                 
             }
-            ChooseTeamViewModel myModel = new ChooseTeamViewModel();
+            
             myModel.MyTeam = ChooseTeamController.myTeam;
-            return RedirectToAction("Index", "Home");
+            myModel.Moves = Move.moveList;
+            myModel.Pokes = Pokemon.pokeList;
+            myModel.Types = Models.Type.typeList;
+            return View("Index", myModel);
 
 
 
