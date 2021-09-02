@@ -17,7 +17,6 @@ namespace PoGoBattleHelper.Controllers
     public class ChooseMovesController : Controller
     {
         public ChooseMovesViewModel myModel = new ChooseMovesViewModel();
-        //public static List<Pokemon> myTeam = ChooseTeamController.myTeam;
         public static Pokemon chosenPoke = new Pokemon();
 
         [HttpGet, Route("/ChooseMoves")]
