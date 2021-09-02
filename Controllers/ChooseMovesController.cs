@@ -51,80 +51,56 @@ namespace PoGoBattleHelper.Controllers
         }
 
         [HttpPost, Route("/ChooseMoves/QuickMoves")]
-        public IActionResult QuickMoves(string fastMove)
+        public IActionResult QuickMoves(ICollection<string> fastMove)
         {
             foreach (Pokemon mon in ChooseTeamController.myTeam)
             {
                 if (mon.Name == chosenPoke.Name)
                 {
-                    for (int i = 0; i < mon.QuickMoves.Count(); i++)
+                    foreach (string id in fastMove)
                     {
-                        if (fastMove != mon.QuickMoves[i].Id)
-                        {
-                            mon.QuickMoves.Remove(mon.QuickMoves[i]);
-                        }
-                        else
+                        if (id == "false")
                         {
                             continue;
                         }
+                        else
+                        {
+                            for (int i = 0; i < mon.QuickMoves.Count(); i++)
+                            {
+                                Move move = mon.QuickMoves[i];
+                                if (id == move.Id)
+                                {
+                                    continue;
+                                }
+                                else
+                                {
+                                    mon.QuickMoves.Remove(move);
+                                    if (mon.QuickMoves.Count() == 1)
+                                    {
+                                        i = 0;
+                                    }
+                                    else if (i >= mon.QuickMoves.Count()-1)
+                                    {
+                                        i = -1;
+                                    }
+                                }
+                            }
+                        }
                     }
-                    //foreach (Move qMove in mon.QuickMoves)
-                    //{
-                    //    if (qMove.Id != fastMove)
-                    //    {
-                    //        mon.QuickMoves.Remove(qMove);
-                    //    }
-                    //}
-
-
-
-
-
-
-
-
-
-                    //foreach (Move fMove in mon.QuickMoves)
-                    //{
-                    //    if (fastMove.Equals(fMove.Id))
-                    //    {
-                    //        continue;
-                    //    }
-                    //    else if (fastMove.Equals("false"))
-                    //    {
-                    //        mon.QuickMoves.Remove(fMove);
-                    //    }
-                    //}
-
-                    //foreach (Move cMove in mon.CinematicMoves)
-                    //{
-                    //    if (chargedMove.Equals(cMove.Id))
-                    //    {
-                    //        continue;
-                    //    }
-                    //    else if (chargedMove.Equals("false"))
-                    //    {
-                    //        mon.CinematicMoves.Remove(cMove);
-                    //    }
-                    //}
                 }
-                
             }
             
             myModel.MyTeam = ChooseTeamController.myTeam;
             myModel.Moves = Move.moveList;
             myModel.Pokes = Pokemon.pokeList;
             myModel.Types = Models.Type.typeList;
+
+
+            // THIS IS HOW YOU RETURN A VIEW WITH A MODEL, IF IT'S FOR A DIFFERENT CONTROLLER YOU HAVE TO PUT THE CONTROLLER NAME FIRST
+            // return View("Index", myModel);
+
+            // THIS IS WHERE I WILL ACTUALLY RETURN THE VIEW FOR THE NEXT MOVE CHOICE THIS "return View("Index", myModel);" MUST BE CHANGED
             return View("Index", myModel);
-
-
-
-
-
-
-
-
-
         }
 
 

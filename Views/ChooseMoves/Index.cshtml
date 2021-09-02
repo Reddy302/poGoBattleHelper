@@ -3,9 +3,6 @@
 <div class="mx-auto pt-4 pb-3 text-center">
     <h3 class="h3"><strong>Your Team</strong></h3>
 </div>
-<div class="mx-auto pt-4 pb-3 text-center">
-    <a asp-controller="Home" asp-action="Index">TEST TEAM WITH MOVES</a>
-</div>
 <div class="mx-auto text-center">
     @if (Model.MyTeam.Count == 0)
     {
@@ -178,7 +175,7 @@
                         <td>
                             <b>Charged Move:</b> @move.Name
                         </td>
-                        <td>MOVE TEST: @move.PokemonType.Name</td>
+                        <td><b>Move Type:</b> @move.PokemonType.Name</td>
                     }
                     @foreach (Move move in poke.QuickMoves)
                     {

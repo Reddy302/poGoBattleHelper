@@ -143,17 +143,18 @@
                 </tr>
                 <tr>
                     <td class="text-left">
+                        <form id="fastMoveForm" name="fastMoveForm" valign="bottom" method="post" action="QuickMoves" class="m-2">
 
-                        @foreach (Move fastMove in Model.ChosenPoke.QuickMoves)
-                        {
-                            <form id="fastMove" name="fastMove" valign="bottom" method="post" action="QuickMoves" class="m-2">
-                                @*<input type="hidden" id="@fastMove.Id" name="fastMove" value="false" />*@
+                            @foreach (Move fastMove in Model.ChosenPoke.QuickMoves)
+                            {
+                                <input type="hidden" id="@fastMove.Id" name="fastMove" value="false" />
                                 <input type="checkbox" id="@fastMove.Id" name="fastMove" value="@fastMove.Id" />
                                 <label for="fastMove" class="h5"><img alt="@fastMove.PokemonType.Name" src="~/images/types/@(fastMove.PokemonType.Id).png" height="45" />&nbsp;@fastMove.Name</label><br />
-                            </form>
-                        }
-                        <br />
-                        <button class="btn btn-success" type="submit" form="fastMove">Submit My Moves!</button>
+
+                            }
+                            <br />
+                            <button class="btn btn-success" type="submit" form="fastMoveForm">Submit My Moves!</button>
+                        </form>
                     </td>                                      
                 </tr>
             </tbody>
