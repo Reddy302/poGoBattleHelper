@@ -131,43 +131,40 @@
         </table>
         <br />
         <div class="mx-auto text-center"><h4><strong>AVAILABLE CHARGED MOVES FOR THIS POKE</strong></h4></div><br />
-        <div class="mx-auto text-center"><h5>Please choose 1-2 Charged Moves.</h5></div><br />
+        <div class="mx-auto text-center"><h5>Please choose up to 2 Charged Moves.</h5></div><br />
 
         <table class="mx-auto text-center">
             <tbody>
                 @*ADD IN A TABLE THAT LISTS ALL MOVES FOR THE POKE*@
                 <tr class="align-top text-center">
-                    <td class="align-top">
-                        <table class="m-3 align-top">
-                            <tbody>
-                                <tr>
-                                    <td colspan="3">
-                                        <div class="text-center"><h5><strong>Available Charged Moves</strong></h5></div>
-                                    </td>
-                                </tr>
-                                @foreach (Move chargedMove in Model.ChosenPoke.CinematicMoves)
-                                {
-                                    <tr>
-                                        <td class="align-top">
-                                            <form id="@chargedMove.Id" name="chargedMove" valign="bottom" method="post" action="ChargedMoves" class="m-2">
-                                                <input type="hidden" id="@chargedMove.Id" name="chargedMove" value="false" />
-                                                <input type="checkbox" id="@chargedMove.Id" name="chargedMove" value="@chargedMove.Id" />
-                                            </form>
-                                        </td>
-                                        <td><img alt="@chargedMove.PokemonType.Name" src="~/images/types/@(chargedMove.PokemonType.Id).png" height="45" /></td>
-                                        <td><h5 class="mx-auto text-left">@chargedMove.Name</h5></td>
-                                    </tr>
-                                }
-                            </tbody>
-                        </table>
+                    <td colspan="3">
+                        <div class="text-center"><h5><strong>Available Charged Moves</strong></h5></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-left">
+                        <form id="chargedMoveForm" name="chargedMoveForm" valign="bottom" method="post" action="ChargedMoves" class="m-2">
+
+                            @foreach (Move chargedMove in Model.ChosenPoke.CinematicMoves)
+                            {
+                                <input type="hidden" id="@chargedMove.Id" name="chargedMove" value="false" />
+                                <input type="checkbox" id="@chargedMove.Id" name="chargedMove" value="@chargedMove.Id" />
+                                <label for="chargedMove" class="h5"><img alt="@chargedMove.PokemonType.Name" src="~/images/types/@(chargedMove.PokemonType.Id).png" height="45" />&nbsp;@chargedMove.Name</label><br />
+                            }
+                            <br />
+                            <button class="btn btn-success" type="submit" form="chargedMoveForm">Submit My Moves!</button>
+                        </form>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <br />
-        <div class="mx-auto text-center">
-            <input class="btn btn-success" name="submit" type="submit" action="Moves" value="Submit My Moves" />
-        </div>
-
     </div>
+}
+else
+{
+    <div class="mx-auto text-center">SOMETHING WENT WRONG. TRY AGAIN</div>
+    <br />
+    <form method="post" action="MyTeam" id="myTeam" name="myTeam" class="mx-auto text-center">
+        <button class="btn btn-danger" name="myTeam" value="myTeam" id="myTeam">GO BACK TO MY TEAM</button>
+    </form>
 }

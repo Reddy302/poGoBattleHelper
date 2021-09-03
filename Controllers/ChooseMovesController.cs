@@ -18,11 +18,25 @@ namespace PoGoBattleHelper.Controllers
     {
         public ChooseMovesViewModel myModel = new ChooseMovesViewModel();
         public static Pokemon chosenPoke = new Pokemon();
+        public static List<Pokemon> tempTeam = new List<Pokemon>();
 
         [HttpGet, Route("/ChooseMoves")]
         public IActionResult Index()
         {
-            myModel.MyTeam = ChooseTeamController.myTeam;
+            if (tempTeam.Count() == 0)
+            {
+                foreach (Pokemon poke in Pokemon.pokeList)
+                {
+                    foreach (Pokemon mon in ChooseTeamController.myTeam)
+                    {
+                        if (poke.Id == mon.Id)
+                        {
+                            tempTeam.Add(poke);
+                        }
+                    }
+                }
+            }
+            myModel.MyTeam = tempTeam;
             return View(myModel);
         }
 
@@ -36,20 +50,19 @@ namespace PoGoBattleHelper.Controllers
                     chosenPoke = poke;
                 }
             }
-            myModel.MyTeam = ChooseTeamController.myTeam;
+            myModel.MyTeam = tempTeam;
             myModel.ChosenPoke = chosenPoke;
-            //return a view that is dynamic to the pokemon and also shows all available moves in a checkbox form
             return RedirectToAction("QuickMoves");
         }
 
-        [HttpGet, Route("/ChooseMoves/QuickMoves")]
+        [HttpGet, Route("/QuickMoves")]
         public IActionResult QuickMoves()
         {
             myModel.ChosenPoke = chosenPoke;
             return View(myModel);
         }
 
-        [HttpPost, Route("/ChooseMoves/QuickMoves")]
+        [HttpPost, Route("/QuickMoves")]
         public IActionResult QuickMoves(ICollection<string> fastMove)
         {
             foreach (Pokemon mon in ChooseTeamController.myTeam)
@@ -74,34 +87,58 @@ namespace PoGoBattleHelper.Controllers
                                 else
                                 {
                                     mon.QuickMoves.Remove(move);
-                                    if (mon.QuickMoves.Count() == 1)
-                                    {
-                                        i = 0;
-                                    }
-                                    else if (i >= mon.QuickMoves.Count()-1)
-                                    {
-                                        i = -1;
-                                    }
+                                    i--;
                                 }
                             }
                         }
                     }
                 }
             }
+
+            //myModel.ChosenPoke = chosenPoke;
             
-            myModel.MyTeam = ChooseTeamController.myTeam;
-            myModel.Moves = Move.moveList;
-            myModel.Pokes = Pokemon.pokeList;
-            myModel.Types = Models.Type.typeList;
-
-
             // THIS IS HOW YOU RETURN A VIEW WITH A MODEL, IF IT'S FOR A DIFFERENT CONTROLLER YOU HAVE TO PUT THE CONTROLLER NAME FIRST
             // return View("Index", myModel);
 
             // THIS IS WHERE I WILL ACTUALLY RETURN THE VIEW FOR THE NEXT MOVE CHOICE THIS "return View("Index", myModel);" MUST BE CHANGED
-            return View("Index", myModel);
+            return RedirectToAction("ChargedMoves");
+        }
+        
+        [HttpGet, Route("/ChargedMoves")]
+        public IActionResult ChargedMoves()
+        {
+            myModel.ChosenPoke = chosenPoke;
+            return View(myModel);
         }
 
+        [HttpPost, Route("/ChargedMoves")]
+        public IActionResult ChargedMoves(IList<string> chargedMove)
+        {
+            List<Move> chosenMoves = new List<Move>();
+            foreach (Pokemon mon in ChooseTeamController.myTeam)
+            {
+                if (mon.Name == chosenPoke.Name)
+                {
+                    for (int i = 0; i < mon.CinematicMoves.Count(); i++)
+                    {
+                        Move move = mon.CinematicMoves[i];
+                        for (int j = 0; j < chargedMove.Count(); j++)
+                        {
+                            string id = chargedMove[j];
+                            if (id == move.Id)
+                            {
+                                chosenMoves.Add(move);
+                                chargedMove.Remove(id);
+                                j--;
+                                continue;
+                            }
+                            else if (id == "false")
+                            {
+                                continue;
+                            }
+                        }
+                    }
+                    mon.CinematicMoves = chosenMoves;
 
 
 
@@ -112,5 +149,75 @@ namespace PoGoBattleHelper.Controllers
 
 
 
+
+
+
+
+
+                    //foreach (string id in chargedMove)
+                    //{
+                    //    if (id == "false")
+                    //    {
+                    //        continue;
+                    //    }
+                    //    else
+                    //    {
+                    //        for (int i = 0; i < mon.CinematicMoves.Count(); i++)
+                    //        {
+                    //            Move move = mon.CinematicMoves[i];
+                    //            if (id == move.Id)
+                    //            {
+                    //                continue;
+                    //            }
+                    //            else
+                    //            {
+                    //                mon.CinematicMoves.Remove(move);
+                    //                if (mon.CinematicMoves.Count() == 1)
+                    //                {
+                    //                    i = 0;
+                    //                }
+                    //                else if (i >= mon.CinematicMoves.Count() - 1)
+                    //                {
+                    //                    i = -1;
+                    //                }
+                    //            }
+                    //        }
+                    //    }
+                    //}
+                }
+                else
+                {
+                    continue;
+                }
+            }
+            if (tempTeam.Count() == 1)
+            {
+                // RETURN THE VIEW FOR THE NEXT STEP - MAYBE A CONFIRMATION SCREEN WITH ALL POKES AND CHOSEN MOVES
+                myModel.MyTeam = ChooseTeamController.myTeam;
+                return View("ConfirmationScreen", myModel);
+            }
+            else
+            {
+                tempTeam.Remove(chosenPoke);
+                myModel.MyTeam = tempTeam;
+                myModel.Moves = Move.moveList;
+                myModel.Pokes = Pokemon.pokeList;
+                myModel.Types = Models.Type.typeList;
+                return RedirectToAction("Index");
+            }
+
+
+            //[HttpGet, Route("/ConfirmationScreen")]
+            //public IActionResult ConfirmationScreen()
+            //{
+            //    myModel.MyTeam = ChooseTeamController.myTeam;
+            //    return View(myModel);
+            //}
+
+
+
+
+
+        }
     }
 }

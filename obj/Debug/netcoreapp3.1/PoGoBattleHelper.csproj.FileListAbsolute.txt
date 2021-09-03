@@ -136,3 +136,4 @@ C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\Choo
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\ChooseMoves\Index.cshtml.g.cs
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\ChooseMoves\ChargedMoves.cshtml.g.cs
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\ChooseMoves\QuickMoves.cshtml.g.cs
+C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\ChooseMoves\ConfirmationScreen.cshtml.g.cs
