@@ -1,176 +1,185 @@
 ﻿@model PoGoBattleHelper.ViewModels.ChooseMovesViewModel;
 
-<div class="mx-auto text-center h1">THIS WILL BE YOUR CONFIRMATION SCREEN</div>
-
-<table class="mx-auto text-center">
-    <tbody>
-        <tr>
-            @foreach (Pokemon poke in Model.MyTeam)
-            {
-                string modifier = "00";
-                if (poke.Name.ToLower().Contains("castform sunny"))
-                {
-                    modifier = "12";
-                }
-                else if (poke.Name.ToLower().Contains("castform rainy"))
-                {
-                    modifier = "13";
-                }
-                else if (poke.Name.ToLower().Contains("castform snowy"))
-                {
-                    modifier = "14";
-                }
-                else if (poke.Name.ToLower().Contains("deoxys attack"))
-                {
-                    modifier = "16";
-                }
-                else if (poke.Name.ToLower().Contains("deoxys defense"))
-                {
-                    modifier = "17";
-                }
-                else if (poke.Name.ToLower().Contains("deoxys speed"))
-                {
-                    modifier = "18";
-                }
-                else if (poke.Name.ToLower().Contains("burmy plant"))
-                {
-                    modifier = "19";
-                }
-                else if (poke.Name.ToLower().Contains("burmy sandy"))
-                {
-                    modifier = "20";
-                }
-                else if (poke.Name.ToLower().Contains("burmy trash"))
-                {
-                    modifier = "21";
-                }
-                else if (poke.Name.ToLower().Contains("wormdam plant"))
-                {
-                    modifier = "22";
-                }
-                else if (poke.Name.ToLower().Contains("wormdam sandy"))
-                {
-                    modifier = "23";
-                }
-                else if (poke.Name.ToLower().Contains("wormdam trash"))
-                {
-                    modifier = "24";
-                }
-                else if (poke.Name.ToLower().Contains("cherrim overcast"))
-                {
-                    modifier = "25";
-                }
-                else if (poke.Name.ToLower().Contains("cherrim sunny"))
-                {
-                    modifier = "26";
-                }
-                else if (poke.Name.ToLower().Contains("rotom heat"))
-                {
-                    modifier = "27";
-                }
-                else if (poke.Name.ToLower().Contains("rotom wash"))
-                {
-                    modifier = "28";
-                }
-                else if (poke.Name.ToLower().Contains("rotom frost"))
-                {
-                    modifier = "29";
-                }
-                else if (poke.Name.ToLower().Contains("rotom fan"))
-                {
-                    modifier = "30";
-                }
-                else if (poke.Name.ToLower().Contains("rotom mow"))
-                {
-                    modifier = "91";
-                }
-                else if (poke.Name.ToLower().Contains("giratina altered"))
-                {
-                    modifier = "32";
-                }
-                else if (poke.Name.ToLower().Contains("giratina origin"))
-                {
-                    modifier = "33";
-                }
-                else if (poke.Name.ToLower().Contains("shaymin land"))
-                {
-                    modifier = "34";
-                }
-                else if (poke.Name.ToLower().Contains("shaymin sky"))
-                {
-                    modifier = "35";
-                }
-                else if (poke.Name.ToLower().Contains("alola"))
-                {
-                    modifier = "61";
-                }
-                else if (poke.Name.ToLower().Contains("galar"))
-                {
-                    modifier = "31";
-                }
-                else if (poke.Name.ToLower().Contains("mega"))
-                {
-                    modifier = "51";
-                }
-                else
-                {
-                    modifier = "00";
-                }
-
-                string dex = poke.Dex.ToString("D3");
-
-                <td class="p-3">
-                    <div class="py-3 px-3 text-center">
-                        <img class="py-0" src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png" alt="@poke.Name" style="height: 130px; max-width: 150px" />
-                        <br />
-                        <div class="py-0"><strong>@poke.Name</strong></div>
-                    </div>
-                </td>
-            }
-        </tr>
-    </tbody>
-</table>
-
-
-
-
+<div class="mx-auto text-center h1">Your Team</div>
 
 @if (Model.MyTeam != null)
 {
-    <div class="mx-auto text-center"><h4><strong>My Team Test</strong></h4></div>
+    <table class="mx-auto text-center">
+        <tbody>
+            <tr>
+                @foreach (Pokemon poke in Model.MyTeam)
+                {
+                    string modifier = "00";
+                    if (poke.Name.ToLower().Contains("castform sunny"))
+                    {
+                        modifier = "12";
+                    }
+                    else if (poke.Name.ToLower().Contains("castform rainy"))
+                    {
+                        modifier = "13";
+                    }
+                    else if (poke.Name.ToLower().Contains("castform snowy"))
+                    {
+                        modifier = "14";
+                    }
+                    else if (poke.Name.ToLower().Contains("deoxys attack"))
+                    {
+                        modifier = "16";
+                    }
+                    else if (poke.Name.ToLower().Contains("deoxys defense"))
+                    {
+                        modifier = "17";
+                    }
+                    else if (poke.Name.ToLower().Contains("deoxys speed"))
+                    {
+                        modifier = "18";
+                    }
+                    else if (poke.Name.ToLower().Contains("burmy plant"))
+                    {
+                        modifier = "19";
+                    }
+                    else if (poke.Name.ToLower().Contains("burmy sandy"))
+                    {
+                        modifier = "20";
+                    }
+                    else if (poke.Name.ToLower().Contains("burmy trash"))
+                    {
+                        modifier = "21";
+                    }
+                    else if (poke.Name.ToLower().Contains("wormdam plant"))
+                    {
+                        modifier = "22";
+                    }
+                    else if (poke.Name.ToLower().Contains("wormdam sandy"))
+                    {
+                        modifier = "23";
+                    }
+                    else if (poke.Name.ToLower().Contains("wormdam trash"))
+                    {
+                        modifier = "24";
+                    }
+                    else if (poke.Name.ToLower().Contains("cherrim overcast"))
+                    {
+                        modifier = "25";
+                    }
+                    else if (poke.Name.ToLower().Contains("cherrim sunny"))
+                    {
+                        modifier = "26";
+                    }
+                    else if (poke.Name.ToLower().Contains("rotom heat"))
+                    {
+                        modifier = "27";
+                    }
+                    else if (poke.Name.ToLower().Contains("rotom wash"))
+                    {
+                        modifier = "28";
+                    }
+                    else if (poke.Name.ToLower().Contains("rotom frost"))
+                    {
+                        modifier = "29";
+                    }
+                    else if (poke.Name.ToLower().Contains("rotom fan"))
+                    {
+                        modifier = "30";
+                    }
+                    else if (poke.Name.ToLower().Contains("rotom mow"))
+                    {
+                        modifier = "91";
+                    }
+                    else if (poke.Name.ToLower().Contains("giratina altered"))
+                    {
+                        modifier = "32";
+                    }
+                    else if (poke.Name.ToLower().Contains("giratina origin"))
+                    {
+                        modifier = "33";
+                    }
+                    else if (poke.Name.ToLower().Contains("shaymin land"))
+                    {
+                        modifier = "34";
+                    }
+                    else if (poke.Name.ToLower().Contains("shaymin sky"))
+                    {
+                        modifier = "35";
+                    }
+                    else if (poke.Name.ToLower().Contains("alola"))
+                    {
+                        modifier = "61";
+                    }
+                    else if (poke.Name.ToLower().Contains("galar"))
+                    {
+                        modifier = "31";
+                    }
+                    else if (poke.Name.ToLower().Contains("mega"))
+                    {
+                        modifier = "51";
+                    }
+                    else
+                    {
+                        modifier = "00";
+                    }
+
+                    string dex = poke.Dex.ToString("D3");
+
+                    <td class="p-3">
+                        <div class="py-3 px-3 text-center">
+                            <img class="py-0" src="~/images/pokes/pokemon_icon_@(dex)_@(modifier).png" alt="@poke.Name" style="height: 130px; max-width: 150px" />
+                            <br />
+                            <div class="py-0"><strong>@poke.Name</strong></div>
+                            @foreach (PoGoBattleHelper.Models.Type type in poke.Types)
+                            {
+                                <img class="py-0" src="~/images/types/@(type.Id).png" alt="@type.Name" style="max-width: 32px;" />
+                            }
+                        </div>
+                    </td>
+                }
+            </tr>
+        </tbody>
+    </table>
+
+
     @if (Model.MyTeam.Count == 0)
-    {<div class="mx-auto text-center">Please choose a team to test me</div>}
+    {<div class="mx-auto text-center"><a asp-controller="ChooseTeam" asp-action="Index">Please choose a team</a></div>}
     <table class="table mx-auto">
         <tbody>
+            <tr class="mx-auto text-center">
+                <th class="mx-auto text-left"><b>Pokemon</b></th>
+                <th class="mx-auto text-left"><b>Fast Move</b></th>
+                <th class="mx-auto text-left"><b>Charged Move 1</b></th>
+                <th class="mx-auto text-left"><b>Charged Move 2 (optional)</b></th>
+            </tr>
             @foreach (Pokemon poke in Model.MyTeam)
             {
-            <tr>
-                <td>
-                    <b>Poke:</b> @poke.Name
-                </td>
-                @foreach (PoGoBattleHelper.Models.Type type in poke.Types)
-                {
+                <tr>
                     <td>
-                        <b>Type:</b> @type.Name
+                        <b>@poke.Name</b>
                     </td>
-                }
-                @foreach (Move move in poke.QuickMoves)
-                {
-                    <td>
-                        <b>Fast Move:</b>  @move.Name<br />
-                        <b>Move Type:</b> @move.PokemonType.Name
-                    </td>
-                }
-                @foreach (Move move in poke.CinematicMoves)
-                {
-                    <td>
-                        <b>Charged Move:</b> @move.Name<br />
-                        <b>Move Type:</b> @move.PokemonType.Name
-                    </td>
-                }
+                    @foreach (Move move in poke.QuickMoves)
+                    {
+                        <td class="mx-auto text-left">
+                            <div class="mx-auto text-left">
+                                <img class="py-0" src="~/images/types/@(move.PokemonType.Id).png" alt="@poke.Name" style="max-width: 40px" />
+                                @move.Name
+                            </div>
+                        </td>
+                    }
+                    @foreach (Move move in poke.CinematicMoves)
+                    {
+                        <td class="mx-auto text-left">
+                            <img class="py-0" src="~/images/types/@(move.PokemonType.Id).png" alt="@poke.Name" style="max-width: 40px" />
+                            @move.Name
+                        </td>
+                    }
 
-            </tr>
+                </tr>
             }
         </tbody>
     </table>
+    <br />
+    <div class="mx-auto text-center h4">Now that you have chosen your team. It's time to choose your opponent!</div><br />
+    <div class="mx-auto text-center">
+        <form method="post" action="ChargedMoves" id="chooseOpponent" name="chooseOpponent">
+            <button class="btn btn-success" name="chooseOpponent" value="true" id="chooseOpponent">CHOOSE OPPONENT</button>
+        </form>
+    </div>
 }

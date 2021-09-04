@@ -47,6 +47,7 @@ namespace PoGoBattleHelper.Controllers
     }
 }
 
+// TODO: Refactor the checkbox forms to only accept one input for fast move and two inputs for charged move
 // TODO: Find Raticate Alola sprite and add it to the pokes folder as "pokemon_icon_020_61.png"
 // TODO: Put the getType code into a Partial View once it has been refactored.
 // TODO: Add a Data Layer to the application

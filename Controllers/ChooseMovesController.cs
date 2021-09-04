@@ -112,8 +112,14 @@ namespace PoGoBattleHelper.Controllers
         }
 
         [HttpPost, Route("/ChargedMoves")]
-        public IActionResult ChargedMoves(IList<string> chargedMove)
+        public IActionResult ChargedMoves(IList<string> chargedMove, string chooseOpponent)
         {
+            if (chooseOpponent == "true")
+            {
+                // THIS WILL RETURN A REDIRECT TO ACTION FOR CHOOSE OPPONENT 
+                return View();
+            }
+
             List<Move> chosenMoves = new List<Move>();
             foreach (Pokemon mon in ChooseTeamController.myTeam)
             {
@@ -139,51 +145,6 @@ namespace PoGoBattleHelper.Controllers
                         }
                     }
                     mon.CinematicMoves = chosenMoves;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    //foreach (string id in chargedMove)
-                    //{
-                    //    if (id == "false")
-                    //    {
-                    //        continue;
-                    //    }
-                    //    else
-                    //    {
-                    //        for (int i = 0; i < mon.CinematicMoves.Count(); i++)
-                    //        {
-                    //            Move move = mon.CinematicMoves[i];
-                    //            if (id == move.Id)
-                    //            {
-                    //                continue;
-                    //            }
-                    //            else
-                    //            {
-                    //                mon.CinematicMoves.Remove(move);
-                    //                if (mon.CinematicMoves.Count() == 1)
-                    //                {
-                    //                    i = 0;
-                    //                }
-                    //                else if (i >= mon.CinematicMoves.Count() - 1)
-                    //                {
-                    //                    i = -1;
-                    //                }
-                    //            }
-                    //        }
-                    //    }
-                    //}
                 }
                 else
                 {
@@ -206,13 +167,7 @@ namespace PoGoBattleHelper.Controllers
                 return RedirectToAction("Index");
             }
 
-
-            //[HttpGet, Route("/ConfirmationScreen")]
-            //public IActionResult ConfirmationScreen()
-            //{
-            //    myModel.MyTeam = ChooseTeamController.myTeam;
-            //    return View(myModel);
-            //}
+            
 
 
 

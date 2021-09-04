@@ -74,7 +74,7 @@
         int counter2 = 0;
         <table class="mx-auto text-center">
             <tbody>
-                <tr>
+                <tr class="mx-auto text-center">
                     @foreach (Pokemon poke in Model.PossiblePokes)
                     {
                         string modifier = "00";
@@ -185,7 +185,7 @@
 
                         string dex = poke.Dex.ToString("D3");
 
-                        <td class="p-3">
+                        <td class="p-3 mx-auto text-center">
                             <div class="py-3 text-center">
                                 <form id="@poke.Name.ToLower()" name="poke" valign="bottom" method="post" action="AddPoke" class="py-0">
                                     <input type="hidden" id="@poke.Name.ToLower()" name="poke" value="@poke.Name.ToLower()" />
