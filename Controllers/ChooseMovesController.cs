@@ -95,12 +95,6 @@ namespace PoGoBattleHelper.Controllers
                 }
             }
 
-            //myModel.ChosenPoke = chosenPoke;
-            
-            // THIS IS HOW YOU RETURN A VIEW WITH A MODEL, IF IT'S FOR A DIFFERENT CONTROLLER YOU HAVE TO PUT THE CONTROLLER NAME FIRST
-            // return View("Index", myModel);
-
-            // THIS IS WHERE I WILL ACTUALLY RETURN THE VIEW FOR THE NEXT MOVE CHOICE THIS "return View("Index", myModel);" MUST BE CHANGED
             return RedirectToAction("ChargedMoves");
         }
         
@@ -117,7 +111,7 @@ namespace PoGoBattleHelper.Controllers
             if (chooseOpponent == "true")
             {
                 // THIS WILL RETURN A REDIRECT TO ACTION FOR CHOOSE OPPONENT 
-                return View();
+                return RedirectToAction("Index", "ChooseOpponent");
             }
 
             List<Move> chosenMoves = new List<Move>();

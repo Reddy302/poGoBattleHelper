@@ -1,0 +1,39 @@
+﻿@model PoGoBattleHelper.ViewModels.ChooseOpponentViewModel;
+
+<div class="mx-auto pt-4 pb-3 text-center">
+    <h3 class="h3"><strong>Choose Your Opponent Type</strong></h3>
+</div>
+<div class="mx-auto text-center">
+    @if (Model.Types == null)
+    {
+        <span><strong>SOMETHING WENT WRONG. PLEASE TRY AGAIN.</strong></span>
+        <br />
+        <a asp-controller="ChooseOpponent" asp-action="Index">Choose Opponent Pokemon by Type</a>
+    }
+    else
+    {
+        <table class="mx-auto text-center">
+            <tbody>
+                <tr>
+                    @{int counter = 0;}
+                    @foreach (PoGoBattleHelper.Models.Type type in Model.Types)
+                    {
+                        <td>
+                            <form id="@type.Name.ToLower()" name="type" valign="center" method="post" action="ChooseOpponent">
+                                <input type="hidden" id="@type.Name.ToLower()" name="type" value="@type.Name.ToLower()" />
+                                <input id="@type.Name.ToLower()" name="type" type="image" alt="@type.Name" src="~/images/types/@(type.Id).png">
+                            </form>
+                        </td>
+                        counter++;
+                        if (counter % 9 == 0)
+                        {
+                        @:</tr><tr>
+                        }
+                    }
+
+
+                </tr>
+            </tbody>
+        </table>
+    }
+</div>
