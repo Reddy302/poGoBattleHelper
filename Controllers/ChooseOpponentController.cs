@@ -20,6 +20,8 @@ namespace PoGoBattleHelper.Controllers
         private static List<Pokemon> possiblePokes = new List<Pokemon>();
         private static List<Pokemon> possiblePokes2Types = new List<Pokemon>();
         public static Pokemon opponent = new Pokemon();
+        public static List<Pokemon> myTeam = ChooseTeamController.myTeam;
+        public List<Pokemon> recommendedPokes = new List<Pokemon>();
 
         [HttpGet, Route("/ChooseOpponent")]
         public IActionResult Index()
@@ -97,8 +99,22 @@ namespace PoGoBattleHelper.Controllers
             return View("Opponent", myModel);            
         }
 
+        [HttpPost, Route("/ChooseOpponent/Recommendation")]
+        public IActionResult Recommendation(string confirm)
+        {
+            if (confirm == "true")
+            {
+                // FOREACH POKE IN MY TEAM CHECK THE TYPES OF EACH ATTACK AGAINST THE OPPONENT TYPE
+                // MAYBE THINK ABOUT ADDING UP A POINTS SYSTEM SO THAT A POKE GETS A POINT FOR EACH MOVE THAT IS STRONG AGAINST THE OPPONENT
 
 
+
+            }
+
+            myModel.Opponent = opponent;
+            myModel.MyTeam = myTeam;
+            return View(myModel);
+        }
 
 
 
