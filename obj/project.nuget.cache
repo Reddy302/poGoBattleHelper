@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "60bpAjrlVTAmwwxb7/2vfsiQC7srF/XmtrZ9FIjRpnbjObsUoZJOf9OO+iDj8ZOj6bRc2DyLWh77i/9P+vIfKQ==",
+  "dgSpecHash": "mXxHoSMf56pYkF1HJd5wthtIt9fMOxrxDc0ZUHQL5nWeTLxJex3J3P7O89pgXO2jakrhVWeCvHuCm1LzGUyuKQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\lewis\\Desktop\\Capstone Project\\PoGoBattleHelper.csproj",
   "expectedPackageFiles": [
@@ -13,7 +13,8 @@
     "C:\\Users\\lewis\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\lewis\\.nuget\\packages\\system.runtime.handles\\4.3.0\\system.runtime.handles.4.3.0.nupkg.sha512",
     "C:\\Users\\lewis\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
-    "C:\\Users\\lewis\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
+    "C:\\Users\\lewis\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
+    "C:\\Users\\lewis\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
   ],
   "logs": []
 }

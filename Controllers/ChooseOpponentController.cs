@@ -21,7 +21,8 @@ namespace PoGoBattleHelper.Controllers
         private static List<Pokemon> possiblePokes2Types = new List<Pokemon>();
         public static Pokemon opponent = new Pokemon();
         public static List<Pokemon> myTeam = ChooseTeamController.myTeam;
-        public List<Pokemon> recommendedPokes = new List<Pokemon>();
+        public Dictionary<Pokemon, List<Move>> strongPokes = new Dictionary<Pokemon, List<Move>>();
+        public Dictionary<Pokemon, List<Move>> neutralPokes = new Dictionary<Pokemon, List<Move>>();
 
         [HttpGet, Route("/ChooseOpponent")]
         public IActionResult Index()
@@ -100,19 +101,98 @@ namespace PoGoBattleHelper.Controllers
         }
 
         [HttpPost, Route("/ChooseOpponent/Recommendation")]
-        public IActionResult Recommendation(string confirm)
+        public IActionResult Recommendation(string confirm, string clear)
         {
+            if (clear == "clear")
+            {
+                opponent = new Pokemon();
+                return RedirectToAction("Index");
+            }
+            
             if (confirm == "true")
             {
                 // FOREACH POKE IN MY TEAM CHECK THE TYPES OF EACH ATTACK AGAINST THE OPPONENT TYPE
                 // MAYBE THINK ABOUT ADDING UP A POINTS SYSTEM SO THAT A POKE GETS A POINT FOR EACH MOVE THAT IS STRONG AGAINST THE OPPONENT
-
-
-
+                foreach (Pokemon poke in myTeam)
+                {
+                    int points = 0;
+                    List<Move> cMove = new List<Move>();
+                    foreach (Move qMove in poke.QuickMoves)
+                    {
+                        foreach (Damage stat in qMove.PokemonType.Damage)
+                        {
+                            foreach (Models.Type oppType in opponent.Types)
+                            {
+                                if (stat.Id == oppType.Id)
+                                {
+                                    if (stat.AttackScalar > 1)
+                                    {
+                                        points++;
+                                    }
+                                    else if (stat.AttackScalar < 1)
+                                    {
+                                        points--;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    foreach (Move chargedMove in poke.CinematicMoves)
+                    {
+                        foreach (Damage stat in chargedMove.PokemonType.Damage)
+                        {
+                            foreach (Models.Type oppType in opponent.Types)
+                            {
+                                if (stat.Id == oppType.Id)
+                                {
+                                    if (stat.AttackScalar > 1)
+                                    {
+                                        cMove.Add(chargedMove);
+                                        points += 2;
+                                    }
+                                    else if (stat.AttackScalar < 1)
+                                    {
+                                        points--;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    foreach (Models.Type pokeType in poke.Types)
+                    {
+                        foreach (Damage stat in pokeType.Damage)
+                        {
+                            foreach (Models.Type oppType in opponent.Types)
+                            {
+                                if (stat.Id == oppType.Id)
+                                {
+                                    if (stat.AttackScalar > 1)
+                                    {
+                                        points++;
+                                    }
+                                    if (stat.AttackScalar < 1)
+                                    {
+                                        points = 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (points > 1)
+                    {
+                        strongPokes.Add(poke, cMove);
+                    }
+                    if (points == 1)
+                    {
+                        neutralPokes.Add(poke, cMove);
+                    }
+                }
             }
 
             myModel.Opponent = opponent;
             myModel.MyTeam = myTeam;
+            myModel.StrongPokes = strongPokes;
+            myModel.NeutralPokes = neutralPokes;
             return View(myModel);
         }
 

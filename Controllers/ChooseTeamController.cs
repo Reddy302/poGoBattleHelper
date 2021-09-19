@@ -28,11 +28,28 @@ namespace PoGoBattleHelper.Controllers
             {
                 foreach (Move move in Move.moveList)
                 {
+                    foreach (Models.Type type in Models.Type.typeList)
+                    {
+                        if (move.PokemonType.Id == type.Id)
+                        {
+                            move.PokemonType  = type;
+                            move.PokemonType.Damage = type.Damage;                             
+                        }
+
+                        foreach (Models.Type pokeType in poke.Types)
+                        {
+                            if (pokeType.Id == type.Id)
+                            {
+                                pokeType.Damage = type.Damage;
+                            }
+                        }
+                    }
                     foreach (Move fMove in poke.QuickMoves)
                     {
                         if (fMove.Id == move.Id)
                         {
                             fMove.PokemonType = move.PokemonType;
+                            fMove.PokemonType.Damage = move.PokemonType.Damage;
                         }
                     }
                     foreach(Move cMove in poke.CinematicMoves)
@@ -40,6 +57,7 @@ namespace PoGoBattleHelper.Controllers
                         if (cMove.Id == move.Id)
                         {
                             cMove.PokemonType = move.PokemonType;
+                            cMove.PokemonType.Damage = move.PokemonType.Damage;
                         }
                     }
                 }

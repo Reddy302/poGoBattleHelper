@@ -141,3 +141,4 @@ C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\Choo
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\ChooseOpponent\Index.cshtml.g.cs
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\ChooseOpponent\Opponent.cshtml.g.cs
 C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\ChooseOpponent\GetSecondType.cshtml.g.cs
+C:\Users\lewis\Desktop\Capstone Project\obj\Debug\netcoreapp3.1\Razor\Views\ChooseOpponent\Recommendation.cshtml.g.cs

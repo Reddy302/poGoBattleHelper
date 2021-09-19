@@ -37,5 +37,16 @@ namespace PoGoBattleHelper.Models
     {
         public string Id { get; set; }
         public float AttackScalar { get; set; }
+
+        public Damage(string id, float attackScalar)
+        {
+            Id = id;
+            AttackScalar = attackScalar;
+        }
+
+        public Damage()
+        {
+
+        }
     }
 }

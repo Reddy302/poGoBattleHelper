@@ -14,5 +14,7 @@ namespace PoGoBattleHelper.ViewModels
         public List<Pokemon> PossiblePokes2Types { get; set; }
         public Pokemon Opponent { get; set; }
         public List<Pokemon> MyTeam { get; set; }
+        public Dictionary<Pokemon, List<Move>> StrongPokes { get; set; }
+        public Dictionary<Pokemon, List<Move>> NeutralPokes { get; set; }
     }
 }
