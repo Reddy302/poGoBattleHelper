@@ -127,7 +127,7 @@ namespace PoGoBattleHelper.Controllers
                                 {
                                     if (stat.AttackScalar > 1)
                                     {
-                                        points++;
+                                        points ++;
                                     }
                                     else if (stat.AttackScalar < 1)
                                     {
@@ -152,7 +152,7 @@ namespace PoGoBattleHelper.Controllers
                                     }
                                     else if (stat.AttackScalar < 1)
                                     {
-                                        points--;
+                                        points -= 2;
                                     }
                                 }
                             }
@@ -182,7 +182,7 @@ namespace PoGoBattleHelper.Controllers
                     {
                         strongPokes.Add(poke, cMove);
                     }
-                    if (points == 1)
+                    if (points == 0)
                     {
                         neutralPokes.Add(poke, cMove);
                     }
