@@ -152,115 +152,115 @@
                     <tr>
                         <td colspan="@(Model.StrongPokes.Count)">
                             <div class="mx-auto pt-4 pb-3 text-center">
-                                <h3 class="h3"><strong>Strong Pokemon vs This Opponent</strong></h3>
+                                <h4 class="h4"><strong>Strong Pokemon vs This Opponent</strong></h4>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        @foreach (Pokemon poke in Model.StrongPokes.Keys)
+                        @foreach (KeyValuePair<Pokemon, List<Move>> poke in Model.StrongPokes)
                         {
                             string modifier1 = "00";
-                            @if (poke.Name.ToLower().Contains("castform sunny"))
+                            @if (poke.Key.Name.ToLower().Contains("castform sunny"))
                             {
                                 modifier1 = "12";
                             }
-                            else if (poke.Name.ToLower().Contains("castform rainy"))
+                            else if (poke.Key.Name.ToLower().Contains("castform rainy"))
                             {
                                 modifier1 = "13";
                             }
-                            else if (poke.Name.ToLower().Contains("castform snowy"))
+                            else if (poke.Key.Name.ToLower().Contains("castform snowy"))
                             {
                                 modifier1 = "14";
                             }
-                            else if (poke.Name.ToLower().Contains("deoxys attack"))
+                            else if (poke.Key.Name.ToLower().Contains("deoxys attack"))
                             {
                                 modifier1 = "16";
                             }
-                            else if (poke.Name.ToLower().Contains("deoxys defense"))
+                            else if (poke.Key.Name.ToLower().Contains("deoxys defense"))
                             {
                                 modifier1 = "17";
                             }
-                            else if (poke.Name.ToLower().Contains("deoxys speed"))
+                            else if (poke.Key.Name.ToLower().Contains("deoxys speed"))
                             {
                                 modifier1 = "18";
                             }
-                            else if (poke.Name.ToLower().Contains("burmy plant"))
+                            else if (poke.Key.Name.ToLower().Contains("burmy plant"))
                             {
                                 modifier1 = "19";
                             }
-                            else if (poke.Name.ToLower().Contains("burmy sandy"))
+                            else if (poke.Key.Name.ToLower().Contains("burmy sandy"))
                             {
                                 modifier1 = "20";
                             }
-                            else if (poke.Name.ToLower().Contains("burmy trash"))
+                            else if (poke.Key.Name.ToLower().Contains("burmy trash"))
                             {
                                 modifier1 = "21";
                             }
-                            else if (poke.Name.ToLower().Contains("wormdam plant"))
+                            else if (poke.Key.Name.ToLower().Contains("wormdam plant"))
                             {
                                 modifier1 = "22";
                             }
-                            else if (poke.Name.ToLower().Contains("wormdam sandy"))
+                            else if (poke.Key.Name.ToLower().Contains("wormdam sandy"))
                             {
                                 modifier1 = "23";
                             }
-                            else if (poke.Name.ToLower().Contains("wormdam trash"))
+                            else if (poke.Key.Name.ToLower().Contains("wormdam trash"))
                             {
                                 modifier1 = "24";
                             }
-                            else if (poke.Name.ToLower().Contains("cherrim overcast"))
+                            else if (poke.Key.Name.ToLower().Contains("cherrim overcast"))
                             {
                                 modifier1 = "25";
                             }
-                            else if (poke.Name.ToLower().Contains("cherrim sunny"))
+                            else if (poke.Key.Name.ToLower().Contains("cherrim sunny"))
                             {
                                 modifier1 = "26";
                             }
-                            else if (poke.Name.ToLower().Contains("rotom heat"))
+                            else if (poke.Key.Name.ToLower().Contains("rotom heat"))
                             {
                                 modifier1 = "27";
                             }
-                            else if (poke.Name.ToLower().Contains("rotom wash"))
+                            else if (poke.Key.Name.ToLower().Contains("rotom wash"))
                             {
                                 modifier1 = "28";
                             }
-                            else if (poke.Name.ToLower().Contains("rotom frost"))
+                            else if (poke.Key.Name.ToLower().Contains("rotom frost"))
                             {
                                 modifier1 = "29";
                             }
-                            else if (poke.Name.ToLower().Contains("rotom fan"))
+                            else if (poke.Key.Name.ToLower().Contains("rotom fan"))
                             {
                                 modifier1 = "30";
                             }
-                            else if (poke.Name.ToLower().Contains("rotom mow"))
+                            else if (poke.Key.Name.ToLower().Contains("rotom mow"))
                             {
                                 modifier1 = "91";
                             }
-                            else if (poke.Name.ToLower().Contains("giratina altered"))
+                            else if (poke.Key.Name.ToLower().Contains("giratina altered"))
                             {
                                 modifier1 = "32";
                             }
-                            else if (poke.Name.ToLower().Contains("giratina origin"))
+                            else if (poke.Key.Name.ToLower().Contains("giratina origin"))
                             {
                                 modifier1 = "33";
                             }
-                            else if (poke.Name.ToLower().Contains("shaymin land"))
+                            else if (poke.Key.Name.ToLower().Contains("shaymin land"))
                             {
                                 modifier1 = "34";
                             }
-                            else if (poke.Name.ToLower().Contains("shaymin sky"))
+                            else if (poke.Key.Name.ToLower().Contains("shaymin sky"))
                             {
                                 modifier1 = "35";
                             }
-                            else if (poke.Name.ToLower().Contains("alola"))
+                            else if (poke.Key.Name.ToLower().Contains("alola"))
                             {
                                 modifier1 = "61";
                             }
-                            else if (poke.Name.ToLower().Contains("galar"))
+                            else if (poke.Key.Name.ToLower().Contains("galar"))
                             {
                                 modifier1 = "31";
                             }
-                            else if (poke.Name.ToLower().Contains("mega"))
+                            else if (poke.Key.Name.ToLower().Contains("mega"))
                             {
                                 modifier1 = "51";
                             }
@@ -269,26 +269,24 @@
                                 modifier1 = "00";
                             }
 
-                            string dex1 = poke.Dex.ToString("D3");
+                            string dex1 = poke.Key.Dex.ToString("D3");
 
                             <td class="p-3">
                                 <div class="py-3 px-3 text-center">
-                                    <img class="py-0" src="~/images/pokes/pokemon_icon_@(dex1)_@(modifier1).png" alt="@poke.Name" style="height: 130px; max-width: 150px" />
+                                    <img class="py-0" src="~/images/pokes/pokemon_icon_@(dex1)_@(modifier1).png" alt="@poke.Key.Name" style="height: 130px; max-width: 150px" />
                                     <br />
-                                    <div class="py-0 h6">@poke.Name</div>
+                                    <div class="py-0 h6">@poke.Key.Name</div>
                                     <br />
                                     <div class="mx-auto text-center h5"><strong>Recommended Charged Move</strong></div>
                                     <br />
-                                    @foreach (List<Move> value in Model.StrongPokes.Values)
+                                    @if (poke.Value.Count != 0 && poke.Value != null)
                                     {
-                                        if (value.Count != 0 || value != null)
+                                        foreach (Move cMove in poke.Value)
                                         {
-                                            foreach (Move cMove in value)
-                                            {
-                                                <img class="mx-auto text-center" src="~/images/types/@(cMove.PokemonType.Id).png" alt="@cMove.PokemonType.Name" />
-                                                <br />
-                                                <div class="py-0 h6">@cMove.Name</div>
-                                            }
+                                            <img class="mx-auto text-center" src="~/images/types/@(cMove.PokemonType.Id).png" alt="@cMove.PokemonType.Name" />
+                                            <br />
+                                            <div class="py-0 h6">@cMove.Name</div>
+                                            
                                         }
                                     }
                                 </div>
@@ -306,115 +304,115 @@
                     <tr>
                         <td colspan="@(Model.NeutralPokes.Count)">
                             <div class="mx-auto pt-4 pb-3 text-center">
-                                <h3 class="h3"><strong>Neutral Pokemon vs This Opponent</strong></h3>
+                                <h4 class="h4"><strong>Neutral Pokemon vs This Opponent</strong></h4>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        @foreach (Pokemon poke in Model.NeutralPokes.Keys)
+                        @foreach (KeyValuePair<Pokemon, List<Move>> poke in Model.NeutralPokes)
                         {
                             string modifier2 = "00";
-                            @if (poke.Name.ToLower().Contains("castform sunny"))
+                            @if (poke.Key.Name.ToLower().Contains("castform sunny"))
                             {
                                 modifier2 = "12";
                             }
-                            else if (poke.Name.ToLower().Contains("castform rainy"))
+                            else if (poke.Key.Name.ToLower().Contains("castform rainy"))
                             {
                                 modifier2 = "13";
                             }
-                            else if (poke.Name.ToLower().Contains("castform snowy"))
+                            else if (poke.Key.Name.ToLower().Contains("castform snowy"))
                             {
                                 modifier2 = "14";
                             }
-                            else if (poke.Name.ToLower().Contains("deoxys attack"))
+                            else if (poke.Key.Name.ToLower().Contains("deoxys attack"))
                             {
                                 modifier2 = "16";
                             }
-                            else if (poke.Name.ToLower().Contains("deoxys defense"))
+                            else if (poke.Key.Name.ToLower().Contains("deoxys defense"))
                             {
                                 modifier2 = "17";
                             }
-                            else if (poke.Name.ToLower().Contains("deoxys speed"))
+                            else if (poke.Key.Name.ToLower().Contains("deoxys speed"))
                             {
                                 modifier2 = "18";
                             }
-                            else if (poke.Name.ToLower().Contains("burmy plant"))
+                            else if (poke.Key.Name.ToLower().Contains("burmy plant"))
                             {
                                 modifier2 = "19";
                             }
-                            else if (poke.Name.ToLower().Contains("burmy sandy"))
+                            else if (poke.Key.Name.ToLower().Contains("burmy sandy"))
                             {
                                 modifier2 = "20";
                             }
-                            else if (poke.Name.ToLower().Contains("burmy trash"))
+                            else if (poke.Key.Name.ToLower().Contains("burmy trash"))
                             {
                                 modifier2 = "21";
                             }
-                            else if (poke.Name.ToLower().Contains("wormdam plant"))
+                            else if (poke.Key.Name.ToLower().Contains("wormdam plant"))
                             {
                                 modifier2 = "22";
                             }
-                            else if (poke.Name.ToLower().Contains("wormdam sandy"))
+                            else if (poke.Key.Name.ToLower().Contains("wormdam sandy"))
                             {
                                 modifier2 = "23";
                             }
-                            else if (poke.Name.ToLower().Contains("wormdam trash"))
+                            else if (poke.Key.Name.ToLower().Contains("wormdam trash"))
                             {
                                 modifier2 = "24";
                             }
-                            else if (poke.Name.ToLower().Contains("cherrim overcast"))
+                            else if (poke.Key.Name.ToLower().Contains("cherrim overcast"))
                             {
                                 modifier2 = "25";
                             }
-                            else if (poke.Name.ToLower().Contains("cherrim sunny"))
+                            else if (poke.Key.Name.ToLower().Contains("cherrim sunny"))
                             {
                                 modifier2 = "26";
                             }
-                            else if (poke.Name.ToLower().Contains("rotom heat"))
+                            else if (poke.Key.Name.ToLower().Contains("rotom heat"))
                             {
                                 modifier2 = "27";
                             }
-                            else if (poke.Name.ToLower().Contains("rotom wash"))
+                            else if (poke.Key.Name.ToLower().Contains("rotom wash"))
                             {
                                 modifier2 = "28";
                             }
-                            else if (poke.Name.ToLower().Contains("rotom frost"))
+                            else if (poke.Key.Name.ToLower().Contains("rotom frost"))
                             {
                                 modifier2 = "29";
                             }
-                            else if (poke.Name.ToLower().Contains("rotom fan"))
+                            else if (poke.Key.Name.ToLower().Contains("rotom fan"))
                             {
                                 modifier2 = "30";
                             }
-                            else if (poke.Name.ToLower().Contains("rotom mow"))
+                            else if (poke.Key.Name.ToLower().Contains("rotom mow"))
                             {
                                 modifier2 = "91";
                             }
-                            else if (poke.Name.ToLower().Contains("giratina altered"))
+                            else if (poke.Key.Name.ToLower().Contains("giratina altered"))
                             {
                                 modifier2 = "32";
                             }
-                            else if (poke.Name.ToLower().Contains("giratina origin"))
+                            else if (poke.Key.Name.ToLower().Contains("giratina origin"))
                             {
                                 modifier2 = "33";
                             }
-                            else if (poke.Name.ToLower().Contains("shaymin land"))
+                            else if (poke.Key.Name.ToLower().Contains("shaymin land"))
                             {
                                 modifier2 = "34";
                             }
-                            else if (poke.Name.ToLower().Contains("shaymin sky"))
+                            else if (poke.Key.Name.ToLower().Contains("shaymin sky"))
                             {
                                 modifier2 = "35";
                             }
-                            else if (poke.Name.ToLower().Contains("alola"))
+                            else if (poke.Key.Name.ToLower().Contains("alola"))
                             {
                                 modifier2 = "61";
                             }
-                            else if (poke.Name.ToLower().Contains("galar"))
+                            else if (poke.Key.Name.ToLower().Contains("galar"))
                             {
                                 modifier2 = "31";
                             }
-                            else if (poke.Name.ToLower().Contains("mega"))
+                            else if (poke.Key.Name.ToLower().Contains("mega"))
                             {
                                 modifier2 = "51";
                             }
@@ -423,28 +421,34 @@
                                 modifier2 = "00";
                             }
 
-                            string dex2 = poke.Dex.ToString("D3");
+                            string dex2 = poke.Key.Dex.ToString("D3");
 
                             <td class="p-3">
                                 <div class="py-3 px-3 text-center">
-                                    <img class="py-0" src="~/images/pokes/pokemon_icon_@(dex2)_@(modifier2).png" alt="@poke.Name" style="height: 130px; max-width: 150px" />
+                                    <img class="py-0" src="~/images/pokes/pokemon_icon_@(dex2)_@(modifier2).png" alt="@poke.Key.Name" style="height: 130px; max-width: 150px" />
                                     <br />
-                                    <div class="py-0 h6">@poke.Name</div>
+                                    <div class="py-0 h6">@poke.Key.Name</div>
                                     <br />
                                     <div class="mx-auto text-center h5"><strong>Recommended Charged Move</strong></div>
                                     <br />
-                                    @foreach (List<Move> value in Model.NeutralPokes.Values)
+
+                                    @if (poke.Value.Count() != 0 && poke.Value != null)
                                     {
-                                        if (value.Count != 0 || value != null)
+                                        foreach (Move cMove in poke.Value)
                                         {
-                                            foreach (Move cMove in value)
-                                            {
-                                                <img class="mx-auto text-center" src="~/images/types/@(cMove.PokemonType.Id).png" alt="@cMove.PokemonType.Name" />
-                                                <br />
-                                                <div class="py-0 h6">@cMove.Name</div>
-                                            }
+                                            <img class="mx-auto text-center" src="~/images/types/@(cMove.PokemonType.Id).png" alt="@cMove.PokemonType.Name" />
+                                            <br />
+                                            <div class="py-0 h6">@cMove.Name</div>
+
                                         }
                                     }
+                                    else
+                                    {
+                                    //THINK ABOUT ADDING IN SOMETHING TO CHECK AND MAKE SURE THAT NEITHER MOVE IS WEAK AGAINST THE OPPONENT AS WELL
+                                    <div class="py-0 h6">Neither move is strong against this opponent.</div>
+                                    }
+
+
                                 </div>
                             </td>
                         }

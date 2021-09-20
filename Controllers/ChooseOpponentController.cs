@@ -172,7 +172,7 @@ namespace PoGoBattleHelper.Controllers
                                     }
                                     if (stat.AttackScalar < 1)
                                     {
-                                        points = 0;
+                                        points -= 2;
                                     }
                                 }
                             }
