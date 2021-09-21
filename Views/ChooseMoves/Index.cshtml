@@ -4,7 +4,7 @@
     <h3 class="h3"><strong>Your Team</strong></h3>
 </div>
 <div class="mx-auto text-center">
-    @if (Model.MyTeam == null)
+    @if (Model.TempTeam == null || Model.TempTeam.Count() == 0)
     {
         <span><strong>SOMETHING WENT WRONG. PLEASE TRY AGAIN.</strong></span>
         <br />
@@ -15,7 +15,7 @@
         <table class="mx-auto text-center">
             <tbody>
                 <tr>
-                    @foreach (Pokemon poke in Model.MyTeam)
+                    @foreach (Pokemon poke in Model.TempTeam)
                     {
                         string modifier = "00";
                         if (poke.Name.ToLower().Contains("castform sunny"))

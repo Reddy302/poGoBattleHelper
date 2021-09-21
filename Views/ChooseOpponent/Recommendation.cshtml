@@ -271,7 +271,7 @@
 
                             string dex1 = poke.Key.Dex.ToString("D3");
 
-                            <td class="p-3">
+                            <td class="p-3 align-text-top">
                                 <div class="py-3 px-3 text-center">
                                     <img class="py-0" src="~/images/pokes/pokemon_icon_@(dex1)_@(modifier1).png" alt="@poke.Key.Name" style="height: 130px; max-width: 150px" />
                                     <br />
@@ -423,7 +423,7 @@
 
                             string dex2 = poke.Key.Dex.ToString("D3");
 
-                            <td class="p-3">
+                            <td class="p-3 align-text-top">
                                 <div class="py-3 px-3 text-center">
                                     <img class="py-0" src="~/images/pokes/pokemon_icon_@(dex2)_@(modifier2).png" alt="@poke.Key.Name" style="height: 130px; max-width: 150px" />
                                     <br />
@@ -447,8 +447,6 @@
                                     //THINK ABOUT ADDING IN SOMETHING TO CHECK AND MAKE SURE THAT NEITHER MOVE IS WEAK AGAINST THE OPPONENT AS WELL
                                     <div class="py-0 h6">Neither move is strong against this opponent.</div>
                                     }
-
-
                                 </div>
                             </td>
                         }
@@ -456,8 +454,21 @@
                 </tbody>
             </table>
         }
-
-
+        <table class="mx-auto text-center">
+            <tbody>
+                <tr>
+                    <td>
+                        <form method="post" action="Recommendation" id="clear" name="clear">
+                            <button class="btn btn-success" name="clear" value="clear" id="clear">NEXT OPPONENT</button>
+                        </form>
+                        <br />
+                        <form method="post" action="Recommendation" id="startOver" name="startOver">
+                            <button class="btn btn-danger" name="startOver" value="true" id="startOver">START OVER WITH A NEW TEAM</button>
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
 
 

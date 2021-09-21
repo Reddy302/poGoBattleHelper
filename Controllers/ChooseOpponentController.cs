@@ -101,22 +101,22 @@ namespace PoGoBattleHelper.Controllers
         }
 
         [HttpPost, Route("/ChooseOpponent/Recommendation")]
-        public IActionResult Recommendation(string confirm, string clear)
+        public IActionResult Recommendation(string confirm, string clear, string startOver)
         {
+            List<Move> cMove = new List<Move>();
             if (clear == "clear")
             {
                 opponent = new Pokemon();
+                possiblePokes = new List<Pokemon>();
+                possiblePokes2Types = new List<Pokemon>();
                 return RedirectToAction("Index");
             }
             
             if (confirm == "true")
             {
-                // FOREACH POKE IN MY TEAM CHECK THE TYPES OF EACH ATTACK AGAINST THE OPPONENT TYPE
-                // MAYBE THINK ABOUT ADDING UP A POINTS SYSTEM SO THAT A POKE GETS A POINT FOR EACH MOVE THAT IS STRONG AGAINST THE OPPONENT
                 foreach (Pokemon poke in myTeam)
                 {
                     int points = 0;
-                    List<Move> cMove = new List<Move>();
                     foreach (Move qMove in poke.QuickMoves)
                     {
                         foreach (Damage stat in qMove.PokemonType.Damage)
@@ -186,18 +186,27 @@ namespace PoGoBattleHelper.Controllers
                     {
                         neutralPokes.Add(poke, cMove);
                     }
+                    cMove = new List<Move>();
                 }
+                
+                myModel.Opponent = opponent;
+                myModel.MyTeam = myTeam;
+                myModel.StrongPokes = strongPokes;
+                myModel.NeutralPokes = neutralPokes;
+                return View(myModel);
             }
 
-            myModel.Opponent = opponent;
-            myModel.MyTeam = myTeam;
-            myModel.StrongPokes = strongPokes;
-            myModel.NeutralPokes = neutralPokes;
-            return View(myModel);
+            if (startOver == "true")
+            {
+                ChooseTeamController.myTeam = new List<Pokemon>();
+                ChooseTeamController.possiblePokes = new List<Pokemon>();
+                ChooseTeamController.possiblePokes2Types = new List<Pokemon>();
+                ChooseTeamController.myModel = new ChooseTeamViewModel();
+                ChooseMovesController.tempTeam = new List<Pokemon>();
+                return RedirectToAction("Index", "ChooseTeam");
+            }
+
+            return View();            
         }
-
-
-
-
     }
 }

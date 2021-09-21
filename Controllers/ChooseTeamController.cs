@@ -17,9 +17,9 @@ namespace PoGoBattleHelper.Controllers
     public class ChooseTeamController : Controller
     {
         public static List<Pokemon> myTeam = new List<Pokemon>();
-        private static List<Pokemon> possiblePokes = new List<Pokemon>();
-        private static List<Pokemon> possiblePokes2Types = new List<Pokemon>();
-        public ChooseTeamViewModel myModel = new ChooseTeamViewModel();
+        public static List<Pokemon> possiblePokes = new List<Pokemon>();
+        public static List<Pokemon> possiblePokes2Types = new List<Pokemon>();
+        public static ChooseTeamViewModel myModel = new ChooseTeamViewModel();
 
         [HttpGet, Route("/GetType")]
         public IActionResult Index()
@@ -141,7 +141,7 @@ namespace PoGoBattleHelper.Controllers
         [HttpPost, Route("/AddPoke")]
         public IActionResult AddPoke(string poke)
         {
-            if (myTeam.Count < 3)
+            if (myTeam.Count() < 3)
             {
                 foreach(Pokemon mon in Pokemon.pokeList.ToList())
                 {
@@ -208,6 +208,7 @@ namespace PoGoBattleHelper.Controllers
             }
             if (chooseMoves == "chooseMoves")
             {
+                myModel.MyTeam = myTeam;
                 return RedirectToAction("Index", "ChooseMoves");
             }
             return RedirectToAction("GetType");

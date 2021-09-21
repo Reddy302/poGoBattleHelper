@@ -19,6 +19,7 @@ namespace PoGoBattleHelper.Controllers
         public ChooseMovesViewModel myModel = new ChooseMovesViewModel();
         public static Pokemon chosenPoke = new Pokemon();
         public static List<Pokemon> tempTeam = new List<Pokemon>();
+        public static List<Pokemon> myTeam = ChooseTeamController.myTeam;
 
         [HttpGet, Route("/ChooseMoves")]
         public IActionResult Index()
@@ -27,7 +28,7 @@ namespace PoGoBattleHelper.Controllers
             {
                 foreach (Pokemon poke in Pokemon.pokeList)
                 {
-                    foreach (Pokemon mon in ChooseTeamController.myTeam)
+                    foreach (Pokemon mon in myTeam)
                     {
                         if (poke.Id == mon.Id)
                         {
@@ -36,21 +37,22 @@ namespace PoGoBattleHelper.Controllers
                     }
                 }
             }
-            myModel.MyTeam = tempTeam;
+            myModel.MyTeam = myTeam;
+            myModel.TempTeam = tempTeam;
             return View(myModel);
         }
 
         [HttpPost, Route("/ChooseMoves")]
         public IActionResult ChooseMoves(string name)
         {
-            foreach (Pokemon poke in ChooseTeamController.myTeam)
+            foreach (Pokemon poke in myTeam)
             {
                 if (poke.Name.ToLower() == name)
                 {
                     chosenPoke = poke;
                 }
             }
-            myModel.MyTeam = tempTeam;
+            myModel.TempTeam = tempTeam;
             myModel.ChosenPoke = chosenPoke;
             return RedirectToAction("QuickMoves");
         }
@@ -148,13 +150,15 @@ namespace PoGoBattleHelper.Controllers
             if (tempTeam.Count() == 1)
             {
                 // RETURN THE VIEW FOR THE NEXT STEP - MAYBE A CONFIRMATION SCREEN WITH ALL POKES AND CHOSEN MOVES
+                tempTeam.Remove(chosenPoke);
                 myModel.MyTeam = ChooseTeamController.myTeam;
                 return View("ConfirmationScreen", myModel);
             }
             else
             {
                 tempTeam.Remove(chosenPoke);
-                myModel.MyTeam = tempTeam;
+                myModel.TempTeam = tempTeam;
+                myModel.MyTeam = ChooseTeamController.myTeam;
                 myModel.Moves = Move.moveList;
                 myModel.Pokes = Pokemon.pokeList;
                 myModel.Types = Models.Type.typeList;
