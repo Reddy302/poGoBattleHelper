@@ -24,45 +24,6 @@ namespace PoGoBattleHelper.Controllers
         [HttpGet, Route("/GetType")]
         public IActionResult Index()
         {
-            foreach (Pokemon poke in Pokemon.pokeList)
-            {
-                foreach (Move move in Move.moveList)
-                {
-                    foreach (Models.Type type in Models.Type.typeList)
-                    {
-                        if (move.PokemonType.Id == type.Id)
-                        {
-                            move.PokemonType  = type;
-                            move.PokemonType.Damage = type.Damage;                             
-                        }
-
-                        foreach (Models.Type pokeType in poke.Types)
-                        {
-                            if (pokeType.Id == type.Id)
-                            {
-                                pokeType.Damage = type.Damage;
-                            }
-                        }
-                    }
-                    foreach (Move fMove in poke.QuickMoves)
-                    {
-                        if (fMove.Id == move.Id)
-                        {
-                            fMove.PokemonType = move.PokemonType;
-                            fMove.PokemonType.Damage = move.PokemonType.Damage;
-                        }
-                    }
-                    foreach(Move cMove in poke.CinematicMoves)
-                    {
-                        if (cMove.Id == move.Id)
-                        {
-                            cMove.PokemonType = move.PokemonType;
-                            cMove.PokemonType.Damage = move.PokemonType.Damage;
-                        }
-                    }
-                }
-            }
-
             myModel.Pokes = Pokemon.pokeList;
             myModel.Types = Models.Type.typeList;
             myModel.Moves = Move.moveList;
@@ -187,14 +148,14 @@ namespace PoGoBattleHelper.Controllers
             }
             if (clear == "clear")
             {
-                return RedirectToAction("GetType");
+                return RedirectToAction("Index");
             }
             if (clearLast == "clearLast")
             {
                 myTeam.Remove(myTeam[myTeam.Count - 1]);
 
                 myModel.MyTeam = myTeam;
-                return RedirectToAction("GetType");
+                return RedirectToAction("Index");
             }
             if (startOver == "startOver")
             {
@@ -204,14 +165,24 @@ namespace PoGoBattleHelper.Controllers
                 }
 
                 myModel.MyTeam = myTeam;
-                return RedirectToAction("GetType");
+                return RedirectToAction("Index");
             }
             if (chooseMoves == "chooseMoves")
             {
                 myModel.MyTeam = myTeam;
                 return RedirectToAction("Index", "ChooseMoves");
             }
-            return RedirectToAction("GetType");
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult ClearTeam()
+        {
+            myTeam = new List<Pokemon>();
+            possiblePokes = new List<Pokemon>();
+            possiblePokes2Types = new List<Pokemon>();
+            myModel = new ChooseTeamViewModel();
+
+            return RedirectToAction("ClearTeam", "ChooseMoves");
         }
     }
 }

@@ -17,8 +17,8 @@ namespace PoGoBattleHelper.Models
         public string Name { get; set; }
         public List<Damage> Damage { get; set; }
 
-        private static readonly string fileString = System.IO.File.ReadAllText("pokedex/type.json");
-        public static readonly List<Models.Type> typeList = JsonSerializer.Deserialize<List<Models.Type>>(fileString);
+        public static readonly string fileString = System.IO.File.ReadAllText("pokedex/type.json");
+        public static List<Models.Type> typeList = JsonSerializer.Deserialize<List<Models.Type>>(fileString);
 
         public Type(string id, string name, List<Damage> damage)
         {

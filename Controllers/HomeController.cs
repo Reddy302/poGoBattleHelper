@@ -25,12 +25,52 @@ namespace PoGoBattleHelper.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            foreach (Pokemon poke in Pokemon.pokeList.ToList())
+            {
+                foreach (Move move in Move.moveList.ToList())
+                {
+                    foreach (Models.Type type in Models.Type.typeList.ToList())
+                    {
+                        if (move.PokemonType.Id == type.Id)
+                        {
+                            move.PokemonType = type;
+                            move.PokemonType.Damage = type.Damage;
+                        }
+
+                        foreach (Models.Type pokeType in poke.Types)
+                        {
+                            if (pokeType.Id == type.Id)
+                            {
+                                pokeType.Damage = type.Damage;
+                            }
+                        }
+                    }
+                    foreach (Move fMove in poke.QuickMoves)
+                    {
+                        if (fMove.Id == move.Id)
+                        {
+                            fMove.PokemonType = move.PokemonType;
+                            fMove.PokemonType.Damage = move.PokemonType.Damage;
+                        }
+                    }
+                    foreach (Move cMove in poke.CinematicMoves)
+                    {
+                        if (cMove.Id == move.Id)
+                        {
+                            cMove.PokemonType = move.PokemonType;
+                            cMove.PokemonType.Damage = move.PokemonType.Damage;
+                        }
+                    }
+                }
+            }
+
             List<Pokemon> test = ChooseTeamController.myTeam;
             ChooseTeamViewModel myModel = new ChooseTeamViewModel();
             myModel.Pokes = Pokemon.pokeList;
             myModel.Types = Models.Type.typeList;
             myModel.MyTeam = test;
             myModel.Moves = Move.moveList;
+
             return View(myModel);
         }
 

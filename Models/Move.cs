@@ -29,8 +29,8 @@ namespace PoGoBattleHelper.Models
 		public string Name { get; set; }
 		public int InternalId { get; set; }
 
-		private static readonly string fileString = System.IO.File.ReadAllText("pokedex/move.json");
-		public static readonly List<Move> moveList = JsonSerializer.Deserialize<List<Move>>(fileString);
+		public static readonly string fileString = System.IO.File.ReadAllText("pokedex/move.json");
+		public static List<Move> moveList = JsonSerializer.Deserialize<List<Move>>(fileString);
 
 		public Move(string id, Models.Type pokemonType, string name)
         {

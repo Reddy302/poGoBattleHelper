@@ -33,7 +33,7 @@ namespace PoGoBattleHelper.Models
         public string Id { get; set; }
         public List<object> Forms { get; set; }
 
-        private static readonly string fileString = System.IO.File.ReadAllText("pokedex/pokemon.json");
+        public static readonly string fileString = System.IO.File.ReadAllText("pokedex/pokemon.json");
         public static List<Pokemon> pokeList = JsonSerializer.Deserialize<List<Pokemon>>(fileString);
 
         public Pokemon(Models.Type type1, Models.Type type2)

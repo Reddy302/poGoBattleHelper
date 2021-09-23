@@ -7,10 +7,13 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.IO;
-using Newtonsoft.Json;
+using System.Web;
+using System.Windows;
+using Microsoft.AspNetCore.Hosting;
 
 namespace PoGoBattleHelper.Controllers
 {
@@ -20,13 +23,27 @@ namespace PoGoBattleHelper.Controllers
         private static List<Pokemon> possiblePokes = new List<Pokemon>();
         private static List<Pokemon> possiblePokes2Types = new List<Pokemon>();
         public static Pokemon opponent = new Pokemon();
-        public static List<Pokemon> myTeam = ChooseTeamController.myTeam;
+        public static List<Pokemon> oppTeam = new List<Pokemon>();
         public Dictionary<Pokemon, List<Move>> strongPokes = new Dictionary<Pokemon, List<Move>>();
         public Dictionary<Pokemon, List<Move>> neutralPokes = new Dictionary<Pokemon, List<Move>>();
+        
 
         [HttpGet, Route("/ChooseOpponent")]
         public IActionResult Index()
         {
+            if (oppTeam.Count() < 3)
+            {
+                foreach (Pokemon originalPoke in Pokemon.pokeList)
+                {
+                    foreach (Pokemon poke in ChooseTeamController.myTeam)
+                    {
+                        if (originalPoke.Id == poke.Id)
+                        {
+                            oppTeam.Add(originalPoke);
+                        }
+                    }
+                }
+            }
             myModel.Types = Models.Type.typeList;
             myModel.Pokes = Pokemon.pokeList;
             return View(myModel);
@@ -104,17 +121,10 @@ namespace PoGoBattleHelper.Controllers
         public IActionResult Recommendation(string confirm, string clear, string startOver)
         {
             List<Move> cMove = new List<Move>();
-            if (clear == "clear")
-            {
-                opponent = new Pokemon();
-                possiblePokes = new List<Pokemon>();
-                possiblePokes2Types = new List<Pokemon>();
-                return RedirectToAction("Index");
-            }
             
             if (confirm == "true")
             {
-                foreach (Pokemon poke in myTeam)
+                foreach (Pokemon poke in oppTeam)
                 {
                     int points = 0;
                     foreach (Move qMove in poke.QuickMoves)
@@ -147,8 +157,23 @@ namespace PoGoBattleHelper.Controllers
                                 {
                                     if (stat.AttackScalar > 1)
                                     {
-                                        cMove.Add(chargedMove);
-                                        points += 2;
+                                        if (cMove.Count() > 0)
+                                        {
+                                            if (cMove[0].Id == chargedMove.Id)
+                                            {
+                                                continue;
+                                            }
+                                            else
+                                            {
+                                                cMove.Add(chargedMove);
+                                            }
+                                        }
+                                        else
+                                        {
+                                            cMove.Add(chargedMove);
+                                            points += 2;
+                                        }
+                                        
                                     }
                                     else if (stat.AttackScalar < 1)
                                     {
@@ -187,23 +212,45 @@ namespace PoGoBattleHelper.Controllers
                         neutralPokes.Add(poke, cMove);
                     }
                     cMove = new List<Move>();
+                    points = 0;
                 }
                 
                 myModel.Opponent = opponent;
-                myModel.MyTeam = myTeam;
+                myModel.MyTeam = oppTeam;
                 myModel.StrongPokes = strongPokes;
                 myModel.NeutralPokes = neutralPokes;
+                strongPokes = new Dictionary<Pokemon, List<Move>>();
+                neutralPokes = new Dictionary<Pokemon, List<Move>>();
                 return View(myModel);
+            }
+
+            if (clear == "clear")
+            {
+                opponent = new Pokemon();
+                possiblePokes = new List<Pokemon>();
+                possiblePokes2Types = new List<Pokemon>();
+                foreach (Move move in cMove)
+                {
+                    cMove.Remove(move);
+                }
+                return RedirectToAction("Index");
             }
 
             if (startOver == "true")
             {
-                ChooseTeamController.myTeam = new List<Pokemon>();
-                ChooseTeamController.possiblePokes = new List<Pokemon>();
-                ChooseTeamController.possiblePokes2Types = new List<Pokemon>();
-                ChooseTeamController.myModel = new ChooseTeamViewModel();
-                ChooseMovesController.tempTeam = new List<Pokemon>();
-                return RedirectToAction("Index", "ChooseTeam");
+                Pokemon.pokeList = JsonSerializer.Deserialize<List<Pokemon>>(Pokemon.fileString);
+                Move.moveList = JsonSerializer.Deserialize<List<Move>>(Move.fileString);
+                Models.Type.typeList = JsonSerializer.Deserialize<List<Models.Type>>(Models.Type.fileString);
+
+                myModel = new ChooseOpponentViewModel();
+                possiblePokes = new List<Pokemon>();
+                possiblePokes2Types = new List<Pokemon>();
+                opponent = new Pokemon();
+                oppTeam = new List<Pokemon>();
+                strongPokes = new Dictionary<Pokemon, List<Move>>();
+                neutralPokes = new Dictionary<Pokemon, List<Move>>();
+
+                return RedirectToAction("ClearTeam", "ChooseTeam");
             }
 
             return View();            
