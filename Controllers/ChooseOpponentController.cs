@@ -24,6 +24,7 @@ namespace PoGoBattleHelper.Controllers
         private static List<Pokemon> possiblePokes2Types = new List<Pokemon>();
         public static Pokemon opponent = new Pokemon();
         public static List<Pokemon> oppTeam = new List<Pokemon>();
+        public static List<Move> cMove = new List<Move>();
         public Dictionary<Pokemon, List<Move>> strongPokes = new Dictionary<Pokemon, List<Move>>();
         public Dictionary<Pokemon, List<Move>> neutralPokes = new Dictionary<Pokemon, List<Move>>();
         
@@ -118,14 +119,13 @@ namespace PoGoBattleHelper.Controllers
         }
 
         [HttpPost, Route("/ChooseOpponent/Recommendation")]
-        public IActionResult Recommendation(string confirm, string clear, string startOver)
+        public IActionResult Recommendation(string confirm, string next, string startOver)
         {
-            List<Move> cMove = new List<Move>();
-            
             if (confirm == "true")
             {
                 foreach (Pokemon poke in oppTeam)
                 {
+                    cMove = new List<Move>();
                     int points = 0;
                     foreach (Move qMove in poke.QuickMoves)
                     {
@@ -147,11 +147,11 @@ namespace PoGoBattleHelper.Controllers
                             }
                         }
                     }
-                    foreach (Move chargedMove in poke.CinematicMoves)
+                    foreach (Models.Type oppType in opponent.Types)
                     {
-                        foreach (Damage stat in chargedMove.PokemonType.Damage)
+                        foreach (Move chargedMove in poke.CinematicMoves)
                         {
-                            foreach (Models.Type oppType in opponent.Types)
+                            foreach (Damage stat in chargedMove.PokemonType.Damage)
                             {
                                 if (stat.Id == oppType.Id)
                                 {
@@ -159,13 +159,15 @@ namespace PoGoBattleHelper.Controllers
                                     {
                                         if (cMove.Count() > 0)
                                         {
-                                            if (cMove[0].Id == chargedMove.Id)
+                                            if (cMove.Contains(chargedMove))
                                             {
+                                                points += 2;
                                                 continue;
                                             }
                                             else
                                             {
                                                 cMove.Add(chargedMove);
+                                                points += 2;
                                             }
                                         }
                                         else
@@ -173,7 +175,6 @@ namespace PoGoBattleHelper.Controllers
                                             cMove.Add(chargedMove);
                                             points += 2;
                                         }
-                                        
                                     }
                                     else if (stat.AttackScalar < 1)
                                     {
@@ -224,15 +225,16 @@ namespace PoGoBattleHelper.Controllers
                 return View(myModel);
             }
 
-            if (clear == "clear")
+            if (next == "next")
             {
                 opponent = new Pokemon();
                 possiblePokes = new List<Pokemon>();
                 possiblePokes2Types = new List<Pokemon>();
-                foreach (Move move in cMove)
-                {
-                    cMove.Remove(move);
-                }
+                cMove = new List<Move>();
+                strongPokes = new Dictionary<Pokemon, List<Move>>();
+                neutralPokes = new Dictionary<Pokemon, List<Move>>();
+                myModel.StrongPokes = strongPokes;
+                myModel.NeutralPokes = neutralPokes;
                 return RedirectToAction("Index");
             }
 
